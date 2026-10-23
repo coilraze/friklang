@@ -1,0 +1,427 @@
+{
+  "schema_version": "1.1",
+  "id": "A0L01",
+  "title": "Алфавит: буквы, регистр и названия",
+  "level": "A0 (внутренняя метка подготовки)",
+  "language_standard": "en-GB; equivalent en-US accepted unless explicitly targeted",
+  "curriculum_topics": [
+    "A0-01"
+  ],
+  "prerequisites": [],
+  "objective": "Узнать 26 пар букв, прочитать таблицу их названий и записать имя/код латиницей.",
+  "vocabulary": {
+    "Name": "имя (поле карточки)",
+    "Code": "код (поле карточки)",
+    "Mia": "Миа, вымышленное имя",
+    "Ben": "Бен, вымышленное имя"
+  },
+  "theory": [
+    "Английский алфавит содержит 26 букв. Заглавная и строчная — два написания одной буквы: A/a. Для букв в таблице ниже дано название в IPA (международная фонетическая запись), а не русская транскрипция. Сейчас используй запись как справочник; знаки подробно разберём в следующем уроке. Без звука здесь проверяется узнавание записи, а не качество произношения.",
+    "Гласные буквы в базовой классификации — A, E, I, O, U; Y в разных словах может передавать гласный или согласный звук. Остальные буквы обычно называют согласными. Это классификация букв, не точное соответствие звукам: одна буква может передавать разные звуки, а несколько букв — один звук.",
+    "Таблица названий в выбранном британском варианте: A a /eɪ/; B b /biː/; C c /siː/; D d /diː/; E e /iː/; F f /ef/; G g /dʒiː/; H h /eɪtʃ/; I i /aɪ/; J j /dʒeɪ/; K k /keɪ/; L l /el/; M m /em/; N n /en/; O o /əʊ/; P p /piː/; Q q /kjuː/; R r /ɑː/; S s /es/; T t /tiː/; U u /juː/; V v /viː/; W w /ˈdʌbljuː/; X x /eks/; Y y /waɪ/; Z z /zed/. Название W многосложное; знак ударения пока просто часть словарной записи.",
+    "В американском варианте Z обычно /ziː/ (zee), O /oʊ/, R /ɑːr/. Эти варианты нормативны и не являются ошибкой. Здесь по умолчанию используем британские названия. Название буквы и звук в слове различаются: название B — /biː/, в слове Ben буква b обозначает /b/. Не вставляй название каждой буквы вместо чтения слова.",
+    "В имени первая буква заглавная: Mia, Ben. Коды могут быть полностью заглавными: AB. Кириллическая А и латинская A выглядят похоже, но для английской записи нужна латинская раскладка. В обычном имени не чередуем регистры случайно. Слова разделяются пробелами. Двоеточие после Name/Code здесь отделяет метку от значения; это карточка, не предложение."
+  ],
+  "examples": [
+    {
+      "correct": "Mia",
+      "incorrect": "mIA",
+      "correction": "Mia",
+      "explanation_ru": "В обычной записи имени заглавная только первая буква."
+    },
+    {
+      "correct": "B → b",
+      "incorrect": "B → d",
+      "correction": "B → b",
+      "explanation_ru": "Строчная пара B — b; d соответствует D."
+    },
+    {
+      "correct": "A B",
+      "incorrect": "AB",
+      "correction": "A B",
+      "explanation_ru": "Если просят две отдельные буквы через пробел, слитная запись не выполняет инструкцию; в коде AB допустимо."
+    }
+  ],
+  "reading": {
+    "id": "A0L01-R",
+    "text": "Name: Mia\nCode: AB\n\nName: Ben\nCode: CD",
+    "glossary": {}
+  },
+  "tasks": [
+    {
+      "id": "A0L01-T01",
+      "objective": "Узнать нижний регистр",
+      "type": "identify",
+      "difficulty": 1,
+      "phase": "practice",
+      "prompt": "Введи строчную пару B.",
+      "answers": [
+        "b"
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; no automatic rejection",
+        "language_variants": "accept equivalent en-US; preserve targeted distinctions"
+      },
+      "feedback_ru": "У заглавной B строчная пара b, не d."
+    },
+    {
+      "id": "A0L01-T02",
+      "objective": "Узнать верхний регистр",
+      "type": "identify",
+      "difficulty": 1,
+      "phase": "practice",
+      "prompt": "Введи заглавную пару q.",
+      "answers": [
+        "Q"
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; no automatic rejection",
+        "language_variants": "accept equivalent en-US; preserve targeted distinctions"
+      },
+      "feedback_ru": "Для q заглавная Q, не O."
+    },
+    {
+      "id": "A0L01-T03",
+      "objective": "Записать порядок",
+      "type": "form",
+      "difficulty": 1,
+      "phase": "practice",
+      "prompt": "Введи первые четыре заглавные буквы алфавита через пробел.",
+      "answers": [
+        "A B C D"
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; no automatic rejection",
+        "language_variants": "accept equivalent en-US; preserve targeted distinctions"
+      },
+      "feedback_ru": "Порядок A, B, C, D; здесь требуются отдельные буквы."
+    },
+    {
+      "id": "A0L01-T04",
+      "objective": "Различить названия",
+      "type": "identify",
+      "difficulty": 1,
+      "phase": "practice",
+      "prompt": "По таблице: название какой буквы /iː/? Введи заглавную букву.",
+      "answers": [
+        "E"
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; no automatic rejection",
+        "language_variants": "accept equivalent en-US; preserve targeted distinctions"
+      },
+      "feedback_ru": "/iː/ — название E; название I — /aɪ/."
+    },
+    {
+      "id": "A0L01-T05",
+      "objective": "Различить G и J",
+      "type": "identify",
+      "difficulty": 1,
+      "phase": "practice",
+      "prompt": "По таблице: /dʒeɪ/ — название какой буквы? Введи заглавную.",
+      "answers": [
+        "J"
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; no automatic rejection",
+        "language_variants": "accept equivalent en-US; preserve targeted distinctions"
+      },
+      "feedback_ru": "Буква J называется /dʒeɪ/; G — /dʒiː/."
+    },
+    {
+      "id": "A0L01-T06",
+      "objective": "Сопоставить британское название",
+      "type": "form",
+      "difficulty": 1,
+      "phase": "practice",
+      "prompt": "Введи заглавную букву с британским названием /zed/.",
+      "answers": [
+        "Z"
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; no automatic rejection",
+        "language_variants": "accept equivalent en-US; preserve targeted distinctions"
+      },
+      "feedback_ru": "Это Z. Американское /ziː/ — название той же буквы."
+    },
+    {
+      "id": "A0L01-T07",
+      "objective": "Прочитать поле карточки",
+      "type": "reading",
+      "difficulty": 2,
+      "phase": "reading",
+      "prompt": "В A0L01-R какое имя стоит рядом с кодом CD?",
+      "answers": [
+        "Ben"
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "semantic_short",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; no automatic rejection",
+        "language_variants": "accept equivalent en-US; preserve targeted distinctions"
+      },
+      "feedback_ru": "Код CD записан на карточке Ben."
+    },
+    {
+      "id": "A0L01-T08",
+      "objective": "Прочитать код",
+      "type": "reading",
+      "difficulty": 2,
+      "phase": "reading",
+      "prompt": "Какой код указан для Mia? Сохрани регистр.",
+      "answers": [
+        "AB"
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "semantic_short",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; no automatic rejection",
+        "language_variants": "accept equivalent en-US; preserve targeted distinctions"
+      },
+      "feedback_ru": "На карточке Mia код AB, а не CD."
+    },
+    {
+      "id": "A0L01-T09",
+      "objective": "Записать своё имя латиницей",
+      "type": "writing",
+      "difficulty": 2,
+      "phase": "writing",
+      "prompt": "Создай строку Name: и своё или вымышленное имя латиницей. Можно выбрать Mia или Ben.",
+      "answers": [],
+      "alternatives": [],
+      "criteria": [
+        "Есть метка Name: и имя.",
+        "Имя латиницей, первая буква заглавная.",
+        "Не требуется официальный паспортный вариант имени."
+      ],
+      "validation": {
+        "mode": "manual",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; no automatic rejection",
+        "language_variants": "accept equivalent en-US; preserve targeted distinctions"
+      },
+      "feedback_ru": "Это поле карточки: полное предложение пока не требуется. Если выбираешь настоящее имя, несколько общепринятых латинских написаний допустимы.",
+      "sample_answer": "Name: Mia",
+      "writing_support": {
+        "checklist_ru": [
+          "Есть метка Name: и имя.",
+          "Имя латиницей, первая буква заглавная.",
+          "Не требуется официальный паспортный вариант имени."
+        ],
+        "typical_errors": [
+          {
+            "incorrect": "mIA",
+            "correction": "Mia",
+            "explanation_ru": "В обычной записи имени заглавная только первая буква."
+          },
+          {
+            "incorrect": "B → d",
+            "correction": "B → b",
+            "explanation_ru": "Строчная пара B — b; d соответствует D."
+          },
+          {
+            "incorrect": "AB",
+            "correction": "A B",
+            "explanation_ru": "Если просят две отдельные буквы через пробел, слитная запись не выполняет инструкцию; в коде AB допустимо."
+          }
+        ],
+        "rubric": "docs/writing-feedback.md",
+        "review_status": "unreviewed",
+        "self_review_available": true
+      }
+    },
+    {
+      "id": "A0L01-T10",
+      "objective": "Создать карточку",
+      "type": "writing",
+      "difficulty": 2,
+      "phase": "writing",
+      "prompt": "Создай карточку нового человека: Name: имя и на следующей строке Code: любые две разные заглавные латинские буквы.",
+      "answers": [],
+      "alternatives": [],
+      "criteria": [
+        "Есть два понятных поля Name и Code.",
+        "Имя с заглавной; код из двух разных латинских букв.",
+        "В карточке не требуется точка после каждого поля."
+      ],
+      "validation": {
+        "mode": "manual",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; no automatic rejection",
+        "language_variants": "accept equivalent en-US; preserve targeted distinctions"
+      },
+      "feedback_ru": "После каждой метки есть двоеточие и значение; код не нужно превращать в слово.",
+      "sample_answer": "Name: Ben\nCode: EF",
+      "writing_support": {
+        "checklist_ru": [
+          "Есть два понятных поля Name и Code.",
+          "Имя с заглавной; код из двух разных латинских букв.",
+          "В карточке не требуется точка после каждого поля."
+        ],
+        "typical_errors": [
+          {
+            "incorrect": "mIA",
+            "correction": "Mia",
+            "explanation_ru": "В обычной записи имени заглавная только первая буква."
+          },
+          {
+            "incorrect": "B → d",
+            "correction": "B → b",
+            "explanation_ru": "Строчная пара B — b; d соответствует D."
+          },
+          {
+            "incorrect": "AB",
+            "correction": "A B",
+            "explanation_ru": "Если просят две отдельные буквы через пробел, слитная запись не выполняет инструкцию; в коде AB допустимо."
+          }
+        ],
+        "rubric": "docs/writing-feedback.md",
+        "review_status": "unreviewed",
+        "self_review_available": true
+      }
+    },
+    {
+      "id": "A0L01-T11",
+      "objective": "Исправить регистр имени",
+      "type": "punctuation",
+      "difficulty": 2,
+      "phase": "checkpoint",
+      "prompt": "Перепиши обычное имя правильно: mIA. Введи только имя, без точки.",
+      "answers": [
+        "Mia"
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; no automatic rejection",
+        "language_variants": "accept equivalent en-US; preserve targeted distinctions"
+      },
+      "feedback_ru": "Начальная M заглавная, остальные буквы строчные."
+    },
+    {
+      "id": "A0L01-T12",
+      "objective": "Проверить различение имён букв",
+      "type": "identify",
+      "difficulty": 2,
+      "phase": "delayed_review",
+      "prompt": "Без подсказки: /aɪ/ — название какой буквы? Введи заглавную.",
+      "answers": [
+        "I"
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; no automatic rejection",
+        "language_variants": "accept equivalent en-US; preserve targeted distinctions"
+      },
+      "feedback_ru": "Название I — /aɪ/, а E — /iː/."
+    }
+  ],
+  "review": {
+    "schedule_days": [
+      1,
+      3,
+      7,
+      21
+    ],
+    "instruction_ru": "Повтори последние два задания без ключа; затем создай новую карточку со словами урока. Не проверяется произношение вслух.",
+    "mastery": "Не менее 80% письменных заданий по целям блока, открытая работа по адаптированной рубрике; письменное распознавание не подтверждает произношение."
+  },
+  "quality": {
+    "status": "author_reviewed_pending_independent_review",
+    "provenance": "Оригинальные инструкции, карточки и задания; IPA и общеязыковые правила сверены с открытыми словарными справочниками.",
+    "remaining_review": "Независимая проверка фонетических объяснений и пилот взрослого новичка."
+  }
+}

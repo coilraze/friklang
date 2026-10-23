@@ -1,0 +1,444 @@
+{
+  "schema_version": "1.1",
+  "id": "A0L04",
+  "title": "Гласные: частые модели и исключения",
+  "level": "A0 (внутренняя метка подготовки)",
+  "language_standard": "en-GB; equivalent en-US accepted unless explicitly targeted",
+  "curriculum_topics": [
+    "A0-04"
+  ],
+  "prerequisites": [
+    "A0L03"
+  ],
+  "objective": "Сравнивать данные словарные записи, замечать исключения и не угадывать число слогов по буквам.",
+  "vocabulary": {
+    "cap": "кепка",
+    "cape": "плащ; мыс",
+    "sit": "сидеть",
+    "site": "место; сайт",
+    "name": "имя",
+    "home": "дом; домой в go home",
+    "have": "иметь",
+    "give": "давать",
+    "see": "видеть",
+    "tea": "чай",
+    "head": "голова",
+    "food": "еда",
+    "book": "книга",
+    "rain": "дождь",
+    "day": "день",
+    "said": "сказал/сказала; форма say",
+    "about": "о; приблизительно"
+  },
+  "theory": [
+    "В некоторых коротких словах с моделью согласная–гласная–согласная (CVC) встречается краткий гласный: cap /kæp/, sit /sɪt/. В некоторых парах конечная e не образует отдельный слог, но написание связано с другим гласным: cape /keɪp/, site /saɪt/, name /neɪm/, home /həʊm/. Это тенденции, а не алгоритм для любого слова.",
+    "Распространённые исключения: have /hæv/, give /ɡɪv/ не получают дифтонг по модели name. Said /sed/ не читается с /eɪ/, хотя ai в rain /reɪn/ даёт /eɪ/. Не изучаем здесь прошедшее время: said дано только как словарное слово-исключение со значением «сказал/сказала».",
+    "Частые сочетания: ee в see /siː/; ea в tea /tiː/, но head /hed/; oo в food /fuːd/, но book /bʊk/; ai в rain /reɪn/; ay в day /deɪ/. Совпадение буквосочетания не гарантирует один звук. В /uː/ и /ʊ/ различается качество, а не только длина.",
+    "В about /əˈbaʊt/ начальная a соответствует безударной schwa /ə/. Нельзя произносить все безударные гласные как название буквы; по письменному заданию мы только определяем знак и ударение. В name один слог, хотя две гласные буквы; в about два. Не используем механическое деление написания как доказательство произношения.",
+    "Если встречено незнакомое слово: найди его в словаре, выбери UK-запись, сравни с моделью, отметь исключение. Ни новая буква e, ни знакомое сочетание не дают права считать догадку достоверной. В карточках ниже даны только проверяемые письменные сведения, без аудио и устной оценки."
+  ],
+  "examples": [
+    {
+      "correct": "have /hæv/",
+      "incorrect": "have /heɪv/",
+      "correction": "have /hæv/",
+      "explanation_ru": "Have не следует частой модели name."
+    },
+    {
+      "correct": "book /bʊk/",
+      "incorrect": "book /buːk/",
+      "correction": "book /bʊk/",
+      "explanation_ru": "В выбранной словарной форме book /ʊ/, food — /uː/."
+    },
+    {
+      "correct": "said /sed/",
+      "incorrect": "said /seɪd/",
+      "correction": "said /sed/",
+      "explanation_ru": "Said — частое исключение для ai."
+    }
+  ],
+  "reading": {
+    "id": "A0L04-R",
+    "text": "Минисловарь для записки:\nname /neɪm/ — имя\nhome /həʊm/ — дом\nhave /hæv/ — иметь\ngive /ɡɪv/ — давать\nПоследние два слова — исключения из упрощённой модели конечной e.",
+    "glossary": {}
+  },
+  "tasks": [
+    {
+      "id": "A0L04-T01",
+      "objective": "Сравнить CVC/CVCe",
+      "type": "identify",
+      "difficulty": 1,
+      "phase": "practice",
+      "prompt": "В каком слове дан /eɪ/: cap /kæp/ или cape /keɪp/? Введи слово.",
+      "answers": [
+        "cape"
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; no automatic rejection",
+        "language_variants": "accept equivalent en-US; preserve targeted distinctions"
+      },
+      "feedback_ru": "В cape записан дифтонг /eɪ/."
+    },
+    {
+      "id": "A0L04-T02",
+      "objective": "Распознать исключение",
+      "type": "identify",
+      "difficulty": 1,
+      "phase": "practice",
+      "prompt": "В have /hæv/ гласный /æ/ или /eɪ/? Скопируй в косых скобках.",
+      "answers": [
+        "/æ/"
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; no automatic rejection",
+        "language_variants": "accept equivalent en-US; preserve targeted distinctions"
+      },
+      "feedback_ru": "Have не следует модели name /neɪm/."
+    },
+    {
+      "id": "A0L04-T03",
+      "objective": "Различить ea",
+      "type": "identify",
+      "difficulty": 1,
+      "phase": "practice",
+      "prompt": "Какое слово содержит /e/: tea /tiː/ или head /hed/?",
+      "answers": [
+        "head"
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; no automatic rejection",
+        "language_variants": "accept equivalent en-US; preserve targeted distinctions"
+      },
+      "feedback_ru": "В head сочетание ea передаёт /e/, а не /iː/."
+    },
+    {
+      "id": "A0L04-T04",
+      "objective": "Различить oo",
+      "type": "identify",
+      "difficulty": 1,
+      "phase": "practice",
+      "prompt": "Какое слово содержит /ʊ/: food /fuːd/ или book /bʊk/?",
+      "answers": [
+        "book"
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; no automatic rejection",
+        "language_variants": "accept equivalent en-US; preserve targeted distinctions"
+      },
+      "feedback_ru": "В book записан /ʊ/, в food /uː/."
+    },
+    {
+      "id": "A0L04-T05",
+      "objective": "Распознать said",
+      "type": "identify",
+      "difficulty": 1,
+      "phase": "practice",
+      "prompt": "Введи IPA для said по уроку, включая косые скобки.",
+      "answers": [
+        "/sed/"
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; no automatic rejection",
+        "language_variants": "accept equivalent en-US; preserve targeted distinctions"
+      },
+      "feedback_ru": "Не переносим /eɪ/ из rain на said."
+    },
+    {
+      "id": "A0L04-T06",
+      "objective": "Повторить слоги",
+      "type": "form",
+      "difficulty": 1,
+      "phase": "practice",
+      "prompt": "Сколько слогов в site /saɪt/? Введи цифру.",
+      "answers": [
+        "1"
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; no automatic rejection",
+        "language_variants": "accept equivalent en-US; preserve targeted distinctions"
+      },
+      "feedback_ru": "/aɪ/ — один дифтонг; конечная e здесь не добавляет слог."
+    },
+    {
+      "id": "A0L04-T07",
+      "objective": "Найти исключения в карточке",
+      "type": "reading",
+      "difficulty": 2,
+      "phase": "reading",
+      "prompt": "Какие два слова в A0L04-R названы исключениями? Перечисли через запятую.",
+      "answers": [
+        "have, give"
+      ],
+      "alternatives": [
+        "give, have"
+      ],
+      "criteria": [],
+      "validation": {
+        "mode": "semantic_short",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; no automatic rejection",
+        "language_variants": "accept equivalent en-US; preserve targeted distinctions"
+      },
+      "feedback_ru": "Это have и give; в них нет ожидаемых по упрощению дифтонгов."
+    },
+    {
+      "id": "A0L04-T08",
+      "objective": "Найти слово по значению",
+      "type": "reading",
+      "difficulty": 2,
+      "phase": "reading",
+      "prompt": "В A0L04-R какое слово означает «дом»?",
+      "answers": [
+        "home"
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "semantic_short",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; no automatic rejection",
+        "language_variants": "accept equivalent en-US; preserve targeted distinctions"
+      },
+      "feedback_ru": "Home связано с домом; name — имя."
+    },
+    {
+      "id": "A0L04-T09",
+      "objective": "Составить карточку пары",
+      "type": "writing",
+      "difficulty": 2,
+      "phase": "writing",
+      "prompt": "Запиши food и book с данными IPA и объясни по-русски, чем различается чтение oo.",
+      "answers": [],
+      "alternatives": [],
+      "criteria": [
+        "Есть food /fuːd/ и book /bʊk/.",
+        "Различие названо через IPA, не русскую транскрипцию.",
+        "Не заявлено, что отличается только длительность."
+      ],
+      "validation": {
+        "mode": "manual",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; no automatic rejection",
+        "language_variants": "accept equivalent en-US; preserve targeted distinctions"
+      },
+      "feedback_ru": "Одинаковое oo не гарантирует одинаковый гласный: /uː/ и /ʊ/.",
+      "sample_answer": "food /fuːd/ — еда; book /bʊk/ — книга. В oo здесь разные гласные /uː/ и /ʊ/.",
+      "writing_support": {
+        "checklist_ru": [
+          "Есть food /fuːd/ и book /bʊk/.",
+          "Различие названо через IPA, не русскую транскрипцию.",
+          "Не заявлено, что отличается только длительность."
+        ],
+        "typical_errors": [
+          {
+            "incorrect": "have /heɪv/",
+            "correction": "have /hæv/",
+            "explanation_ru": "Have не следует частой модели name."
+          },
+          {
+            "incorrect": "book /buːk/",
+            "correction": "book /bʊk/",
+            "explanation_ru": "В выбранной словарной форме book /ʊ/, food — /uː/."
+          },
+          {
+            "incorrect": "said /seɪd/",
+            "correction": "said /sed/",
+            "explanation_ru": "Said — частое исключение для ai."
+          }
+        ],
+        "rubric": "docs/writing-feedback.md",
+        "review_status": "unreviewed",
+        "self_review_available": true
+      }
+    },
+    {
+      "id": "A0L04-T10",
+      "objective": "Объяснить ограничение модели",
+      "type": "writing",
+      "difficulty": 2,
+      "phase": "writing",
+      "prompt": "Напиши по-русски правило-предостережение о конечной e и приведи have с данным IPA.",
+      "answers": [],
+      "alternatives": [],
+      "criteria": [
+        "Конечная e не названа универсальным правилом.",
+        "Есть исключение have /hæv/.",
+        "Указана возможность словарной проверки."
+      ],
+      "validation": {
+        "mode": "manual",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; no automatic rejection",
+        "language_variants": "accept equivalent en-US; preserve targeted distinctions"
+      },
+      "feedback_ru": "Частая модель помогает предположить, но исключения нужно сверять по словарю.",
+      "sample_answer": "Конечная e не гарантирует дифтонг: have /hæv/ — исключение. Незнакомые слова проверяю по словарю.",
+      "writing_support": {
+        "checklist_ru": [
+          "Конечная e не названа универсальным правилом.",
+          "Есть исключение have /hæv/.",
+          "Указана возможность словарной проверки."
+        ],
+        "typical_errors": [
+          {
+            "incorrect": "have /heɪv/",
+            "correction": "have /hæv/",
+            "explanation_ru": "Have не следует частой модели name."
+          },
+          {
+            "incorrect": "book /buːk/",
+            "correction": "book /bʊk/",
+            "explanation_ru": "В выбранной словарной форме book /ʊ/, food — /uː/."
+          },
+          {
+            "incorrect": "said /seɪd/",
+            "correction": "said /sed/",
+            "explanation_ru": "Said — частое исключение для ai."
+          }
+        ],
+        "rubric": "docs/writing-feedback.md",
+        "review_status": "unreviewed",
+        "self_review_available": true
+      }
+    },
+    {
+      "id": "A0L04-T11",
+      "objective": "Узнать ay",
+      "type": "identify",
+      "difficulty": 2,
+      "phase": "checkpoint",
+      "prompt": "В day /deɪ/ какой гласный у ay? Скопируй в косых скобках.",
+      "answers": [
+        "/eɪ/"
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; no automatic rejection",
+        "language_variants": "accept equivalent en-US; preserve targeted distinctions"
+      },
+      "feedback_ru": "В этом слове ay передаёт /eɪ/."
+    },
+    {
+      "id": "A0L04-T12",
+      "objective": "Закрепить schwa",
+      "type": "identify",
+      "difficulty": 2,
+      "phase": "delayed_review",
+      "prompt": "Скопируй первый гласный знак about /əˈbaʊt/, без скобок.",
+      "answers": [
+        "ə"
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; no automatic rejection",
+        "language_variants": "accept equivalent en-US; preserve targeted distinctions"
+      },
+      "feedback_ru": "Начальная безударная гласная — schwa /ə/."
+    }
+  ],
+  "review": {
+    "schedule_days": [
+      1,
+      3,
+      7,
+      21
+    ],
+    "instruction_ru": "Повтори последние два задания без ключа; затем создай новую карточку со словами урока. Не проверяется произношение вслух.",
+    "mastery": "Не менее 80% письменных заданий по целям блока, открытая работа по адаптированной рубрике; письменное распознавание не подтверждает произношение."
+  },
+  "quality": {
+    "status": "author_reviewed_pending_independent_review",
+    "provenance": "Оригинальные инструкции, карточки и задания; IPA и общеязыковые правила сверены с открытыми словарными справочниками.",
+    "remaining_review": "Независимая проверка фонетических объяснений и пилот взрослого новичка."
+  }
+}

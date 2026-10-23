@@ -1,0 +1,599 @@
+{
+  "schema_version": "1.1",
+  "id": "L02",
+  "title": "Личные местоимения и am/is/are",
+  "level": "A1 (методическое распределение)",
+  "curriculum_topics": [
+    "A1-02"
+  ],
+  "prerequisites": [
+    "L01"
+  ],
+  "objective": "Выбирать форму be и заменять имя подходящим местоимением.",
+  "vocabulary": {
+    "you": "ты; вы",
+    "he": "он (о человеке)",
+    "she": "она (о человеке)",
+    "it": "оно/он/она о предмете в наших примерах",
+    "we": "мы",
+    "they": "они",
+    "is": "форма be с he/she/it и одним именем",
+    "are": "форма be с you/we/they",
+    "Ben": "Бен, имя",
+    "tea": "чай",
+    "cold": "холодный",
+    "warm": "тёплый",
+    "with": "с",
+    "at home": "дома",
+    "here": "здесь",
+    "ready": "готовый",
+    "happy": "довольный",
+    "calm": "спокойный"
+  },
+  "theory": [
+    "Местоимение заменяет имя или название, если понятно, о ком/чём речь. В этом уроке Mia использует she, Ben использует he; для чая используем it. It не выбирается по русскому грамматическому роду. Для человека выбирай известное местоимение, не угадывай его по имени.",
+    "Формы настоящего be: I am; you are; he/she/it is; we/they are. С одним именем: Mia is ready. Для говорящего вместе с другими — we; для нескольких других — they. You означает и «ты», и «вы», но форма всегда are. В этом блоке they обозначает нескольких других. В современном английском they также может обозначать одного человека; это допустимое употребление, но в данных упражнениях референты заданы явно.",
+    "В I am ready, She is ready, They are ready слово ready не меняется. Форму глагола выбираем по подлежащему. После be может быть место: Ben is at home. With — «с»: I am with Ben.",
+    "Пока пишем полные формы. Сокращения, отрицания и вопросы будут в следующем уроке. Напоминание: заглавная в начале, I всегда заглавное, точка в конце."
+  ],
+  "examples": [
+    {
+      "correct": "She is ready.",
+      "incorrect": "She are ready.",
+      "correction": "She is ready.",
+      "explanation_ru": "С she ставится is."
+    },
+    {
+      "correct": "You are here.",
+      "incorrect": "You is here.",
+      "correction": "You are here.",
+      "explanation_ru": "С you всегда are, даже при обращении к одному человеку."
+    },
+    {
+      "correct": "It is cold.",
+      "incorrect": "It are cold.",
+      "correction": "It is cold.",
+      "explanation_ru": "Для одного предмета it + is."
+    }
+  ],
+  "reading": {
+    "id": "L02-R",
+    "text": "I am Mia. I am with Ben. He is here. We are at home. We are ready.",
+    "glossary": {
+      "with Ben": "с Беном"
+    },
+    "context_ru": "В этой учебной ситуации участвуют только Mia и Ben. Mia пишет от первого лица."
+  },
+  "tasks": [
+    {
+      "id": "L02-T01",
+      "objective": "Вспомнить I am",
+      "type": "gap",
+      "difficulty": 1,
+      "phase": "entry",
+      "prompt": "Только слово: I ___ here.",
+      "answers": [
+        "am"
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
+      },
+      "feedback_ru": "С I используется am."
+    },
+    {
+      "id": "L02-T02",
+      "objective": "Вспомнить порядок",
+      "type": "identify",
+      "difficulty": 1,
+      "phase": "entry",
+      "prompt": "Введи утверждение правильно: ready / am / I.",
+      "answers": [
+        "I am ready."
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
+      },
+      "feedback_ru": "I перед am; ready после связки."
+    },
+    {
+      "id": "L02-T03",
+      "objective": "Выбрать is",
+      "type": "gap",
+      "difficulty": 1,
+      "phase": "practice",
+      "prompt": "Только слово: She ___ calm.",
+      "answers": [
+        "is"
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
+      },
+      "feedback_ru": "She сочетается с is."
+    },
+    {
+      "id": "L02-T04",
+      "objective": "Выбрать are",
+      "type": "gap",
+      "difficulty": 1,
+      "phase": "practice",
+      "prompt": "Только слово: We ___ ready.",
+      "answers": [
+        "are"
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
+      },
+      "feedback_ru": "We — «мы», форма are."
+    },
+    {
+      "id": "L02-T05",
+      "objective": "Согласовать you",
+      "type": "gap",
+      "difficulty": 1,
+      "phase": "practice",
+      "prompt": "Обращаешься к одному другу. Только слово: You ___ here.",
+      "answers": [
+        "are"
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
+      },
+      "feedback_ru": "Даже к одному адресату: you are."
+    },
+    {
+      "id": "L02-T06",
+      "objective": "Заменить имя местоимением",
+      "type": "form",
+      "difficulty": 1,
+      "phase": "practice",
+      "prompt": "Mia использует she. Замени Mia в Mia is happy. Введи полное предложение.",
+      "answers": [
+        "She is happy."
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
+      },
+      "feedback_ru": "Mia заменяется she; форма is сохраняется."
+    },
+    {
+      "id": "L02-T07",
+      "objective": "Заменить предмет",
+      "type": "form",
+      "difficulty": 2,
+      "phase": "practice",
+      "prompt": "В предложении Tea is cold. замени только Tea местоимением для напитка. Введи полное предложение.",
+      "answers": [
+        "It is cold."
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
+      },
+      "feedback_ru": "Для чая используем it, а не he по русскому роду слова."
+    },
+    {
+      "id": "L02-T08",
+      "objective": "Собрать множественное подлежащее",
+      "type": "reorder",
+      "difficulty": 2,
+      "phase": "practice",
+      "prompt": "Собери: ready / they / are.",
+      "answers": [
+        "They are ready."
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
+      },
+      "feedback_ru": "They + are; в начале They с заглавной."
+    },
+    {
+      "id": "L02-T09",
+      "objective": "Исправить he are",
+      "type": "correct",
+      "difficulty": 2,
+      "phase": "practice",
+      "prompt": "Исправь: He are at home. Сохрани подлежащее, смысл и заданную конструкцию; исправь ошибочную форму и оформление.",
+      "answers": [
+        "He is at home."
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
+      },
+      "feedback_ru": "С he нужна is; at home остаётся без изменений."
+    },
+    {
+      "id": "L02-T10",
+      "objective": "Исправить we is",
+      "type": "correct",
+      "difficulty": 2,
+      "phase": "practice",
+      "prompt": "Исправь: We is happy. Сохрани подлежащее, смысл и заданную конструкцию; исправь ошибочную форму и оформление.",
+      "answers": [
+        "We are happy."
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
+      },
+      "feedback_ru": "С we нужна are; happy не меняется."
+    },
+    {
+      "id": "L02-T11",
+      "objective": "Определить рассказчика",
+      "type": "reading",
+      "difficulty": 2,
+      "phase": "reading",
+      "prompt": "L02-R: кто пишет текст? Ответь именем.",
+      "answers": [
+        "Mia"
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "semantic_short",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error",
+        "scoring": "meaning primary; record spelling/capitalisation/punctuation separately; do not erase them"
+      },
+      "feedback_ru": "Первое предложение I am Mia."
+    },
+    {
+      "id": "L02-T12",
+      "objective": "Найти референт he",
+      "type": "reading",
+      "difficulty": 2,
+      "phase": "reading",
+      "prompt": "Кого обозначает He в L02-R? Ответь именем.",
+      "answers": [
+        "Ben"
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "semantic_short",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error",
+        "scoring": "meaning primary; record spelling/capitalisation/punctuation separately; do not erase them"
+      },
+      "feedback_ru": "He отсылает к Ben из предыдущего предложения."
+    },
+    {
+      "id": "L02-T13",
+      "objective": "Определить состав we",
+      "type": "reading",
+      "difficulty": 2,
+      "phase": "reading",
+      "prompt": "Кто обозначен We в L02-R? Перечисли два имени по-русски или по-английски; можно через запятую.",
+      "answers": [
+        "Mia and Ben"
+      ],
+      "alternatives": [
+        "Миа и Бен",
+        "Ben and Mia",
+        "Mia, Ben",
+        "Ben, Mia",
+        "Бен и Миа"
+      ],
+      "criteria": [],
+      "validation": {
+        "mode": "semantic_short",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error",
+        "scoring": "meaning primary; record spelling/capitalisation/punctuation separately; do not erase them"
+      },
+      "feedback_ru": "We здесь включает рассказчика Mia и Ben. Порядок имён не важен; английский союз and не обязателен."
+    },
+    {
+      "id": "L02-T14",
+      "objective": "Найти место",
+      "type": "reading",
+      "difficulty": 2,
+      "phase": "reading",
+      "prompt": "Где находятся Mia и Ben? Можно ответить фрагментом.",
+      "answers": [
+        "at home"
+      ],
+      "alternatives": [
+        "дома",
+        "They are at home."
+      ],
+      "criteria": [],
+      "validation": {
+        "mode": "semantic_short",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error",
+        "scoring": "meaning primary; record spelling/capitalisation/punctuation separately; do not erase them"
+      },
+      "feedback_ru": "We are at home сообщает место обоих."
+    },
+    {
+      "id": "L02-T15",
+      "objective": "Написать разные формы be",
+      "type": "writing",
+      "difficulty": 3,
+      "phase": "writing",
+      "prompt": "Напиши три утверждения: о себе с I, об адресате с you и о группе с they. Используй ready/here/happy.",
+      "answers": [],
+      "alternatives": [],
+      "criteria": [
+        "Три полных предложения с I, you, they.",
+        "Формы am, are, are согласованы.",
+        "Характеристики или место понятны; оформление верно."
+      ],
+      "validation": {
+        "mode": "manual",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
+      },
+      "feedback_ru": "Проверь I am, you are, they are. Содержание может быть вымышленным.",
+      "sample_answer": "I am ready. You are here. They are happy.",
+      "writing_support": {
+        "checklist_ru": [
+          "Три полных предложения с I, you, they.",
+          "Формы am, are, are согласованы.",
+          "Характеристики или место понятны; оформление верно."
+        ],
+        "typical_errors": [
+          {
+            "incorrect": "She are happy.",
+            "correction": "She is happy.",
+            "explanation_ru": "С she используется is."
+          },
+          {
+            "incorrect": "We is here.",
+            "correction": "We are here.",
+            "explanation_ru": "С we используется are."
+          }
+        ],
+        "rubric": "docs/writing-feedback.md",
+        "review_status": "unreviewed",
+        "self_review_available": true
+      }
+    },
+    {
+      "id": "L02-T16",
+      "objective": "Создать профиль двух людей",
+      "type": "writing",
+      "difficulty": 3,
+      "phase": "writing",
+      "prompt": "Напиши четыре связанных предложения: представься с I am, назови Ben с Ben is, продолжи с He is и We are. Укажите место или состояние.",
+      "answers": [],
+      "alternatives": [],
+      "criteria": [
+        "Четыре предложения об одном эпизоде.",
+        "Есть I am, Ben is, He is, We are.",
+        "Понятно, кого обозначают He и We."
+      ],
+      "validation": {
+        "mode": "manual",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
+      },
+      "feedback_ru": "He относится к Ben; We включает тебя и Ben. Должно быть понятно, о ком говорится в каждом предложении.",
+      "sample_answer": "I am Mia. Ben is here. He is happy. We are at home.",
+      "writing_support": {
+        "checklist_ru": [
+          "Четыре предложения об одном эпизоде.",
+          "Есть I am, Ben is, He is, We are.",
+          "Понятно, кого обозначают He и We."
+        ],
+        "typical_errors": [
+          {
+            "incorrect": "She are happy.",
+            "correction": "She is happy.",
+            "explanation_ru": "С she используется is."
+          },
+          {
+            "incorrect": "We is here.",
+            "correction": "We are here.",
+            "explanation_ru": "С we используется are."
+          }
+        ],
+        "rubric": "docs/writing-feedback.md",
+        "review_status": "unreviewed",
+        "self_review_available": true
+      }
+    },
+    {
+      "id": "L02-T17",
+      "objective": "Применить it is",
+      "type": "checkpoint",
+      "difficulty": 3,
+      "phase": "checkpoint",
+      "prompt": "Чай тёплый. Напиши предложение с It и warm.",
+      "answers": [
+        "It is warm."
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
+      },
+      "feedback_ru": "It требует is; warm дано в словаре."
+    },
+    {
+      "id": "L02-T18",
+      "objective": "Закрепить согласование",
+      "type": "checkpoint",
+      "difficulty": 3,
+      "phase": "delayed_review",
+      "prompt": "После перерыва исправь: They is ready.",
+      "answers": [
+        "They are ready."
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
+      },
+      "feedback_ru": "С they употребляется are, даже если местоимение относится к одному человеку. Is здесь не подходит."
+    }
+  ],
+  "review": {
+    "schedule_days": [
+      1,
+      3,
+      7,
+      21
+    ],
+    "instruction_ru": "Сначала выполни задания 17–18 без ключа. Через неделю напиши новый текст о другом человеке/ситуации. Ключи предыдущей попытки скрыты; самопроверка не равна независимому подтверждению усвоения.",
+    "mastery": "80% закрытых заданий, Writing ≥6/8 без нуля по смыслу/целевой конструкции; подтвердить через неделю."
+  },
+  "quality": {
+    "status": "author_reviewed_pending_independent_review",
+    "provenance": "Оригинальные тексты, задания и пояснения LangForge; не скопированы из источников.",
+    "remaining_review": "Независимая языковая редактура и пилот; см. docs/content-quality.md.",
+    "audit": "Самостоятельный аудит Codex этапа 1.5; не независимая лингвистическая экспертиза. См. docs/content-audit.md."
+  },
+  "language_standard": "en-GB; equivalent en-US accepted unless explicitly targeted"
+}

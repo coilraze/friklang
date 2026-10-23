@@ -1,0 +1,444 @@
+{
+  "schema_version": "1.1",
+  "id": "A0L02",
+  "title": "IPA, слоги и ударение",
+  "level": "A0 (внутренняя метка подготовки)",
+  "language_standard": "en-GB; equivalent en-US accepted unless explicitly targeted",
+  "curriculum_topics": [
+    "A0-02"
+  ],
+  "prerequisites": [
+    "A0L01"
+  ],
+  "objective": "Читать условные обозначения словаря, считать слоги по заданной записи и находить ударный слог.",
+  "vocabulary": {
+    "cat": "кот/кошка",
+    "name": "имя",
+    "happy": "довольный/счастливый",
+    "about": "о; приблизительно (значение зависит от контекста)",
+    "tea": "чай",
+    "bed": "кровать",
+    "sit": "сидеть",
+    "hot": "горячий",
+    "cup": "чашка",
+    "book": "книга",
+    "see": "видеть",
+    "food": "еда",
+    "home": "дом",
+    "I": "я"
+  },
+  "theory": [
+    "В словаре /…/ обычно обозначает фонемную запись; это не орфография. /iː/ — один гласный с обозначением долготы, /ɪ/ — другой гласный: дело не только в длительности. /eɪ/, /aɪ/, /əʊ/ — дифтонги, один гласный центр с изменением качества; два знака не означают два слога. /ə/ — schwa, частый безударный гласный; не нужно записывать его русской буквой.",
+    "Рабочий набор для чтения наших карточек: /æ/ cat, /e/ bed, /ɪ/ sit, /ɒ/ hot, /ʌ/ cup, /ʊ/ book, /iː/ see, /uː/ food, /eɪ/ name, /əʊ/ home, /aɪ/ I. Это примеры со значениями в последующих словариках, а не список русских замен. Пока можешь сопоставлять знаки визуально.",
+    "Слог — часть звучащего слова с вершиной (обычно гласным). Число написанных гласных букв не равно числу слогов: name /neɪm/ — один слог; happy /ˈhæpi/ — два; about /əˈbaʊt/ — два. В этом уроке делим центры гласных в заданной записи, не угадываем по буквам. Для name две буквы гласных не дают два слога. Слоговые согласные, например в некоторых записях little, существуют; это исключение из упрощённого подсчёта, здесь их не проверяем.",
+    "Учебное деление по данной записи: happy /ˈhæpi/ → hæ | pi; about /əˈbaʊt/ → ə | baʊt. Черта отделяет части, её не пишут внутри обычного слова. Здесь для happy используем границу перед p; это условная запись для упражнения, не универсальное правило переноса и не единственный фонетический анализ границы согласного.",
+    "Знак /ˈ/ перед слогом показывает основное ударение: /ˈhæpi/ — первый слог, /əˈbaʊt/ — второй. /ˌ/ — второстепенное ударение, не граница слова и не апостроф сокращения. В наших упражнениях основное ударение только одно. В односложных словах его часто не отмечают. Точки деления слогов в словарях могут различаться; не навязываем единственную границу согласного между гласными.",
+    "Карточка ниже связывает слово, IPA и русское значение. Для самостоятельной работы: найди слово в словаре, выбери британскую запись, выдели гласные центры, затем основное ударение. По письменному тесту нельзя установить, правильно ли человек произносит звуки. Никакой записи голоса не требуется."
+  ],
+  "examples": [
+    {
+      "correct": "name: 1 слог",
+      "incorrect": "name: 2 слога",
+      "correction": "name: 1 слог",
+      "explanation_ru": "/eɪ/ — один дифтонг; конечная e здесь отдельного слога не образует."
+    },
+    {
+      "correct": "happy: ударение 1",
+      "incorrect": "happy: ударение 2",
+      "correction": "happy: ударение 1",
+      "explanation_ru": "В /ˈhæpi/ знак стоит перед первым слогом."
+    },
+    {
+      "correct": "about: ударение 2",
+      "incorrect": "about: ударение 1",
+      "correction": "about: ударение 2",
+      "explanation_ru": "В /əˈbaʊt/ основное ударение перед вторым слогом."
+    }
+  ],
+  "reading": {
+    "id": "A0L02-R",
+    "text": "Карточки для записки о состоянии:\nhappy /ˈhæpi/ — довольный\nname /neɪm/ — имя\nabout /əˈbaʊt/ — о, приблизительно",
+    "glossary": {}
+  },
+  "tasks": [
+    {
+      "id": "A0L02-T01",
+      "objective": "Узнать IPA",
+      "type": "identify",
+      "difficulty": 1,
+      "phase": "practice",
+      "prompt": "В какой записи показана IPA: happy или /ˈhæpi/? Скопируй запись IPA.",
+      "answers": [
+        "/ˈhæpi/"
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; no automatic rejection",
+        "language_variants": "accept equivalent en-US; preserve targeted distinctions"
+      },
+      "feedback_ru": "Косые скобки отделяют запись звуков от обычного написания."
+    },
+    {
+      "id": "A0L02-T02",
+      "objective": "Узнать знак основного ударения",
+      "type": "identify",
+      "difficulty": 1,
+      "phase": "practice",
+      "prompt": "Скопируй знак основного ударения: ˈ или ˌ.",
+      "answers": [
+        "ˈ"
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; no automatic rejection",
+        "language_variants": "accept equivalent en-US; preserve targeted distinctions"
+      },
+      "feedback_ru": "ˈ — основное, ˌ — второстепенное ударение."
+    },
+    {
+      "id": "A0L02-T03",
+      "objective": "Узнать долготу",
+      "type": "identify",
+      "difficulty": 1,
+      "phase": "practice",
+      "prompt": "Какой знак в /tiː/ указывает долготу? Скопируй только знак.",
+      "answers": [
+        "ː"
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; no automatic rejection",
+        "language_variants": "accept equivalent en-US; preserve targeted distinctions"
+      },
+      "feedback_ru": "Двоеточие IPA ː относится к гласному; это не обычное двоеточие :."
+    },
+    {
+      "id": "A0L02-T04",
+      "objective": "Посчитать слоги name",
+      "type": "form",
+      "difficulty": 1,
+      "phase": "practice",
+      "prompt": "Сколько слогов в name /neɪm/? Введи цифру.",
+      "answers": [
+        "1"
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; no automatic rejection",
+        "language_variants": "accept equivalent en-US; preserve targeted distinctions"
+      },
+      "feedback_ru": "/eɪ/ — один гласный центр."
+    },
+    {
+      "id": "A0L02-T05",
+      "objective": "Разделить запись на слоги",
+      "type": "form",
+      "difficulty": 1,
+      "phase": "practice",
+      "prompt": "Раздели happy /ˈhæpi/ по показанной учебной модели на два слога. Введи части без скобок и ударения с чертой | между ними.",
+      "answers": [
+        "hæ | pi"
+      ],
+      "alternatives": [
+        "hæ|pi",
+        "hæ |pi",
+        "hæ| pi"
+      ],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; no automatic rejection",
+        "language_variants": "accept equivalent en-US; preserve targeted distinctions"
+      },
+      "feedback_ru": "В этой модели два гласных центра: /æ/ и /i/; граница по условию перед p."
+    },
+    {
+      "id": "A0L02-T06",
+      "objective": "Определить ударный слог",
+      "type": "identify",
+      "difficulty": 1,
+      "phase": "practice",
+      "prompt": "Какой слог ударный в about /əˈbaʊt/? Введи номер.",
+      "answers": [
+        "2"
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; no automatic rejection",
+        "language_variants": "accept equivalent en-US; preserve targeted distinctions"
+      },
+      "feedback_ru": "Знак ˈ стоит после первого безударного /ə/, перед вторым слогом."
+    },
+    {
+      "id": "A0L02-T07",
+      "objective": "Найти слово по смыслу",
+      "type": "reading",
+      "difficulty": 2,
+      "phase": "reading",
+      "prompt": "По карточкам A0L02-R какое слово означает «довольный»?",
+      "answers": [
+        "happy"
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "semantic_short",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; no automatic rejection",
+        "language_variants": "accept equivalent en-US; preserve targeted distinctions"
+      },
+      "feedback_ru": "Happy связано с состоянием человека."
+    },
+    {
+      "id": "A0L02-T08",
+      "objective": "Применить описание карточки",
+      "type": "reading",
+      "difficulty": 2,
+      "phase": "reading",
+      "prompt": "В A0L02-R найди слово с двумя слогами и ударением на первом.",
+      "answers": [
+        "happy"
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "semantic_short",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; no automatic rejection",
+        "language_variants": "accept equivalent en-US; preserve targeted distinctions"
+      },
+      "feedback_ru": "У happy /ˈhæpi/ два гласных центра и ударение на первом."
+    },
+    {
+      "id": "A0L02-T09",
+      "objective": "Составить словарную карточку",
+      "type": "writing",
+      "difficulty": 2,
+      "phase": "writing",
+      "prompt": "Создай строку для happy: написание, данная IPA-запись, русский смысл и число слогов. Используй материал урока.",
+      "answers": [],
+      "alternatives": [],
+      "criteria": [
+        "Есть happy и /ˈhæpi/.",
+        "Значение довольный/счастливый и число 2.",
+        "Ударение первого слога не перенесено."
+      ],
+      "validation": {
+        "mode": "manual",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; no automatic rejection",
+        "language_variants": "accept equivalent en-US; preserve targeted distinctions"
+      },
+      "feedback_ru": "Не пиши русскую транскрипцию. Русское значение допустимо, русская имитация звуков — не замена IPA.",
+      "sample_answer": "happy /ˈhæpi/ — довольный, 2 слога",
+      "writing_support": {
+        "checklist_ru": [
+          "Есть happy и /ˈhæpi/.",
+          "Значение довольный/счастливый и число 2.",
+          "Ударение первого слога не перенесено."
+        ],
+        "typical_errors": [
+          {
+            "incorrect": "name: 2 слога",
+            "correction": "name: 1 слог",
+            "explanation_ru": "/eɪ/ — один дифтонг; конечная e здесь отдельного слога не образует."
+          },
+          {
+            "incorrect": "happy: ударение 2",
+            "correction": "happy: ударение 1",
+            "explanation_ru": "В /ˈhæpi/ знак стоит перед первым слогом."
+          },
+          {
+            "incorrect": "about: ударение 1",
+            "correction": "about: ударение 2",
+            "explanation_ru": "В /əˈbaʊt/ основное ударение перед вторым слогом."
+          }
+        ],
+        "rubric": "docs/writing-feedback.md",
+        "review_status": "unreviewed",
+        "self_review_available": true
+      }
+    },
+    {
+      "id": "A0L02-T10",
+      "objective": "Объяснить правило своими словами",
+      "type": "writing",
+      "difficulty": 2,
+      "phase": "writing",
+      "prompt": "Объясни по-русски, почему в name /neɪm/ один слог, хотя написаны a и e.",
+      "answers": [],
+      "alternatives": [],
+      "criteria": [
+        "Различены буквы и гласный центр.",
+        "Указано, что /eɪ/ один центр, а e не создаёт отдельного слога.",
+        "Допустимы разные русские формулировки."
+      ],
+      "validation": {
+        "mode": "manual",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; no automatic rejection",
+        "language_variants": "accept equivalent en-US; preserve targeted distinctions"
+      },
+      "feedback_ru": "Считаются гласные центры записи, не буквы; /eɪ/ один дифтонг. Здесь конечная e отдельного звука не даёт.",
+      "sample_answer": "В записи /neɪm/ один гласный центр /eɪ/. Буква e не добавляет слог.",
+      "writing_support": {
+        "checklist_ru": [
+          "Различены буквы и гласный центр.",
+          "Указано, что /eɪ/ один центр, а e не создаёт отдельного слога.",
+          "Допустимы разные русские формулировки."
+        ],
+        "typical_errors": [
+          {
+            "incorrect": "name: 2 слога",
+            "correction": "name: 1 слог",
+            "explanation_ru": "/eɪ/ — один дифтонг; конечная e здесь отдельного слога не образует."
+          },
+          {
+            "incorrect": "happy: ударение 2",
+            "correction": "happy: ударение 1",
+            "explanation_ru": "В /ˈhæpi/ знак стоит перед первым слогом."
+          },
+          {
+            "incorrect": "about: ударение 1",
+            "correction": "about: ударение 2",
+            "explanation_ru": "В /əˈbaʊt/ основное ударение перед вторым слогом."
+          }
+        ],
+        "rubric": "docs/writing-feedback.md",
+        "review_status": "unreviewed",
+        "self_review_available": true
+      }
+    },
+    {
+      "id": "A0L02-T11",
+      "objective": "Повторить слоги без подсказки",
+      "type": "form",
+      "difficulty": 2,
+      "phase": "checkpoint",
+      "prompt": "Сколько слогов в tea /tiː/? Введи цифру.",
+      "answers": [
+        "1"
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; no automatic rejection",
+        "language_variants": "accept equivalent en-US; preserve targeted distinctions"
+      },
+      "feedback_ru": "Один гласный центр /iː/, хотя в tea две гласные буквы."
+    },
+    {
+      "id": "A0L02-T12",
+      "objective": "Отличить schwa",
+      "type": "identify",
+      "difficulty": 2,
+      "phase": "delayed_review",
+      "prompt": "Какой из знаков обозначает schwa: ə или æ? Скопируй знак.",
+      "answers": [
+        "ə"
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; no automatic rejection",
+        "language_variants": "accept equivalent en-US; preserve targeted distinctions"
+      },
+      "feedback_ru": "Schwa — /ə/; /æ/ — другой гласный."
+    }
+  ],
+  "review": {
+    "schedule_days": [
+      1,
+      3,
+      7,
+      21
+    ],
+    "instruction_ru": "Повтори последние два задания без ключа; затем создай новую карточку со словами урока. Не проверяется произношение вслух.",
+    "mastery": "Не менее 80% письменных заданий по целям блока, открытая работа по адаптированной рубрике; письменное распознавание не подтверждает произношение."
+  },
+  "quality": {
+    "status": "author_reviewed_pending_independent_review",
+    "provenance": "Оригинальные инструкции, карточки и задания; IPA и общеязыковые правила сверены с открытыми словарными справочниками.",
+    "remaining_review": "Независимая проверка фонетических объяснений и пилот взрослого новичка."
+  }
+}

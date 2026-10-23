@@ -1,0 +1,601 @@
+{
+  "schema_version": "1.1",
+  "id": "L05",
+  "title": "Базовая пунктуация и чтение микротекста",
+  "level": "A1 (методическое распределение)",
+  "curriculum_topics": [
+    "A1-05"
+  ],
+  "prerequisites": [
+    "L04"
+  ],
+  "objective": "Редактировать простую записку и извлекать из неё факты.",
+  "vocabulary": {
+    "English": "английский язык",
+    "read": "читать",
+    "study": "учиться; изучать",
+    "work": "работать",
+    "every day": "каждый день",
+    "at home": "дома",
+    "here": "здесь",
+    "ready": "готовый",
+    "tired": "уставший",
+    "happy": "довольный",
+    "Mia": "Миа",
+    "Ben": "Бен",
+    "yes": "да",
+    "no": "нет",
+    "I": "я",
+    "you": "ты/вы",
+    "he": "он",
+    "she": "она",
+    "we": "мы",
+    "they": "они"
+  },
+  "theory": [
+    "Начало предложения, имена, I и название языка English пишутся с заглавной. Утверждение заканчивается точкой, прямой вопрос — вопросительным знаком. Не ставь точку после уже написанного вопросительного знака.",
+    "Не отделяй подлежащее от глагола запятой: Mia reads. Два самостоятельных утверждения нельзя соединять только запятой в обычной учебной прозе. На этом этапе безопасно разделить их точкой: I am Mia. I study English. Другие способы связи будут позже.",
+    "После Yes и No в кратком ответе ставим запятую: Yes, I am. Апостроф в I'm, isn't, aren't обозначает сокращение, а не границу предложения. В записке допускаются полные формы и изученные сокращения.",
+    "Читай текст сначала целиком: кто пишет, о чём, где? Затем найди отдельный факт. Деление на смысловые группы помогает: I / study English / every day. Косые черты — учебная разметка, их не нужно вставлять в обычный текст. Не делай вывод о времени работы, если написано только at home.",
+    "В Writing пока используй только знакомые утверждения, отрицания и вопросы с be и утвердительные действия Present Simple. Не требуются сложные запятые, двоеточие или точка с запятой."
+  ],
+  "examples": [
+    {
+      "correct": "I study English.",
+      "incorrect": "i study english.",
+      "correction": "I study English.",
+      "explanation_ru": "I и English с заглавной."
+    },
+    {
+      "correct": "Mia reads.",
+      "incorrect": "Mia, reads.",
+      "correction": "Mia reads.",
+      "explanation_ru": "Между подлежащим и глаголом запятая не нужна."
+    },
+    {
+      "correct": "I am Mia. I am here.",
+      "incorrect": "I am Mia, I am here.",
+      "correction": "I am Mia. I am here.",
+      "explanation_ru": "Два самостоятельных утверждения разделены точкой."
+    }
+  ],
+  "reading": {
+    "id": "L05-R",
+    "text": "I am Mia. I study English every day. I read at home. Ben is here. He is not tired. We are ready.",
+    "glossary": {}
+  },
+  "tasks": [
+    {
+      "id": "L05-T01",
+      "objective": "Повторить третье лицо",
+      "type": "gap",
+      "difficulty": 1,
+      "phase": "entry",
+      "prompt": "Только форма read: Ben ___ every day.",
+      "answers": [
+        "reads"
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
+      },
+      "feedback_ru": "Одно имя Ben требует reads."
+    },
+    {
+      "id": "L05-T02",
+      "objective": "Повторить вопрос be",
+      "type": "form",
+      "difficulty": 1,
+      "phase": "entry",
+      "prompt": "Сделай She is ready. вопросом.",
+      "answers": [
+        "Is she ready?"
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
+      },
+      "feedback_ru": "Is переносится перед she; вопросительный знак обязателен."
+    },
+    {
+      "id": "L05-T03",
+      "objective": "Исправить заглавные и точку",
+      "type": "punctuation",
+      "difficulty": 1,
+      "phase": "practice",
+      "prompt": "Исправь только регистр и пунктуацию: i study english",
+      "answers": [
+        "I study English."
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
+      },
+      "feedback_ru": "I и English с заглавной, в конце точка."
+    },
+    {
+      "id": "L05-T04",
+      "objective": "Исправить вопросительный знак",
+      "type": "punctuation",
+      "difficulty": 1,
+      "phase": "practice",
+      "prompt": "Исправь знак: Are you ready.",
+      "answers": [
+        "Are you ready?"
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
+      },
+      "feedback_ru": "Это прямой вопрос: нужен ?. Артикли или формы глагола менять не нужно."
+    },
+    {
+      "id": "L05-T05",
+      "objective": "Убрать запятую",
+      "type": "punctuation",
+      "difficulty": 1,
+      "phase": "practice",
+      "prompt": "Исправь только пунктуацию: Ben, works at home.",
+      "answers": [
+        "Ben works at home."
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
+      },
+      "feedback_ru": "Запятая не отделяет Ben от works."
+    },
+    {
+      "id": "L05-T06",
+      "objective": "Разделить два утверждения",
+      "type": "punctuation",
+      "difficulty": 1,
+      "phase": "practice",
+      "prompt": "Раздели на два предложения точками; исправь регистр: i am mia i am here",
+      "answers": [
+        "I am Mia. I am here."
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
+      },
+      "feedback_ru": "Два полных утверждения, каждое с заглавной и точкой."
+    },
+    {
+      "id": "L05-T07",
+      "objective": "Исправить comma splice",
+      "type": "punctuation",
+      "difficulty": 2,
+      "phase": "practice",
+      "prompt": "Раздели на два предложения точками: I am ready, I study English.",
+      "answers": [
+        "I am ready. I study English."
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
+      },
+      "feedback_ru": "Одной запятой нельзя соединить эти самостоятельные утверждения. В задаче требуются две точки."
+    },
+    {
+      "id": "L05-T08",
+      "objective": "Добавить апостроф",
+      "type": "punctuation",
+      "difficulty": 2,
+      "phase": "practice",
+      "prompt": "Восстанови апостроф, сохрани сокращение: Im ready.",
+      "answers": [
+        "I'm ready."
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
+      },
+      "feedback_ru": "I am сокращается I'm с апострофом, без пробела внутри."
+    },
+    {
+      "id": "L05-T09",
+      "objective": "Оформить краткий ответ",
+      "type": "punctuation",
+      "difficulty": 2,
+      "phase": "practice",
+      "prompt": "Исправь регистр и знаки: yes i am",
+      "answers": [
+        "Yes, I am."
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
+      },
+      "feedback_ru": "После Yes запятая; I всегда заглавное; в конце точка."
+    },
+    {
+      "id": "L05-T10",
+      "objective": "Согласовать и оформить",
+      "type": "correct",
+      "difficulty": 2,
+      "phase": "practice",
+      "prompt": "Речь о нынешней привычке. Исправь грамматику, регистр и знаки, сохрани подлежащее: she read english every day",
+      "answers": [
+        "She reads English every day."
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
+      },
+      "feedback_ru": "She требует reads; English с заглавной; нужна точка."
+    },
+    {
+      "id": "L05-T11",
+      "objective": "Определить автора",
+      "type": "reading",
+      "difficulty": 2,
+      "phase": "reading",
+      "prompt": "L05-R: кто автор записки? Ответь именем.",
+      "answers": [
+        "Mia"
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "semantic_short",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error",
+        "scoring": "meaning primary; record spelling/capitalisation/punctuation separately; do not erase them"
+      },
+      "feedback_ru": "I am Mia указывает автора, а Ben — другой участник."
+    },
+    {
+      "id": "L05-T12",
+      "objective": "Найти привычку",
+      "type": "reading",
+      "difficulty": 2,
+      "phase": "reading",
+      "prompt": "В L05-R какое занятие Mia прямо сопровождается словами every day? Ответь по-русски или английским фрагментом.",
+      "answers": [
+        "изучает английский"
+      ],
+      "alternatives": [
+        "studies English",
+        "She studies English every day."
+      ],
+      "criteria": [],
+      "validation": {
+        "mode": "semantic_short",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error",
+        "scoring": "meaning primary; record spelling/capitalisation/punctuation separately; do not erase them"
+      },
+      "feedback_ru": "Every day относится к I study English. Чтение тоже названо, но для него частота прямо не указана."
+    },
+    {
+      "id": "L05-T13",
+      "objective": "Понять отрицание",
+      "type": "reading",
+      "difficulty": 2,
+      "phase": "reading",
+      "prompt": "Ben устал? Ответь кратко по-английски.",
+      "answers": [
+        "No, he is not."
+      ],
+      "alternatives": [
+        "No, he isn't.",
+        "No, he's not."
+      ],
+      "criteria": [],
+      "validation": {
+        "mode": "semantic_short",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error",
+        "scoring": "meaning primary; record spelling/capitalisation/punctuation separately; do not erase them"
+      },
+      "feedback_ru": "He is not tired отрицает усталость Ben."
+    },
+    {
+      "id": "L05-T14",
+      "objective": "Не домысливать сведения",
+      "type": "reading",
+      "difficulty": 2,
+      "phase": "reading",
+      "prompt": "Можно ли узнать из записки, где работает Mia? Ответь по-русски.",
+      "answers": [
+        "нет"
+      ],
+      "alternatives": [
+        "нельзя",
+        "Неизвестно."
+      ],
+      "criteria": [],
+      "validation": {
+        "mode": "semantic_short",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error",
+        "scoring": "meaning primary; record spelling/capitalisation/punctuation separately; do not erase them"
+      },
+      "feedback_ru": "Названо место чтения, но место работы не сообщается."
+    },
+    {
+      "id": "L05-T15",
+      "objective": "Написать записку",
+      "type": "writing",
+      "difficulty": 3,
+      "phase": "writing",
+      "prompt": "Напиши записку из четырёх предложений: имя, изучение English, место чтения, готовность. Можно придумать человека.",
+      "answers": [],
+      "alternatives": [],
+      "criteria": [
+        "Четыре связанных утверждения выполняют все пункты.",
+        "Различаются be с состоянием и обычные глаголы без be.",
+        "Заглавные, границы предложений и написание English верны."
+      ],
+      "validation": {
+        "mode": "manual",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
+      },
+      "feedback_ru": "Проверь I am + имя, I study English, I read + место, I am ready. При другом авторе местоимения остаются от первого лица.",
+      "sample_answer": "I am Ben. I study English. I read at home. I am ready.",
+      "writing_support": {
+        "checklist_ru": [
+          "Четыре связанных утверждения выполняют все пункты.",
+          "Различаются be с состоянием и обычные глаголы без be.",
+          "Заглавные, границы предложений и написание English верны."
+        ],
+        "typical_errors": [
+          {
+            "incorrect": "i study english",
+            "correction": "I study English.",
+            "explanation_ru": "I и English с заглавной; утверждение с точкой."
+          },
+          {
+            "incorrect": "Ben, reads.",
+            "correction": "Ben reads.",
+            "explanation_ru": "Не отделяем подлежащее от глагола запятой."
+          }
+        ],
+        "rubric": "docs/writing-feedback.md",
+        "review_status": "unreviewed",
+        "self_review_available": true
+      }
+    },
+    {
+      "id": "L05-T16",
+      "objective": "Отредактировать и объяснить",
+      "type": "writing",
+      "difficulty": 3,
+      "phase": "writing",
+      "prompt": "Перепиши как три предложения: i am ben i study english i am ready. Затем по-русски назови две причины правок.",
+      "answers": [],
+      "alternatives": [],
+      "criteria": [
+        "Смысл всех трёх утверждений сохранён.",
+        "Каждое оформлено отдельно; I, Ben, English с заглавной.",
+        "Есть два понятных русских объяснения правила."
+      ],
+      "validation": {
+        "mode": "manual",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
+      },
+      "feedback_ru": "Вариант: I am Ben. I study English. I am ready. Объясни заглавные и границы предложений, а не просто перечисли исправленные буквы.",
+      "sample_answer": "I am Ben. I study English. I am ready. I и имена пишутся с заглавной; самостоятельные утверждения разделены точками.",
+      "writing_support": {
+        "checklist_ru": [
+          "Смысл всех трёх утверждений сохранён.",
+          "Каждое оформлено отдельно; I, Ben, English с заглавной.",
+          "Есть два понятных русских объяснения правила."
+        ],
+        "typical_errors": [
+          {
+            "incorrect": "i study english",
+            "correction": "I study English.",
+            "explanation_ru": "I и English с заглавной; утверждение с точкой."
+          },
+          {
+            "incorrect": "Ben, reads.",
+            "correction": "Ben reads.",
+            "explanation_ru": "Не отделяем подлежащее от глагола запятой."
+          }
+        ],
+        "rubric": "docs/writing-feedback.md",
+        "review_status": "unreviewed",
+        "self_review_available": true
+      }
+    },
+    {
+      "id": "L05-T17",
+      "objective": "Проверить оформление нового вопроса",
+      "type": "checkpoint",
+      "difficulty": 3,
+      "phase": "checkpoint",
+      "prompt": "Исправь регистр и знаки: is ben here",
+      "answers": [
+        "Is Ben here?"
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
+      },
+      "feedback_ru": "Начало и имя с заглавной; прямой вопрос заканчивается ?."
+    },
+    {
+      "id": "L05-T18",
+      "objective": "Вернуться к форме и границам",
+      "type": "checkpoint",
+      "difficulty": 3,
+      "phase": "delayed_review",
+      "prompt": "После паузы перепиши как два предложения: mia study english she is ready",
+      "answers": [
+        "Mia studies English. She is ready."
+      ],
+      "alternatives": [
+        "Mia studies English. She's ready."
+      ],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
+      },
+      "feedback_ru": "Mia требует studies; имя, English и начало второго предложения — с заглавной; две точки."
+    }
+  ],
+  "review": {
+    "schedule_days": [
+      1,
+      3,
+      7,
+      21
+    ],
+    "instruction_ru": "Сначала выполни задания 17–18 без ключа. Через неделю напиши новый текст о другом человеке/ситуации. Ключи предыдущей попытки скрыты; самопроверка не равна независимому подтверждению усвоения.",
+    "mastery": "80% закрытых заданий, Writing ≥6/8 без нуля по смыслу/целевой конструкции; подтвердить через неделю."
+  },
+  "quality": {
+    "status": "author_reviewed_pending_independent_review",
+    "provenance": "Оригинальные тексты, задания и пояснения LangForge; не скопированы из источников.",
+    "remaining_review": "Независимая языковая редактура и пилот; см. docs/content-quality.md.",
+    "audit": "Самостоятельный аудит Codex этапа 1.5; не независимая лингвистическая экспертиза. См. docs/content-audit.md."
+  },
+  "language_standard": "en-GB; equivalent en-US accepted unless explicitly targeted"
+}

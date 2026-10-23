@@ -1,0 +1,585 @@
+{
+  "schema_version": "1.1",
+  "id": "L01",
+  "title": "Структура предложения: I am",
+  "level": "A1 (методическое распределение)",
+  "curriculum_topics": [
+    "A1-01"
+  ],
+  "prerequisites": [
+    "A0L05"
+  ],
+  "objective": "Составить три простых утверждения о себе: кто говорит + am + характеристика/место.",
+  "vocabulary": {
+    "I": "я",
+    "am": "форма be после I",
+    "ready": "готов/готова",
+    "here": "здесь",
+    "at home": "дома",
+    "happy": "доволен/довольна; счастлив/счастлива",
+    "tired": "уставший/уставшая",
+    "calm": "спокойный/спокойная",
+    "Mia": "Миа, имя",
+    "Alex": "Алекс, имя"
+  },
+  "theory": [
+    "В учебных полных утверждениях называем, о ком речь (подлежащее), затем ставим личную форму глагола. Для «Я готов» здесь используется I am ready. В русском связки в настоящем времени обычно нет, а в этом английском предложении am нужна.",
+    "Сегодня используем только готовый блок I am. Полная таблица форм be будет в уроке 2. После I am можно назвать имя, характеристику или место: I am Mia. I am calm. I am at home. At home — целый блок «дома». Прилагательное не меняется по полу говорящего.",
+    "I всегда пишется с заглавной буквы; имена тоже. Начинай полное предложение с заглавной и заканчивай утверждение точкой. Между I и am запятая не ставится. Слова разделяются пробелом.",
+    "Схема относится к нашим полным утверждениям. Не все английские высказывания обязаны выглядеть так: команды и заголовки изучим позже. Пока не нужно писать вопросы, отрицания или действие «работаю»."
+  ],
+  "examples": [
+    {
+      "correct": "I am ready.",
+      "incorrect": "I ready.",
+      "correction": "I am ready.",
+      "explanation_ru": "В этом предложении после I нужна форма am."
+    },
+    {
+      "correct": "I am here.",
+      "incorrect": "I here am.",
+      "correction": "I am here.",
+      "explanation_ru": "Для нейтрального учебного утверждения нужен порядок I am here. Вопросы — отдельная конструкция следующего блока."
+    },
+    {
+      "correct": "I am Mia.",
+      "incorrect": "i am mia.",
+      "correction": "I am Mia.",
+      "explanation_ru": "I и имя Mia пишутся с заглавной."
+    }
+  ],
+  "reading": {
+    "id": "L01-R",
+    "text": "I am Mia. I am at home. I am calm. I am ready.",
+    "glossary": {}
+  },
+  "tasks": [
+    {
+      "id": "L01-T01",
+      "objective": "Узнать I",
+      "type": "identify",
+      "difficulty": 1,
+      "phase": "entry",
+      "prompt": "Какое английское слово означает «я»? Введи одно слово.",
+      "answers": [
+        "I"
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
+      },
+      "feedback_ru": "«Я» — I, всегда с заглавной буквы."
+    },
+    {
+      "id": "L01-T02",
+      "objective": "Узнать значение блока",
+      "type": "identify",
+      "difficulty": 1,
+      "phase": "entry",
+      "prompt": "Как переводится at home? Ответь по-русски одним словом.",
+      "answers": [
+        "дома"
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
+      },
+      "feedback_ru": "At home — «дома»; это блок места, а не имя."
+    },
+    {
+      "id": "L01-T03",
+      "objective": "Поставить связку",
+      "type": "gap",
+      "difficulty": 1,
+      "phase": "practice",
+      "prompt": "Введи только пропущенное слово: I ___ ready.",
+      "answers": [
+        "am"
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
+      },
+      "feedback_ru": "После I в этой конструкции нужна am: I am ready."
+    },
+    {
+      "id": "L01-T04",
+      "objective": "Собрать утверждение",
+      "type": "reorder",
+      "difficulty": 1,
+      "phase": "practice",
+      "prompt": "Составь полное утверждение из ready / I / am. Добавь точку.",
+      "answers": [
+        "I am ready."
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
+      },
+      "feedback_ru": "Сначала I, затем am, затем ready."
+    },
+    {
+      "id": "L01-T05",
+      "objective": "Поместить место после связки",
+      "type": "reorder",
+      "difficulty": 1,
+      "phase": "practice",
+      "prompt": "Собери утверждение: at home / am / I.",
+      "answers": [
+        "I am at home."
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
+      },
+      "feedback_ru": "I am — основа; at home — где находится говорящий."
+    },
+    {
+      "id": "L01-T06",
+      "objective": "Отличить полное предложение",
+      "type": "form",
+      "difficulty": 1,
+      "phase": "practice",
+      "prompt": "Введи правильный вариант целиком: I calm. / I am calm.",
+      "answers": [
+        "I am calm."
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
+      },
+      "feedback_ru": "В полном утверждении I calm не хватает am."
+    },
+    {
+      "id": "L01-T07",
+      "objective": "Исправить пропуск am",
+      "type": "correct",
+      "difficulty": 2,
+      "phase": "practice",
+      "prompt": "Исправь: I happy. Сохрани подлежащее, смысл и заданную конструкцию; исправь ошибочную форму и оформление.",
+      "answers": [
+        "I am happy."
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
+      },
+      "feedback_ru": "В русском можно «Я счастлив», здесь требуется am."
+    },
+    {
+      "id": "L01-T08",
+      "objective": "Написать I и конечный знак",
+      "type": "punctuation",
+      "difficulty": 2,
+      "phase": "practice",
+      "prompt": "Исправь регистр и добавь точку: i am here",
+      "answers": [
+        "I am here."
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
+      },
+      "feedback_ru": "Местоимение I заглавное; утверждение заканчивается точкой."
+    },
+    {
+      "id": "L01-T09",
+      "objective": "Убрать неверную запятую",
+      "type": "correct",
+      "difficulty": 2,
+      "phase": "practice",
+      "prompt": "Исправь оформление: I, am tired. Сохрани подлежащее, смысл и заданную конструкцию; исправь ошибочную форму и оформление.",
+      "answers": [
+        "I am tired."
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
+      },
+      "feedback_ru": "Не отделяем I от am запятой."
+    },
+    {
+      "id": "L01-T10",
+      "objective": "Собрать самопредставление",
+      "type": "reorder",
+      "difficulty": 2,
+      "phase": "practice",
+      "prompt": "Ты пишешь от имени Alex. Собери: Alex / I / am.",
+      "answers": [
+        "I am Alex."
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
+      },
+      "feedback_ru": "После I am можно назвать своё имя."
+    },
+    {
+      "id": "L01-T11",
+      "objective": "Найти имя",
+      "type": "reading",
+      "difficulty": 2,
+      "phase": "reading",
+      "prompt": "Прочитай L01-R. Как зовут автора? Ответь именем.",
+      "answers": [
+        "Mia"
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "semantic_short",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error",
+        "scoring": "meaning primary; record spelling/capitalisation/punctuation separately; do not erase them"
+      },
+      "feedback_ru": "В первом предложении автор называет себя Mia."
+    },
+    {
+      "id": "L01-T12",
+      "objective": "Найти место",
+      "type": "reading",
+      "difficulty": 2,
+      "phase": "reading",
+      "prompt": "Где Mia? Ответь по-русски или английским фрагментом.",
+      "answers": [
+        "дома"
+      ],
+      "alternatives": [
+        "at home"
+      ],
+      "criteria": [],
+      "validation": {
+        "mode": "semantic_short",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error",
+        "scoring": "meaning primary; record spelling/capitalisation/punctuation separately; do not erase them"
+      },
+      "feedback_ru": "At home означает «дома»."
+    },
+    {
+      "id": "L01-T13",
+      "objective": "Найти характеристику",
+      "type": "reading",
+      "difficulty": 2,
+      "phase": "reading",
+      "prompt": "Выпиши предложение, где Mia говорит, что спокойна.",
+      "answers": [
+        "I am calm."
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "semantic_short",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error",
+        "scoring": "meaning primary; record spelling/capitalisation/punctuation separately; do not erase them"
+      },
+      "feedback_ru": "Calm — спокойный; tired означало бы усталость."
+    },
+    {
+      "id": "L01-T14",
+      "objective": "Понять главную ситуацию",
+      "type": "reading",
+      "difficulty": 2,
+      "phase": "reading",
+      "prompt": "Прочитай весь L01-R. Передай по-русски, кто пишет, где находится и готов ли этот человек. Свободная формулировка.",
+      "answers": [
+        "Миа дома и готова."
+      ],
+      "alternatives": [
+        "Миа пишет о себе: она дома и готова."
+      ],
+      "criteria": [
+        "Указаны Mia/Миа, дом и готовность; не добавлено рабочее расписание."
+      ],
+      "validation": {
+        "mode": "semantic_short",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error",
+        "scoring": "meaning primary; record spelling/capitalisation/punctuation separately; do not erase them"
+      },
+      "feedback_ru": "Mia называет себя, место at home и состояние ready. Можно пересказать своими словами; calm — дополнительная верная деталь."
+    },
+    {
+      "id": "L01-T15",
+      "objective": "Представиться самостоятельно",
+      "type": "writing",
+      "difficulty": 3,
+      "phase": "writing",
+      "prompt": "Представь себя или вымышленного человека одним предложением I am + имя.",
+      "answers": [],
+      "alternatives": [],
+      "criteria": [
+        "Одно полное предложение с I am.",
+        "Указано любое имя, настоящее или вымышленное.",
+        "I и имя с заглавной; есть точка."
+      ],
+      "validation": {
+        "mode": "manual",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
+      },
+      "feedback_ru": "Нужны I, затем am, затем имя; имя с заглавной, в конце точка. Не сравнивай своё имя с именем в образце.",
+      "sample_answer": "I am Alex.",
+      "writing_support": {
+        "checklist_ru": [
+          "Одно полное предложение с I am.",
+          "Указано любое имя, настоящее или вымышленное.",
+          "I и имя с заглавной; есть точка."
+        ],
+        "typical_errors": [
+          {
+            "incorrect": "I ready.",
+            "correction": "I am ready.",
+            "explanation_ru": "В этой конструкции нужна am."
+          },
+          {
+            "incorrect": "i am Mia.",
+            "correction": "I am Mia.",
+            "explanation_ru": "I всегда заглавное."
+          }
+        ],
+        "rubric": "docs/writing-feedback.md",
+        "review_status": "unreviewed",
+        "self_review_available": true
+      }
+    },
+    {
+      "id": "L01-T16",
+      "objective": "Создать связный микропрофиль",
+      "type": "writing",
+      "difficulty": 3,
+      "phase": "writing",
+      "prompt": "Ты дома и готовишься к занятию. Напиши три предложения: имя, место, состояние. Можно придумать имя и состояние.",
+      "answers": [],
+      "alternatives": [],
+      "criteria": [
+        "Три предложения об одном говорящем.",
+        "Имя, место и состояние выражены понятно.",
+        "В каждом предложении I am; правильное оформление."
+      ],
+      "validation": {
+        "mode": "manual",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
+      },
+      "feedback_ru": "Сохрани I am в каждом предложении. Выбирай here/at home и ready/calm/happy/tired по своему смыслу.",
+      "sample_answer": "I am Mia. I am at home. I am ready.",
+      "writing_support": {
+        "checklist_ru": [
+          "Три предложения об одном говорящем.",
+          "Имя, место и состояние выражены понятно.",
+          "В каждом предложении I am; правильное оформление."
+        ],
+        "typical_errors": [
+          {
+            "incorrect": "I ready.",
+            "correction": "I am ready.",
+            "explanation_ru": "В этой конструкции нужна am."
+          },
+          {
+            "incorrect": "i am Mia.",
+            "correction": "I am Mia.",
+            "explanation_ru": "I всегда заглавное."
+          }
+        ],
+        "rubric": "docs/writing-feedback.md",
+        "review_status": "unreviewed",
+        "self_review_available": true
+      }
+    },
+    {
+      "id": "L01-T17",
+      "objective": "Перенести схему на tired",
+      "type": "checkpoint",
+      "difficulty": 3,
+      "phase": "checkpoint",
+      "prompt": "Напиши «Я устал/устала», используя tired.",
+      "answers": [
+        "I am tired."
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
+      },
+      "feedback_ru": "Полная схема: I + am + tired. В этой задаче нужен именно данный смысл."
+    },
+    {
+      "id": "L01-T18",
+      "objective": "Восстановить правило после перерыва",
+      "type": "checkpoint",
+      "difficulty": 3,
+      "phase": "delayed_review",
+      "prompt": "Без теории исправь: i ready.",
+      "answers": [
+        "I am ready."
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
+      },
+      "feedback_ru": "Две правки: заглавная I и связка am."
+    }
+  ],
+  "review": {
+    "schedule_days": [
+      1,
+      3,
+      7,
+      21
+    ],
+    "instruction_ru": "Сначала выполни задания 17–18 без ключа. Через неделю напиши новый текст о другом человеке/ситуации. Ключи предыдущей попытки скрыты; самопроверка не равна независимому подтверждению усвоения.",
+    "mastery": "80% закрытых заданий, Writing ≥6/8 без нуля по смыслу/целевой конструкции; подтвердить через неделю."
+  },
+  "quality": {
+    "status": "author_reviewed_pending_independent_review",
+    "provenance": "Оригинальные тексты, задания и пояснения LangForge; не скопированы из источников.",
+    "remaining_review": "Независимая языковая редактура и пилот; см. docs/content-quality.md.",
+    "audit": "Самостоятельный аудит Codex этапа 1.5; не независимая лингвистическая экспертиза. См. docs/content-audit.md."
+  },
+  "language_standard": "en-GB; equivalent en-US accepted unless explicitly targeted"
+}

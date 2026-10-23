@@ -1,0 +1,35 @@
+# Local credentials and private learner data
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+credentials*.json
+secrets.*
+private/
+learner-data/
+progress/
+
+# Python / local tooling
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Editor / OS / temporary output
+.idea/
+.vscode/
+Thumbs.db
+Desktop.ini
+.DS_Store
+*.tmp
+*.log
+*.bak
+node_modules/
+dist/
+coverage/

@@ -1,0 +1,599 @@
+{
+  "schema_version": "1.1",
+  "id": "L03",
+  "title": "Отрицания и вопросы с be",
+  "level": "A1 (методическое распределение)",
+  "curriculum_topics": [
+    "A1-03"
+  ],
+  "prerequisites": [
+    "L02"
+  ],
+  "objective": "Писать отрицания, вопросы и краткие ответы с be.",
+  "vocabulary": {
+    "not": "не",
+    "yes": "да",
+    "no": "нет",
+    "tired": "уставший",
+    "ready": "готовый",
+    "here": "здесь",
+    "at home": "дома",
+    "calm": "спокойный",
+    "Mia": "Миа",
+    "Ben": "Бен",
+    "I": "я",
+    "you": "ты/вы",
+    "he": "он",
+    "she": "она",
+    "it": "оно (предмет)",
+    "we": "мы",
+    "they": "они"
+  },
+  "theory": [
+    "Отрицание: подлежащее + am/is/are + not. I am not tired. She is not here. They are not ready. Не добавляй do: у be своя схема.",
+    "Вопрос «да/нет»: перенеси am/is/are перед подлежащим и поставь ?: You are ready. → Are you ready? She is here. → Is she here? В отрицании порядок подлежащего и связки не меняется.",
+    "Краткий ответ повторяет подходящую форму: Are you ready? — Yes, I am. / No, I am not. Is she here? — Yes, she is. / No, she is not. Are they ready? — Yes, they are. / No, they are not. Отвечая за себя на you, используй I или we по ситуации. После Yes/No ставим запятую.",
+    "Сокращения: I am → I'm; you are → you're; he/she/it is → he's/she's/it's; we/they are → we're/they're. is not → isn't, are not → aren't. I am not → I'm not. Апостроф отмечает пропуск букв; в целевом стандартном варианте нет I amn't. Можно сократить и подлежащее со связкой: She is not ready. → She's not ready.; We are not ready. → We're not ready. Не сокращай обе части одновременно: she'sn't не используется.",
+    "В утвердительном кратком ответе оставь полную форму: Yes, she is. Не Yes, she's. В отрицательном допустимо No, she isn't. Если задание требует полную форму, не сокращай."
+  ],
+  "examples": [
+    {
+      "correct": "She is not tired.",
+      "incorrect": "She not is tired.",
+      "correction": "She is not tired.",
+      "explanation_ru": "Not стоит после is."
+    },
+    {
+      "correct": "Are you ready?",
+      "incorrect": "Do you are ready?",
+      "correction": "Are you ready?",
+      "explanation_ru": "Вопрос с be строится переносом are без do."
+    },
+    {
+      "correct": "Yes, she is.",
+      "incorrect": "Yes, she's.",
+      "correction": "Yes, she is.",
+      "explanation_ru": "В конце утвердительного краткого ответа is не сокращается."
+    }
+  ],
+  "reading": {
+    "id": "L03-R",
+    "text": "Mia is at home. Ben is not at home. Is Mia ready? Yes, she is. Is Ben here? No, he is not.",
+    "glossary": {},
+    "context_ru": "Mia пишет записку из дома. Here в этой записке означает место, где находится Mia."
+  },
+  "tasks": [
+    {
+      "id": "L03-T01",
+      "objective": "Вспомнить are",
+      "type": "gap",
+      "difficulty": 1,
+      "phase": "entry",
+      "prompt": "Только слово: They ___ here.",
+      "answers": [
+        "are"
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
+      },
+      "feedback_ru": "С they ставим are."
+    },
+    {
+      "id": "L03-T02",
+      "objective": "Вспомнить is",
+      "type": "correct",
+      "difficulty": 1,
+      "phase": "entry",
+      "prompt": "Исправь: She are ready. Сохрани подлежащее, смысл и заданную конструкцию; исправь ошибочную форму и оформление.",
+      "answers": [
+        "She is ready."
+      ],
+      "alternatives": [
+        "She's ready."
+      ],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
+      },
+      "feedback_ru": "She требует is."
+    },
+    {
+      "id": "L03-T03",
+      "objective": "Поставить not",
+      "type": "gap",
+      "difficulty": 1,
+      "phase": "practice",
+      "prompt": "Сделай отрицание одним словом: I am ___ tired.",
+      "answers": [
+        "not"
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
+      },
+      "feedback_ru": "Not ставится после am."
+    },
+    {
+      "id": "L03-T04",
+      "objective": "Отрицать с is",
+      "type": "form",
+      "difficulty": 1,
+      "phase": "practice",
+      "prompt": "Сделай She is here. отрицанием. Полная форма.",
+      "answers": [
+        "She is not here."
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
+      },
+      "feedback_ru": "Добавь not после is; остальные слова сохраняются."
+    },
+    {
+      "id": "L03-T05",
+      "objective": "Собрать вопрос",
+      "type": "reorder",
+      "difficulty": 1,
+      "phase": "practice",
+      "prompt": "Собери вопрос: you / ready / are.",
+      "answers": [
+        "Are you ready?"
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
+      },
+      "feedback_ru": "Are перед you; в конце вопросительный знак."
+    },
+    {
+      "id": "L03-T06",
+      "objective": "Задать вопрос с is",
+      "type": "form",
+      "difficulty": 1,
+      "phase": "practice",
+      "prompt": "Преобразуй He is at home. в вопрос.",
+      "answers": [
+        "Is he at home?"
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
+      },
+      "feedback_ru": "Is ставится перед he."
+    },
+    {
+      "id": "L03-T07",
+      "objective": "Убрать do с be",
+      "type": "correct",
+      "difficulty": 2,
+      "phase": "practice",
+      "prompt": "Исправь вопрос: Do they are here? Сохрани подлежащее, смысл и заданную конструкцию; исправь ошибочную форму и оформление.",
+      "answers": [
+        "Are they here?"
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
+      },
+      "feedback_ru": "С be не добавляется do; перенеси are вперёд."
+    },
+    {
+      "id": "L03-T08",
+      "objective": "Сократить отрицание",
+      "type": "form",
+      "difficulty": 2,
+      "phase": "practice",
+      "prompt": "Сократи только is not: She is not ready.",
+      "answers": [
+        "She isn't ready."
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
+      },
+      "feedback_ru": "Is not сокращается до isn't; нужен апостроф."
+    },
+    {
+      "id": "L03-T09",
+      "objective": "Ответить за себя",
+      "type": "form",
+      "difficulty": 2,
+      "phase": "practice",
+      "prompt": "Тебя спрашивают Are you ready? Ты готов. Дай краткий утвердительный ответ полной формой.",
+      "answers": [
+        "Yes, I am."
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
+      },
+      "feedback_ru": "На you отвечаешь о себе I; в конце am не сокращается."
+    },
+    {
+      "id": "L03-T10",
+      "objective": "Исправить краткий ответ",
+      "type": "correct",
+      "difficulty": 2,
+      "phase": "practice",
+      "prompt": "Исправь: Yes, she's.",
+      "answers": [
+        "Yes, she is."
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
+      },
+      "feedback_ru": "В кратком утвердительном ответе последняя связка не сокращается."
+    },
+    {
+      "id": "L03-T11",
+      "objective": "Извлечь факт с отрицанием",
+      "type": "reading",
+      "difficulty": 2,
+      "phase": "reading",
+      "prompt": "L03-R: Ben дома? Ответь по-русски да/нет.",
+      "answers": [
+        "нет"
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "semantic_short",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error",
+        "scoring": "meaning primary; record spelling/capitalisation/punctuation separately; do not erase them"
+      },
+      "feedback_ru": "Ben is not at home прямо отрицает его присутствие дома."
+    },
+    {
+      "id": "L03-T12",
+      "objective": "Понять готовность",
+      "type": "reading",
+      "difficulty": 2,
+      "phase": "reading",
+      "prompt": "Mia готова? Ответь кратко по-английски.",
+      "answers": [
+        "Yes, she is."
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "semantic_short",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error",
+        "scoring": "meaning primary; record spelling/capitalisation/punctuation separately; do not erase them"
+      },
+      "feedback_ru": "Yes, she is относится к вопросу Is Mia ready?"
+    },
+    {
+      "id": "L03-T13",
+      "objective": "Найти отрицательный ответ",
+      "type": "reading",
+      "difficulty": 2,
+      "phase": "reading",
+      "prompt": "Ben здесь? Дай краткий ответ по-английски.",
+      "answers": [
+        "No, he is not."
+      ],
+      "alternatives": [
+        "No, he isn't.",
+        "No, he's not."
+      ],
+      "criteria": [],
+      "validation": {
+        "mode": "semantic_short",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error",
+        "scoring": "meaning primary; record spelling/capitalisation/punctuation separately; do not erase them"
+      },
+      "feedback_ru": "Последнее предложение отвечает отрицательно о Ben."
+    },
+    {
+      "id": "L03-T14",
+      "objective": "Отличить отсутствие от состояния",
+      "type": "reading",
+      "difficulty": 2,
+      "phase": "reading",
+      "prompt": "Можно ли из текста узнать, устал ли Ben? Ответь по-русски.",
+      "answers": [
+        "нет"
+      ],
+      "alternatives": [
+        "нельзя",
+        "Неизвестно."
+      ],
+      "criteria": [],
+      "validation": {
+        "mode": "semantic_short",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error",
+        "scoring": "meaning primary; record spelling/capitalisation/punctuation separately; do not erase them"
+      },
+      "feedback_ru": "В тексте сказано о месте Ben; усталость не указана."
+    },
+    {
+      "id": "L03-T15",
+      "objective": "Построить письменный обмен",
+      "type": "writing",
+      "difficulty": 3,
+      "phase": "writing",
+      "prompt": "Напиши вопрос одному человеку о готовности и его отрицательный краткий ответ от первого лица.",
+      "answers": [],
+      "alternatives": [],
+      "criteria": [
+        "Вопрос о готовности с are перед you.",
+        "Краткий отрицательный ответ с I am not или I'm not.",
+        "Вопросительный знак, запятая после No, апостроф при сокращении."
+      ],
+      "validation": {
+        "mode": "manual",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
+      },
+      "feedback_ru": "Вопрос Are you ready?; ответ No, I am not. или No, I'm not. В вопросе you, в ответе I.",
+      "sample_answer": "Are you ready? No, I am not.",
+      "writing_support": {
+        "checklist_ru": [
+          "Вопрос о готовности с are перед you.",
+          "Краткий отрицательный ответ с I am not или I'm not.",
+          "Вопросительный знак, запятая после No, апостроф при сокращении."
+        ],
+        "typical_errors": [
+          {
+            "incorrect": "Is she here.",
+            "correction": "Is she here?",
+            "explanation_ru": "В конце прямого вопроса нужен ?."
+          },
+          {
+            "incorrect": "Yes, she's.",
+            "correction": "Yes, she is.",
+            "explanation_ru": "В конце утвердительного краткого ответа связка не сокращается."
+          }
+        ],
+        "rubric": "docs/writing-feedback.md",
+        "review_status": "unreviewed",
+        "self_review_available": true
+      }
+    },
+    {
+      "id": "L03-T16",
+      "objective": "Создать минисцену",
+      "type": "writing",
+      "difficulty": 3,
+      "phase": "writing",
+      "prompt": "Придумай три предложения о Mia: отрицательное утверждение о состоянии, вопрос о месте и краткий ответ на него.",
+      "answers": [],
+      "alternatives": [],
+      "criteria": [
+        "Есть отрицание с is not, isn't или с she's not.",
+        "Есть вопрос о месте с Is.",
+        "Есть согласованный краткий ответ о Mia; текст понятен."
+      ],
+      "validation": {
+        "mode": "manual",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
+      },
+      "feedback_ru": "Not после is; в вопросе Is перед Mia/she. Ответ должен согласовываться с придуманной ситуацией. Возможны разные содержания.",
+      "sample_answer": "Mia is not tired. Is she at home? Yes, she is.",
+      "writing_support": {
+        "checklist_ru": [
+          "Есть отрицание с is not, isn't или с she's not.",
+          "Есть вопрос о месте с Is.",
+          "Есть согласованный краткий ответ о Mia; текст понятен."
+        ],
+        "typical_errors": [
+          {
+            "incorrect": "Is she here.",
+            "correction": "Is she here?",
+            "explanation_ru": "В конце прямого вопроса нужен ?."
+          },
+          {
+            "incorrect": "Yes, she's.",
+            "correction": "Yes, she is.",
+            "explanation_ru": "В конце утвердительного краткого ответа связка не сокращается."
+          }
+        ],
+        "rubric": "docs/writing-feedback.md",
+        "review_status": "unreviewed",
+        "self_review_available": true
+      }
+    },
+    {
+      "id": "L03-T17",
+      "objective": "Отрицать we are",
+      "type": "checkpoint",
+      "difficulty": 3,
+      "phase": "checkpoint",
+      "prompt": "Сделай We are ready. отрицанием; допускается сокращение.",
+      "answers": [
+        "We are not ready."
+      ],
+      "alternatives": [
+        "We aren't ready.",
+        "We're not ready."
+      ],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
+      },
+      "feedback_ru": "С we: are not или aren't."
+    },
+    {
+      "id": "L03-T18",
+      "objective": "Восстановить вопрос после паузы",
+      "type": "checkpoint",
+      "difficulty": 3,
+      "phase": "delayed_review",
+      "prompt": "Спроси «Она здесь?», используя she и here.",
+      "answers": [
+        "Is she here?"
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
+      },
+      "feedback_ru": "Is перед she, затем here и вопросительный знак."
+    }
+  ],
+  "review": {
+    "schedule_days": [
+      1,
+      3,
+      7,
+      21
+    ],
+    "instruction_ru": "Сначала выполни задания 17–18 без ключа. Через неделю напиши новый текст о другом человеке/ситуации. Ключи предыдущей попытки скрыты; самопроверка не равна независимому подтверждению усвоения.",
+    "mastery": "80% закрытых заданий, Writing ≥6/8 без нуля по смыслу/целевой конструкции; подтвердить через неделю."
+  },
+  "quality": {
+    "status": "author_reviewed_pending_independent_review",
+    "provenance": "Оригинальные тексты, задания и пояснения LangForge; не скопированы из источников.",
+    "remaining_review": "Независимая языковая редактура и пилот; см. docs/content-quality.md.",
+    "audit": "Самостоятельный аудит Codex этапа 1.5; не независимая лингвистическая экспертиза. См. docs/content-audit.md."
+  },
+  "language_standard": "en-GB; equivalent en-US accepted unless explicitly targeted"
+}

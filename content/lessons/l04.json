@@ -1,0 +1,601 @@
+{
+  "schema_version": "1.1",
+  "id": "L04",
+  "title": "Present Simple: утверждения и согласование",
+  "level": "A1 (методическое распределение)",
+  "curriculum_topics": [
+    "A1-04"
+  ],
+  "prerequisites": [
+    "L03"
+  ],
+  "objective": "Писать о привычках, различая I read и she reads.",
+  "vocabulary": {
+    "read": "читать",
+    "work": "работать",
+    "study": "учиться; изучать",
+    "live": "жить",
+    "like": "любить; нравиться",
+    "go": "ходить; ездить",
+    "watch": "смотреть",
+    "TV": "телевидение; watch TV — смотреть телевизор",
+    "have": "иметь",
+    "tea": "чай",
+    "English": "английский язык",
+    "every day": "каждый день",
+    "at home": "дома",
+    "here": "здесь",
+    "Mia": "Миа",
+    "Ben": "Бен",
+    "I": "я",
+    "you": "ты/вы",
+    "he": "он",
+    "she": "она",
+    "we": "мы",
+    "they": "они",
+    "home": "домой в go home; дома в at home",
+    "time": "время; have time — располагать временем"
+  },
+  "theory": [
+    "В этом уроке Present Simple сообщает о регулярных действиях и фактах. I read every day. — Я читаю каждый день. Для действия, происходящего в данный момент, позже будет отдельная конструкция. Здесь все примеры и исправления относятся к настоящим привычкам, а не к прошедшему времени.",
+    "Утверждение: I/you/we/they + основная форма (read, work, live). He/she/it или одно имя + форма с окончанием: reads, works, lives. Mia reads. Имя Mia требует ту же форму, что she.",
+    "Обычно добавляется -s. После s, sh, ch, x, z обычно -es; частые go → goes, do → does. Watch → watches. После согласной + y: study → studies; после гласной + y обычно добавляем -s. Неправильное have → has. Have time — «располагать временем»: I have time. → She has time. Это устойчивый блок без артикля. Go home — «идти/ездить домой», без to: She goes home every day.",
+    "Для «Я готов» нужна связка I am ready. Для «Я работаю» в этом уроке I work, без am. Не вставляй be перед обычным глаголом в Present Simple. Формы am/is/are — особые формы be, а не обычное добавление -s.",
+    "I study English: перед English в значении языка здесь нет артикля, English пишется с заглавной. В этом уроке только утверждения; вопросы и отрицания с do/does вводятся позже. Не нужно использовать их в Writing."
+  ],
+  "examples": [
+    {
+      "correct": "She reads every day.",
+      "incorrect": "She read every day.",
+      "correction": "She reads every day.",
+      "explanation_ru": "В настоящем утверждении с she добавляется -s."
+    },
+    {
+      "correct": "I work at home.",
+      "incorrect": "I am work at home.",
+      "correction": "I work at home.",
+      "explanation_ru": "Для обычного Present Simple work не нужна am."
+    },
+    {
+      "correct": "Ben studies English.",
+      "incorrect": "Ben studys English.",
+      "correction": "Ben studies English.",
+      "explanation_ru": "Перед y согласная d: y меняется на ies."
+    }
+  ],
+  "reading": {
+    "id": "L04-R",
+    "text": "Mia reads every day. She studies English. Ben works at home. He reads every day. They like English.",
+    "glossary": {},
+    "context_ru": "В этой учебной ситуации участвуют только Mia и Ben."
+  },
+  "tasks": [
+    {
+      "id": "L04-T01",
+      "objective": "Повторить be",
+      "type": "gap",
+      "difficulty": 1,
+      "phase": "entry",
+      "prompt": "Только слово: She ___ ready.",
+      "answers": [
+        "is"
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
+      },
+      "feedback_ru": "С характеристикой ready используется is; это не обычный глагол действия."
+    },
+    {
+      "id": "L04-T02",
+      "objective": "Повторить отрицание be",
+      "type": "form",
+      "difficulty": 1,
+      "phase": "entry",
+      "prompt": "Сделай I am ready. отрицанием, полная форма.",
+      "answers": [
+        "I am not ready."
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
+      },
+      "feedback_ru": "Not после am; это повторение предыдущего урока."
+    },
+    {
+      "id": "L04-T03",
+      "objective": "Применить основную форму",
+      "type": "gap",
+      "difficulty": 1,
+      "phase": "practice",
+      "prompt": "Только форма read: I ___ every day.",
+      "answers": [
+        "read"
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
+      },
+      "feedback_ru": "С I основная форма read."
+    },
+    {
+      "id": "L04-T04",
+      "objective": "Добавить s",
+      "type": "gap",
+      "difficulty": 1,
+      "phase": "practice",
+      "prompt": "Только форма read: She ___ every day.",
+      "answers": [
+        "reads"
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
+      },
+      "feedback_ru": "С she в утверждении Present Simple reads."
+    },
+    {
+      "id": "L04-T05",
+      "objective": "Применить ies",
+      "type": "gap",
+      "difficulty": 1,
+      "phase": "practice",
+      "prompt": "Только форма study: Ben ___ English.",
+      "answers": [
+        "studies"
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
+      },
+      "feedback_ru": "Согласная d + y: study → studies."
+    },
+    {
+      "id": "L04-T06",
+      "objective": "Применить es",
+      "type": "gap",
+      "difficulty": 1,
+      "phase": "practice",
+      "prompt": "Только форма watch: He ___ TV every day.",
+      "answers": [
+        "watches"
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
+      },
+      "feedback_ru": "После ch в watch добавляется es: watches TV — смотрит телевизор."
+    },
+    {
+      "id": "L04-T07",
+      "objective": "Убрать лишнюю be",
+      "type": "correct",
+      "difficulty": 2,
+      "phase": "practice",
+      "prompt": "Исправь: I am work at home. Сохрани подлежащее, смысл и заданную конструкцию; исправь ошибочную форму и оформление.",
+      "answers": [
+        "I work at home."
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
+      },
+      "feedback_ru": "В Present Simple с work не нужна am."
+    },
+    {
+      "id": "L04-T08",
+      "objective": "Исправить согласование they",
+      "type": "correct",
+      "difficulty": 2,
+      "phase": "practice",
+      "prompt": "Исправь: They reads every day. Сохрани подлежащее, смысл и заданную конструкцию; исправь ошибочную форму и оформление.",
+      "answers": [
+        "They read every day."
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
+      },
+      "feedback_ru": "С they нужна основная форма без s."
+    },
+    {
+      "id": "L04-T09",
+      "objective": "Поменять подлежащее",
+      "type": "form",
+      "difficulty": 2,
+      "phase": "practice",
+      "prompt": "Замени только I на She и согласуй глагол: I have time. Введи полное предложение.",
+      "answers": [
+        "She has time."
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
+      },
+      "feedback_ru": "С she глагол have меняется на has. Have time — располагать временем."
+    },
+    {
+      "id": "L04-T10",
+      "objective": "Собрать привычку",
+      "type": "reorder",
+      "difficulty": 2,
+      "phase": "practice",
+      "prompt": "Собери: English / studies / Mia.",
+      "answers": [
+        "Mia studies English."
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
+      },
+      "feedback_ru": "Mia — подлежащее; studies — действие; English — что изучает."
+    },
+    {
+      "id": "L04-T11",
+      "objective": "Найти действие Mia",
+      "type": "reading",
+      "difficulty": 2,
+      "phase": "reading",
+      "prompt": "L04-R: что изучает Mia? Ответь одним словом по-английски.",
+      "answers": [
+        "English"
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "semantic_short",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error",
+        "scoring": "meaning primary; record spelling/capitalisation/punctuation separately; do not erase them"
+      },
+      "feedback_ru": "She studies English; she относится к Mia."
+    },
+    {
+      "id": "L04-T12",
+      "objective": "Найти место работы",
+      "type": "reading",
+      "difficulty": 2,
+      "phase": "reading",
+      "prompt": "Где работает Ben? Можно ответить фрагментом или по-русски.",
+      "answers": [
+        "at home"
+      ],
+      "alternatives": [
+        "дома",
+        "He works at home."
+      ],
+      "criteria": [],
+      "validation": {
+        "mode": "semantic_short",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error",
+        "scoring": "meaning primary; record spelling/capitalisation/punctuation separately; do not erase them"
+      },
+      "feedback_ru": "В предложении Ben works at home место работы указано блоком at home — дома."
+    },
+    {
+      "id": "L04-T13",
+      "objective": "Определить референт they",
+      "type": "reading",
+      "difficulty": 2,
+      "phase": "reading",
+      "prompt": "Кого обозначает They в последнем предложении?",
+      "answers": [
+        "Mia and Ben"
+      ],
+      "alternatives": [
+        "Миа и Бен",
+        "Ben and Mia"
+      ],
+      "criteria": [],
+      "validation": {
+        "mode": "semantic_short",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error",
+        "scoring": "meaning primary; record spelling/capitalisation/punctuation separately; do not erase them"
+      },
+      "feedback_ru": "They объединяет Mia и Ben из предыдущих предложений."
+    },
+    {
+      "id": "L04-T14",
+      "objective": "Подтвердить факт текстом",
+      "type": "reading",
+      "difficulty": 2,
+      "phase": "reading",
+      "prompt": "Выпиши предложение, которое сообщает, что Ben читает каждый день.",
+      "answers": [
+        "He reads every day."
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "semantic_short",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error",
+        "scoring": "meaning primary; record spelling/capitalisation/punctuation separately; do not erase them"
+      },
+      "feedback_ru": "He в этом месте обозначает Ben, а не Mia."
+    },
+    {
+      "id": "L04-T15",
+      "objective": "Описать свои привычки",
+      "type": "writing",
+      "difficulty": 3,
+      "phase": "writing",
+      "prompt": "Напиши три утверждения о привычках с I. Используй read/study/work/live/like и слова урока; можно придумать факты.",
+      "answers": [],
+      "alternatives": [],
+      "criteria": [
+        "Три понятных утверждения Present Simple с I.",
+        "Использованы обычные глаголы без лишней am и без s.",
+        "Лексика осмысленна; оформление предложений верно."
+      ],
+      "validation": {
+        "mode": "manual",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
+      },
+      "feedback_ru": "С I глагол без s; am нужна с ready, но не перед read/work. Не требуются вопросы или отрицания.",
+      "sample_answer": "I read every day. I study English. I work at home.",
+      "writing_support": {
+        "checklist_ru": [
+          "Три понятных утверждения Present Simple с I.",
+          "Использованы обычные глаголы без лишней am и без s.",
+          "Лексика осмысленна; оформление предложений верно."
+        ],
+        "typical_errors": [
+          {
+            "incorrect": "She study English.",
+            "correction": "She studies English.",
+            "explanation_ru": "С she: согласная + y → ies."
+          },
+          {
+            "incorrect": "I am read.",
+            "correction": "I read.",
+            "explanation_ru": "В целевом Present Simple не ставим am перед read."
+          }
+        ],
+        "rubric": "docs/writing-feedback.md",
+        "review_status": "unreviewed",
+        "self_review_available": true
+      }
+    },
+    {
+      "id": "L04-T16",
+      "objective": "Перенести привычки на третье лицо",
+      "type": "writing",
+      "difficulty": 3,
+      "phase": "writing",
+      "prompt": "Напиши три связанных утверждения о Mia или Ben. В первом используй имя, затем she или he. Назови занятия и место/частотность.",
+      "answers": [],
+      "alternatives": [],
+      "criteria": [
+        "Один человек и понятные местоименные связи.",
+        "Три утверждения Present Simple, согласованные с третьим лицом.",
+        "Есть место или частотность; содержание не противоречит себе."
+      ],
+      "validation": {
+        "mode": "manual",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
+      },
+      "feedback_ru": "Одно имя и she/he требуют формы с s/es/ies. Не добавляй is перед обычным глаголом.",
+      "sample_answer": "Mia works at home. She studies English. She reads every day.",
+      "writing_support": {
+        "checklist_ru": [
+          "Один человек и понятные местоименные связи.",
+          "Три утверждения Present Simple, согласованные с третьим лицом.",
+          "Есть место или частотность; содержание не противоречит себе."
+        ],
+        "typical_errors": [
+          {
+            "incorrect": "She study English.",
+            "correction": "She studies English.",
+            "explanation_ru": "С she: согласная + y → ies."
+          },
+          {
+            "incorrect": "I am read.",
+            "correction": "I read.",
+            "explanation_ru": "В целевом Present Simple не ставим am перед read."
+          }
+        ],
+        "rubric": "docs/writing-feedback.md",
+        "review_status": "unreviewed",
+        "self_review_available": true
+      }
+    },
+    {
+      "id": "L04-T17",
+      "objective": "Применить go→goes",
+      "type": "checkpoint",
+      "difficulty": 3,
+      "phase": "checkpoint",
+      "prompt": "Только форма go: She ___ home every day. Используй изученный блок go home.",
+      "answers": [
+        "goes"
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
+      },
+      "feedback_ru": "Go в третьем лице: goes. В этом устойчивом сочетании home употребляется без to."
+    },
+    {
+      "id": "L04-T18",
+      "objective": "Исправить после паузы",
+      "type": "checkpoint",
+      "difficulty": 3,
+      "phase": "delayed_review",
+      "prompt": "Исправь: Ben study English.",
+      "answers": [
+        "Ben studies English."
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
+      },
+      "feedback_ru": "Ben — один человек, поэтому study → studies."
+    }
+  ],
+  "review": {
+    "schedule_days": [
+      1,
+      3,
+      7,
+      21
+    ],
+    "instruction_ru": "Сначала выполни задания 17–18 без ключа. Через неделю напиши новый текст о другом человеке/ситуации. Ключи предыдущей попытки скрыты; самопроверка не равна независимому подтверждению усвоения.",
+    "mastery": "80% закрытых заданий, Writing ≥6/8 без нуля по смыслу/целевой конструкции; подтвердить через неделю."
+  },
+  "quality": {
+    "status": "author_reviewed_pending_independent_review",
+    "provenance": "Оригинальные тексты, задания и пояснения LangForge; не скопированы из источников.",
+    "remaining_review": "Независимая языковая редактура и пилот; см. docs/content-quality.md.",
+    "audit": "Самостоятельный аудит Codex этапа 1.5; не независимая лингвистическая экспертиза. См. docs/content-audit.md."
+  },
+  "language_standard": "en-GB; equivalent en-US accepted unless explicitly targeted"
+}

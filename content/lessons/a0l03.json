@@ -1,0 +1,437 @@
+{
+  "schema_version": "1.1",
+  "id": "A0L03",
+  "title": "Согласные сочетания и немые буквы",
+  "level": "A0 (внутренняя метка подготовки)",
+  "language_standard": "en-GB; equivalent en-US accepted unless explicitly targeted",
+  "curriculum_topics": [
+    "A0-03"
+  ],
+  "prerequisites": [
+    "A0L02"
+  ],
+  "objective": "Распознавать частые сочетания по данным IPA и проверять исключения.",
+  "vocabulary": {
+    "shop": "магазин",
+    "chair": "стул",
+    "thin": "тонкий",
+    "this": "этот/эта/это",
+    "phone": "телефон",
+    "back": "назад; задняя часть",
+    "sing": "петь",
+    "know": "знать",
+    "write": "писать",
+    "school": "школа",
+    "chef": "шеф-повар",
+    "finger": "палец"
+  },
+  "theory": [
+    "Некоторые пары букв часто обозначают один согласный звук: sh → /ʃ/ в shop /ʃɒp/; ch → /tʃ/ в chair /tʃeə/; ph → /f/ в phone /fəʊn/; ck → /k/ в back /bæk/. Сочетание ch не универсально: school /skuːl/ содержит /k/, chef /ʃef/ содержит /ʃ/. Эти слова нужно проверить и запомнить.",
+    "Th может передавать /θ/ в thin /θɪn/ и /ð/ в this /ðɪs/. Нельзя надёжно выбрать один звук только по th. Не заменяем их русскими «с» и «з» в качестве нормы; здесь сравниваем записи, а не оцениваем произношение.",
+    "В sing /sɪŋ/ ng обозначает /ŋ/, без отдельного /g/ в этой словарной форме. Это не правило для всех ng: например, в finger словарь показывает /ŋɡ/. Не нужно самостоятельно угадывать незнакомое слово по одной аналогии.",
+    "В know /nəʊ/ начальная k не обозначает отдельного звука; в write /raɪt/ начальная w не обозначает отдельного звука. «Немая буква» означает особенность этого написания, не запрет на произношение буквы во всех словах. В нашей британской записи chair без последующего гласного не показываем звучащую r; американская запись может отличаться.",
+    "Порядок работы: выдели сочетание; сравни с данным IPA; отметь совпадение с частой моделью или исключение. Словарная запись важнее догадки. Текущие задания не требуют произносить слова вслух."
+  ],
+  "examples": [
+    {
+      "correct": "thin /θɪn/; this /ðɪs/",
+      "incorrect": "Любое th → /θ/",
+      "correction": "thin /θɪn/; this /ðɪs/",
+      "explanation_ru": "В этих двух словах th передаёт разные звуки."
+    },
+    {
+      "correct": "school: ch → /k/",
+      "incorrect": "school: ch → /tʃ/",
+      "correction": "school: ch → /k/",
+      "explanation_ru": "School — исключение из частой модели ch."
+    },
+    {
+      "correct": "know: k не звучит",
+      "incorrect": "know: сначала отдельный /k/",
+      "correction": "know: k не звучит",
+      "explanation_ru": "В /nəʊ/ нет начального /k/."
+    }
+  ],
+  "reading": {
+    "id": "A0L03-R",
+    "text": "Карточка для подписи рисунка магазина:\nshop /ʃɒp/ — магазин\nphone /fəʊn/ — телефон\nchair /tʃeə/ — стул\nСначала проверь сочетания, затем выбери подпись предмета.",
+    "glossary": {}
+  },
+  "tasks": [
+    {
+      "id": "A0L03-T01",
+      "objective": "Найти sh",
+      "type": "identify",
+      "difficulty": 1,
+      "phase": "practice",
+      "prompt": "В слове shop какие две буквы передают /ʃ/? Введи сочетание.",
+      "answers": [
+        "sh"
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; no automatic rejection",
+        "language_variants": "accept equivalent en-US; preserve targeted distinctions"
+      },
+      "feedback_ru": "В shop сочетание sh даёт /ʃ/."
+    },
+    {
+      "id": "A0L03-T02",
+      "objective": "Найти ph",
+      "type": "identify",
+      "difficulty": 1,
+      "phase": "practice",
+      "prompt": "В phone /fəʊn/ какое сочетание передаёт /f/?",
+      "answers": [
+        "ph"
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; no automatic rejection",
+        "language_variants": "accept equivalent en-US; preserve targeted distinctions"
+      },
+      "feedback_ru": "Две буквы ph здесь обозначают один согласный /f/."
+    },
+    {
+      "id": "A0L03-T03",
+      "objective": "Различить th",
+      "type": "identify",
+      "difficulty": 1,
+      "phase": "practice",
+      "prompt": "В this /ðɪs/ th соответствует θ или ð? Скопируй знак.",
+      "answers": [
+        "ð"
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; no automatic rejection",
+        "language_variants": "accept equivalent en-US; preserve targeted distinctions"
+      },
+      "feedback_ru": "В данной записи /ð/, в thin было /θ/."
+    },
+    {
+      "id": "A0L03-T04",
+      "objective": "Не универсализировать ch",
+      "type": "identify",
+      "difficulty": 1,
+      "phase": "practice",
+      "prompt": "В school /skuːl/ какое ch: /k/ или /tʃ/? Скопируй запись в косых скобках.",
+      "answers": [
+        "/k/"
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; no automatic rejection",
+        "language_variants": "accept equivalent en-US; preserve targeted distinctions"
+      },
+      "feedback_ru": "School показывает исключение из частой модели ch."
+    },
+    {
+      "id": "A0L03-T05",
+      "objective": "Найти немую букву",
+      "type": "identify",
+      "difficulty": 1,
+      "phase": "practice",
+      "prompt": "В know /nəʊ/ какая начальная буква не имеет отдельного звука?",
+      "answers": [
+        "k"
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; no automatic rejection",
+        "language_variants": "accept equivalent en-US; preserve targeted distinctions"
+      },
+      "feedback_ru": "В записи нет /k/; начинается /n/."
+    },
+    {
+      "id": "A0L03-T06",
+      "objective": "Прочитать ng по записи",
+      "type": "identify",
+      "difficulty": 1,
+      "phase": "practice",
+      "prompt": "В sing /sɪŋ/ есть отдельный /g/ после /ŋ/? Ответь по-русски да/нет.",
+      "answers": [
+        "нет"
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; no automatic rejection",
+        "language_variants": "accept equivalent en-US; preserve targeted distinctions"
+      },
+      "feedback_ru": "В данной форме sing записан только /ŋ/, без /g/."
+    },
+    {
+      "id": "A0L03-T07",
+      "objective": "Прочитать подпись предмета",
+      "type": "reading",
+      "difficulty": 2,
+      "phase": "reading",
+      "prompt": "Какое слово в A0L03-R означает «стул»?",
+      "answers": [
+        "chair"
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "semantic_short",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; no automatic rejection",
+        "language_variants": "accept equivalent en-US; preserve targeted distinctions"
+      },
+      "feedback_ru": "Подпись chair относится к стулу."
+    },
+    {
+      "id": "A0L03-T08",
+      "objective": "Найти другую модель",
+      "type": "reading",
+      "difficulty": 2,
+      "phase": "reading",
+      "prompt": "В A0L03-R какое слово начинается сочетанием ph?",
+      "answers": [
+        "phone"
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "semantic_short",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; no automatic rejection",
+        "language_variants": "accept equivalent en-US; preserve targeted distinctions"
+      },
+      "feedback_ru": "В phone две буквы ph дают /f/."
+    },
+    {
+      "id": "A0L03-T09",
+      "objective": "Сделать контрастную карточку",
+      "type": "writing",
+      "difficulty": 2,
+      "phase": "writing",
+      "prompt": "Составь две строки: thin и this, их данные IPA и разные звуки th.",
+      "answers": [],
+      "alternatives": [],
+      "criteria": [
+        "Есть обе формы с точной IPA из урока.",
+        "Для thin указан /θ/, для this /ð/.",
+        "Можно объяснить различие на русском, без русской транскрипции."
+      ],
+      "validation": {
+        "mode": "manual",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; no automatic rejection",
+        "language_variants": "accept equivalent en-US; preserve targeted distinctions"
+      },
+      "feedback_ru": "Скопируй IPA точно: thin /θɪn/, this /ðɪs/. Разница относится к начальным согласным.",
+      "sample_answer": "thin /θɪn/: th → /θ/\nthis /ðɪs/: th → /ð/",
+      "writing_support": {
+        "checklist_ru": [
+          "Есть обе формы с точной IPA из урока.",
+          "Для thin указан /θ/, для this /ð/.",
+          "Можно объяснить различие на русском, без русской транскрипции."
+        ],
+        "typical_errors": [
+          {
+            "incorrect": "Любое th → /θ/",
+            "correction": "thin /θɪn/; this /ðɪs/",
+            "explanation_ru": "В этих двух словах th передаёт разные звуки."
+          },
+          {
+            "incorrect": "school: ch → /tʃ/",
+            "correction": "school: ch → /k/",
+            "explanation_ru": "School — исключение из частой модели ch."
+          },
+          {
+            "incorrect": "know: сначала отдельный /k/",
+            "correction": "know: k не звучит",
+            "explanation_ru": "В /nəʊ/ нет начального /k/."
+          }
+        ],
+        "rubric": "docs/writing-feedback.md",
+        "review_status": "unreviewed",
+        "self_review_available": true
+      }
+    },
+    {
+      "id": "A0L03-T10",
+      "objective": "Запомнить исключение",
+      "type": "writing",
+      "difficulty": 2,
+      "phase": "writing",
+      "prompt": "Напиши карточку school с данным IPA и объясни по-русски, почему нельзя читать любое ch как /tʃ/.",
+      "answers": [],
+      "alternatives": [],
+      "criteria": [
+        "School записано с IPA /skuːl/.",
+        "Указано ch → /k/.",
+        "Правило ограничено словом/группой, а не объявлено всеобщим."
+      ],
+      "validation": {
+        "mode": "manual",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; no automatic rejection",
+        "language_variants": "accept equivalent en-US; preserve targeted distinctions"
+      },
+      "feedback_ru": "В school ch даёт /k/, поэтому частая модель не универсальна.",
+      "sample_answer": "school /skuːl/ — школа. Здесь ch даёт /k/, поэтому ch не всегда читается /tʃ/.",
+      "writing_support": {
+        "checklist_ru": [
+          "School записано с IPA /skuːl/.",
+          "Указано ch → /k/.",
+          "Правило ограничено словом/группой, а не объявлено всеобщим."
+        ],
+        "typical_errors": [
+          {
+            "incorrect": "Любое th → /θ/",
+            "correction": "thin /θɪn/; this /ðɪs/",
+            "explanation_ru": "В этих двух словах th передаёт разные звуки."
+          },
+          {
+            "incorrect": "school: ch → /tʃ/",
+            "correction": "school: ch → /k/",
+            "explanation_ru": "School — исключение из частой модели ch."
+          },
+          {
+            "incorrect": "know: сначала отдельный /k/",
+            "correction": "know: k не звучит",
+            "explanation_ru": "В /nəʊ/ нет начального /k/."
+          }
+        ],
+        "rubric": "docs/writing-feedback.md",
+        "review_status": "unreviewed",
+        "self_review_available": true
+      }
+    },
+    {
+      "id": "A0L03-T11",
+      "objective": "Проверить немую w",
+      "type": "identify",
+      "difficulty": 2,
+      "phase": "checkpoint",
+      "prompt": "В write /raɪt/ какая начальная буква не звучит отдельно?",
+      "answers": [
+        "w"
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; no automatic rejection",
+        "language_variants": "accept equivalent en-US; preserve targeted distinctions"
+      },
+      "feedback_ru": "В данной записи начальный звук /r/, а не /w/."
+    },
+    {
+      "id": "A0L03-T12",
+      "objective": "Проверить ck",
+      "type": "identify",
+      "difficulty": 2,
+      "phase": "delayed_review",
+      "prompt": "В back /bæk/ какой звук соответствует ck? Скопируй в косых скобках.",
+      "answers": [
+        "/k/"
+      ],
+      "alternatives": [],
+      "criteria": [],
+      "validation": {
+        "mode": "exact",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; no automatic rejection",
+        "language_variants": "accept equivalent en-US; preserve targeted distinctions"
+      },
+      "feedback_ru": "В back сочетание ck обозначает один /k/."
+    }
+  ],
+  "review": {
+    "schedule_days": [
+      1,
+      3,
+      7,
+      21
+    ],
+    "instruction_ru": "Повтори последние два задания без ключа; затем создай новую карточку со словами урока. Не проверяется произношение вслух.",
+    "mastery": "Не менее 80% письменных заданий по целям блока, открытая работа по адаптированной рубрике; письменное распознавание не подтверждает произношение."
+  },
+  "quality": {
+    "status": "author_reviewed_pending_independent_review",
+    "provenance": "Оригинальные инструкции, карточки и задания; IPA и общеязыковые правила сверены с открытыми словарными справочниками.",
+    "remaining_review": "Независимая проверка фонетических объяснений и пилот взрослого новичка."
+  }
+}
