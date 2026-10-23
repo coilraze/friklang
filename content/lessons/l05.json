@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.1",
+  "schema_version": "1.2",
   "id": "L05",
   "title": "Базовая пунктуация и чтение микротекста",
   "level": "A1 (методическое распределение)",
@@ -62,7 +62,9 @@
   "reading": {
     "id": "L05-R",
     "text": "I am Mia. I study English every day. I read at home. Ben is here. He is not tired. We are ready.",
-    "glossary": {}
+    "glossary": {},
+    "skill": "reading_comprehension",
+    "purpose": "guided_text_practice"
   },
   "tasks": [
     {
@@ -88,7 +90,8 @@
         "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
         "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
       },
-      "feedback_ru": "Одно имя Ben требует reads."
+      "feedback_ru": "Одно имя Ben требует reads.",
+      "skill": "grammar"
     },
     {
       "id": "L05-T02",
@@ -113,7 +116,8 @@
         "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
         "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
       },
-      "feedback_ru": "Is переносится перед she; вопросительный знак обязателен."
+      "feedback_ru": "Is переносится перед she; вопросительный знак обязателен.",
+      "skill": "grammar"
     },
     {
       "id": "L05-T03",
@@ -138,7 +142,8 @@
         "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
         "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
       },
-      "feedback_ru": "I и English с заглавной, в конце точка."
+      "feedback_ru": "I и English с заглавной, в конце точка.",
+      "skill": "punctuation"
     },
     {
       "id": "L05-T04",
@@ -163,7 +168,8 @@
         "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
         "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
       },
-      "feedback_ru": "Это прямой вопрос: нужен ?. Артикли или формы глагола менять не нужно."
+      "feedback_ru": "Это прямой вопрос: нужен ?. Артикли или формы глагола менять не нужно.",
+      "skill": "punctuation"
     },
     {
       "id": "L05-T05",
@@ -188,7 +194,8 @@
         "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
         "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
       },
-      "feedback_ru": "Запятая не отделяет Ben от works."
+      "feedback_ru": "Запятая не отделяет Ben от works.",
+      "skill": "punctuation"
     },
     {
       "id": "L05-T06",
@@ -213,7 +220,8 @@
         "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
         "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
       },
-      "feedback_ru": "Два полных утверждения, каждое с заглавной и точкой."
+      "feedback_ru": "Два полных утверждения, каждое с заглавной и точкой.",
+      "skill": "punctuation"
     },
     {
       "id": "L05-T07",
@@ -238,7 +246,8 @@
         "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
         "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
       },
-      "feedback_ru": "Одной запятой нельзя соединить эти самостоятельные утверждения. В задаче требуются две точки."
+      "feedback_ru": "Одной запятой нельзя соединить эти самостоятельные утверждения. В задаче требуются две точки.",
+      "skill": "punctuation"
     },
     {
       "id": "L05-T08",
@@ -263,7 +272,8 @@
         "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
         "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
       },
-      "feedback_ru": "I am сокращается I'm с апострофом, без пробела внутри."
+      "feedback_ru": "I am сокращается I'm с апострофом, без пробела внутри.",
+      "skill": "punctuation"
     },
     {
       "id": "L05-T09",
@@ -288,22 +298,25 @@
         "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
         "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
       },
-      "feedback_ru": "После Yes запятая; I всегда заглавное; в конце точка."
+      "feedback_ru": "После Yes запятая; I всегда заглавное; в конце точка.",
+      "skill": "punctuation"
     },
     {
       "id": "L05-T10",
-      "objective": "Согласовать и оформить",
-      "type": "correct",
+      "objective": "Редактирование записки и самостоятельное продолжение",
+      "type": "writing",
       "difficulty": 2,
       "phase": "practice",
-      "prompt": "Речь о нынешней привычке. Исправь грамматику, регистр и знаки, сохрани подлежащее: she read english every day",
-      "answers": [
-        "She reads English every day."
-      ],
+      "prompt": "Исправь записку о нынешних привычках Mia: «mia study english. she read every day. she is not tired» Сохрани факты. Добавь своё четвёртое предложение о Mia и объясни по-русски две правки.",
+      "answers": [],
       "alternatives": [],
-      "criteria": [],
+      "criteria": [
+        "Три исходных факта сохранены и оформлены.",
+        "Добавлено самостоятельное осмысленное четвёртое предложение.",
+        "Две причины правок объяснены на русском; неизвестное мнение не подменяет правило."
+      ],
       "validation": {
-        "mode": "exact",
+        "mode": "manual",
         "unicode": "NFC",
         "trim_outer_whitespace": true,
         "case_sensitive": true,
@@ -313,20 +326,77 @@
         "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
         "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
       },
-      "feedback_ru": "She требует reads; English с заглавной; нужна точка."
+      "feedback_ru": "Сначала сохрани исходные факты и исправь формы. Затем добавь собственное предложение по критериям. Образец — один возможный вариант, не строковый ключ.",
+      "sample_answer": "Mia studies English. She reads every day. She is not tired. She is happy. С Mia нужна studies, с she — reads. Первое слово каждого предложения пишется с заглавной.",
+      "writing_support": {
+        "checklist_ru": [
+          "Три исходных факта сохранены и оформлены.",
+          "Добавлено самостоятельное осмысленное четвёртое предложение.",
+          "Две причины правок объяснены на русском; неизвестное мнение не подменяет правило."
+        ],
+        "typical_errors": [
+          {
+            "incorrect": "i study english",
+            "correction": "I study English.",
+            "explanation_ru": "I и English с заглавной; утверждение с точкой."
+          },
+          {
+            "incorrect": "Ben, reads.",
+            "correction": "Ben reads.",
+            "explanation_ru": "Не отделяем подлежащее от глагола запятой."
+          }
+        ],
+        "rubric": "docs/writing-feedback.md",
+        "review_status": "unreviewed",
+        "self_review_available": true
+      },
+      "skill": "writing"
     },
     {
       "id": "L05-T11",
-      "objective": "Определить автора",
+      "objective": "Понимание нового микротекста: fact",
       "type": "reading",
       "difficulty": 2,
       "phase": "reading",
-      "prompt": "L05-R: кто автор записки? Ответь именем.",
+      "prompt": "Прочитай L05-RC. Кто написал записку? Ответь именем.",
+      "answers": [
+        "Alex"
+      ],
+      "alternatives": [],
+      "criteria": [
+        "Ответ соответствует фактам/отсылкам текста; другая верная формулировка допустима."
+      ],
+      "validation": {
+        "mode": "semantic_short",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error",
+        "scoring": "meaning primary; record spelling/capitalisation/punctuation separately; do not erase them"
+      },
+      "feedback_ru": "Автор называет себя Alex; Mia — другой человек.",
+      "reading_id": "L05-RC",
+      "reading_focus": "fact",
+      "skill": "reading_comprehension"
+    },
+    {
+      "id": "L05-T12",
+      "objective": "Понимание нового микротекста: pronoun_reference",
+      "type": "reading",
+      "difficulty": 2,
+      "phase": "reading",
+      "prompt": "Прочитай L05-RC. Кто читает каждый день? Ответь именем.",
       "answers": [
         "Mia"
       ],
       "alternatives": [],
-      "criteria": [],
+      "criteria": [
+        "Ответ соответствует фактам/отсылкам текста; другая верная формулировка допустима."
+      ],
       "validation": {
         "mode": "semantic_short",
         "unicode": "NFC",
@@ -339,52 +409,28 @@
         "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error",
         "scoring": "meaning primary; record spelling/capitalisation/punctuation separately; do not erase them"
       },
-      "feedback_ru": "I am Mia указывает автора, а Ben — другой участник."
-    },
-    {
-      "id": "L05-T12",
-      "objective": "Найти привычку",
-      "type": "reading",
-      "difficulty": 2,
-      "phase": "reading",
-      "prompt": "В L05-R какое занятие Mia прямо сопровождается словами every day? Ответь по-русски или английским фрагментом.",
-      "answers": [
-        "изучает английский"
-      ],
-      "alternatives": [
-        "studies English",
-        "She studies English every day."
-      ],
-      "criteria": [],
-      "validation": {
-        "mode": "semantic_short",
-        "unicode": "NFC",
-        "trim_outer_whitespace": true,
-        "case_sensitive": true,
-        "punctuation_sensitive": true,
-        "internal_whitespace": "preserve",
-        "typographic_apostrophe_equivalent": true,
-        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
-        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error",
-        "scoring": "meaning primary; record spelling/capitalisation/punctuation separately; do not erase them"
-      },
-      "feedback_ru": "Every day относится к I study English. Чтение тоже названо, но для него частота прямо не указана."
+      "feedback_ru": "She после Mia относится к Mia; every day относится к reads.",
+      "reading_id": "L05-RC",
+      "reading_focus": "pronoun_reference",
+      "skill": "reading_comprehension"
     },
     {
       "id": "L05-T13",
-      "objective": "Понять отрицание",
+      "objective": "Понимание нового микротекста: negation",
       "type": "reading",
       "difficulty": 2,
       "phase": "reading",
-      "prompt": "Ben устал? Ответь кратко по-английски.",
+      "prompt": "Прочитай L05-RC. Mia устала? Дай краткий ответ по-английски.",
       "answers": [
-        "No, he is not."
+        "No, she is not."
       ],
       "alternatives": [
-        "No, he isn't.",
-        "No, he's not."
+        "No, she isn't.",
+        "No, she's not."
       ],
-      "criteria": [],
+      "criteria": [
+        "Ответ соответствует фактам/отсылкам текста; другая верная формулировка допустима."
+      ],
       "validation": {
         "mode": "semantic_short",
         "unicode": "NFC",
@@ -397,23 +443,27 @@
         "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error",
         "scoring": "meaning primary; record spelling/capitalisation/punctuation separately; do not erase them"
       },
-      "feedback_ru": "He is not tired отрицает усталость Ben."
+      "feedback_ru": "She is not tired отрицает усталость Mia.",
+      "reading_id": "L05-RC",
+      "reading_focus": "negation",
+      "skill": "reading_comprehension"
     },
     {
       "id": "L05-T14",
-      "objective": "Не домысливать сведения",
+      "objective": "Понимание нового микротекста: missing_information",
       "type": "reading",
       "difficulty": 2,
       "phase": "reading",
-      "prompt": "Можно ли узнать из записки, где работает Mia? Ответь по-русски.",
+      "prompt": "Прочитай L05-RC. Можно ли узнать, где работает Mia? Объясни по-русски.",
       "answers": [
-        "нет"
+        "Нельзя: место работы Mia не указано."
       ],
       "alternatives": [
-        "нельзя",
-        "Неизвестно."
+        "О работе Mia ничего не сказано."
       ],
-      "criteria": [],
+      "criteria": [
+        "Ответ соответствует фактам/отсылкам текста; другая верная формулировка допустима."
+      ],
       "validation": {
         "mode": "semantic_short",
         "unicode": "NFC",
@@ -426,7 +476,10 @@
         "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error",
         "scoring": "meaning primary; record spelling/capitalisation/punctuation separately; do not erase them"
       },
-      "feedback_ru": "Названо место чтения, но место работы не сообщается."
+      "feedback_ru": "Текст сообщает о чтении Mia и месте учёбы Alex, а не о работе Mia.",
+      "reading_id": "L05-RC",
+      "reading_focus": "missing_information",
+      "skill": "reading_comprehension"
     },
     {
       "id": "L05-T15",
@@ -476,7 +529,8 @@
         "rubric": "docs/writing-feedback.md",
         "review_status": "unreviewed",
         "self_review_available": true
-      }
+      },
+      "skill": "writing"
     },
     {
       "id": "L05-T16",
@@ -526,7 +580,8 @@
         "rubric": "docs/writing-feedback.md",
         "review_status": "unreviewed",
         "self_review_available": true
-      }
+      },
+      "skill": "writing"
     },
     {
       "id": "L05-T17",
@@ -551,7 +606,8 @@
         "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
         "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
       },
-      "feedback_ru": "Начало и имя с заглавной; прямой вопрос заканчивается ?."
+      "feedback_ru": "Начало и имя с заглавной; прямой вопрос заканчивается ?.",
+      "skill": "grammar"
     },
     {
       "id": "L05-T18",
@@ -578,7 +634,8 @@
         "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
         "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
       },
-      "feedback_ru": "Mia требует studies; имя, English и начало второго предложения — с заглавной; две точки."
+      "feedback_ru": "Mia требует studies; имя, English и начало второго предложения — с заглавной; две точки.",
+      "skill": "grammar"
     }
   ],
   "review": {
@@ -593,9 +650,19 @@
   },
   "quality": {
     "status": "author_reviewed_pending_independent_review",
-    "provenance": "Оригинальные тексты, задания и пояснения LangForge; не скопированы из источников.",
+    "provenance": "Оригинальные тексты, задания и пояснения friklang; не скопированы из источников.",
     "remaining_review": "Независимая языковая редактура и пилот; см. docs/content-quality.md.",
-    "audit": "Самостоятельный аудит Codex этапа 1.5; не независимая лингвистическая экспертиза. См. docs/content-audit.md."
+    "audit": "Самостоятельный аудит Codex этапа 1.5; не независимая лингвистическая экспертиза. См. docs/content-audit.md.",
+    "audit_stage1_6": "Содержательный пересмотр новых текстов и Writing; не независимая человеческая экспертиза. См. docs/stage-1.6-report.md."
   },
-  "language_standard": "en-GB; equivalent en-US accepted unless explicitly targeted"
+  "language_standard": "en-GB; equivalent en-US accepted unless explicitly targeted",
+  "assessment_reading": {
+    "id": "L05-RC",
+    "text": "I am Alex. I study English at home. Mia is here. She reads every day. She is not tired. We are happy.",
+    "context_ru": "В записке участвуют только Alex и Mia; here — место автора.",
+    "glossary": {},
+    "skill": "reading_comprehension",
+    "presentation": "assessment_only_after_teaching; hide_text_and_keys_until_attempt",
+    "reuse_policy": "First exposure only: later attempts are practice, not a fresh comprehension measure."
+  }
 }

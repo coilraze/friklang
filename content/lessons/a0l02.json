@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.1",
+  "schema_version": "1.2",
   "id": "A0L02",
   "title": "IPA, слоги и ударение",
   "level": "A0 (внутренняя метка подготовки)",
@@ -58,7 +58,9 @@
   "reading": {
     "id": "A0L02-R",
     "text": "Карточки для записки о состоянии:\nhappy /ˈhæpi/ — довольный\nname /neɪm/ — имя\nabout /əˈbaʊt/ — о, приблизительно",
-    "glossary": {}
+    "glossary": {},
+    "skill": "word_recognition",
+    "purpose": "guided_preparation"
   },
   "tasks": [
     {
@@ -84,7 +86,8 @@
         "unknown_variant": "review_required; no automatic rejection",
         "language_variants": "accept equivalent en-US; preserve targeted distinctions"
       },
-      "feedback_ru": "Косые скобки отделяют запись звуков от обычного написания."
+      "feedback_ru": "Косые скобки отделяют запись звуков от обычного написания.",
+      "skill": "word_recognition"
     },
     {
       "id": "A0L02-T02",
@@ -109,7 +112,8 @@
         "unknown_variant": "review_required; no automatic rejection",
         "language_variants": "accept equivalent en-US; preserve targeted distinctions"
       },
-      "feedback_ru": "ˈ — основное, ˌ — второстепенное ударение."
+      "feedback_ru": "ˈ — основное, ˌ — второстепенное ударение.",
+      "skill": "word_recognition"
     },
     {
       "id": "A0L02-T03",
@@ -134,7 +138,8 @@
         "unknown_variant": "review_required; no automatic rejection",
         "language_variants": "accept equivalent en-US; preserve targeted distinctions"
       },
-      "feedback_ru": "Двоеточие IPA ː относится к гласному; это не обычное двоеточие :."
+      "feedback_ru": "Двоеточие IPA ː относится к гласному; это не обычное двоеточие :.",
+      "skill": "word_recognition"
     },
     {
       "id": "A0L02-T04",
@@ -159,7 +164,8 @@
         "unknown_variant": "review_required; no automatic rejection",
         "language_variants": "accept equivalent en-US; preserve targeted distinctions"
       },
-      "feedback_ru": "/eɪ/ — один гласный центр."
+      "feedback_ru": "/eɪ/ — один гласный центр.",
+      "skill": "word_recognition"
     },
     {
       "id": "A0L02-T05",
@@ -188,7 +194,8 @@
         "unknown_variant": "review_required; no automatic rejection",
         "language_variants": "accept equivalent en-US; preserve targeted distinctions"
       },
-      "feedback_ru": "В этой модели два гласных центра: /æ/ и /i/; граница по условию перед p."
+      "feedback_ru": "В этой модели два гласных центра: /æ/ и /i/; граница по условию перед p.",
+      "skill": "word_recognition"
     },
     {
       "id": "A0L02-T06",
@@ -213,14 +220,15 @@
         "unknown_variant": "review_required; no automatic rejection",
         "language_variants": "accept equivalent en-US; preserve targeted distinctions"
       },
-      "feedback_ru": "Знак ˈ стоит после первого безударного /ə/, перед вторым слогом."
+      "feedback_ru": "Знак ˈ стоит после первого безударного /ə/, перед вторым слогом.",
+      "skill": "word_recognition"
     },
     {
       "id": "A0L02-T07",
       "objective": "Найти слово по смыслу",
-      "type": "reading",
+      "type": "word_recognition",
       "difficulty": 2,
-      "phase": "reading",
+      "phase": "word_recognition",
       "prompt": "По карточкам A0L02-R какое слово означает «довольный»?",
       "answers": [
         "happy"
@@ -238,14 +246,15 @@
         "unknown_variant": "review_required; no automatic rejection",
         "language_variants": "accept equivalent en-US; preserve targeted distinctions"
       },
-      "feedback_ru": "Happy связано с состоянием человека."
+      "feedback_ru": "Happy связано с состоянием человека.",
+      "skill": "word_recognition"
     },
     {
       "id": "A0L02-T08",
       "objective": "Применить описание карточки",
-      "type": "reading",
+      "type": "word_recognition",
       "difficulty": 2,
-      "phase": "reading",
+      "phase": "word_recognition",
       "prompt": "В A0L02-R найди слово с двумя слогами и ударением на первом.",
       "answers": [
         "happy"
@@ -263,7 +272,8 @@
         "unknown_variant": "review_required; no automatic rejection",
         "language_variants": "accept equivalent en-US; preserve targeted distinctions"
       },
-      "feedback_ru": "У happy /ˈhæpi/ два гласных центра и ударение на первом."
+      "feedback_ru": "У happy /ˈhæpi/ два гласных центра и ударение на первом.",
+      "skill": "word_recognition"
     },
     {
       "id": "A0L02-T09",
@@ -318,7 +328,8 @@
         "rubric": "docs/writing-feedback.md",
         "review_status": "unreviewed",
         "self_review_available": true
-      }
+      },
+      "skill": "word_recognition"
     },
     {
       "id": "A0L02-T10",
@@ -373,7 +384,8 @@
         "rubric": "docs/writing-feedback.md",
         "review_status": "unreviewed",
         "self_review_available": true
-      }
+      },
+      "skill": "word_recognition"
     },
     {
       "id": "A0L02-T11",
@@ -398,7 +410,8 @@
         "unknown_variant": "review_required; no automatic rejection",
         "language_variants": "accept equivalent en-US; preserve targeted distinctions"
       },
-      "feedback_ru": "Один гласный центр /iː/, хотя в tea две гласные буквы."
+      "feedback_ru": "Один гласный центр /iː/, хотя в tea две гласные буквы.",
+      "skill": "word_recognition"
     },
     {
       "id": "A0L02-T12",
@@ -423,7 +436,8 @@
         "unknown_variant": "review_required; no automatic rejection",
         "language_variants": "accept equivalent en-US; preserve targeted distinctions"
       },
-      "feedback_ru": "Schwa — /ə/; /æ/ — другой гласный."
+      "feedback_ru": "Schwa — /ə/; /æ/ — другой гласный.",
+      "skill": "word_recognition"
     }
   ],
   "review": {
@@ -439,6 +453,7 @@
   "quality": {
     "status": "author_reviewed_pending_independent_review",
     "provenance": "Оригинальные инструкции, карточки и задания; IPA и общеязыковые правила сверены с открытыми словарными справочниками.",
-    "remaining_review": "Независимая проверка фонетических объяснений и пилот взрослого новичка."
+    "remaining_review": "Независимая проверка фонетических объяснений и пилот взрослого новичка.",
+    "audit_stage1_6": "Содержательный пересмотр новых текстов и Writing; не независимая человеческая экспертиза. См. docs/stage-1.6-report.md."
   }
 }

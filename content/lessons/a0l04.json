@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.1",
+  "schema_version": "1.2",
   "id": "A0L04",
   "title": "Гласные: частые модели и исключения",
   "level": "A0 (внутренняя метка подготовки)",
@@ -60,7 +60,9 @@
   "reading": {
     "id": "A0L04-R",
     "text": "Минисловарь для записки:\nname /neɪm/ — имя\nhome /həʊm/ — дом\nhave /hæv/ — иметь\ngive /ɡɪv/ — давать\nПоследние два слова — исключения из упрощённой модели конечной e.",
-    "glossary": {}
+    "glossary": {},
+    "skill": "word_recognition",
+    "purpose": "guided_preparation"
   },
   "tasks": [
     {
@@ -86,7 +88,8 @@
         "unknown_variant": "review_required; no automatic rejection",
         "language_variants": "accept equivalent en-US; preserve targeted distinctions"
       },
-      "feedback_ru": "В cape записан дифтонг /eɪ/."
+      "feedback_ru": "В cape записан дифтонг /eɪ/.",
+      "skill": "word_recognition"
     },
     {
       "id": "A0L04-T02",
@@ -111,7 +114,8 @@
         "unknown_variant": "review_required; no automatic rejection",
         "language_variants": "accept equivalent en-US; preserve targeted distinctions"
       },
-      "feedback_ru": "Have не следует модели name /neɪm/."
+      "feedback_ru": "Have не следует модели name /neɪm/.",
+      "skill": "word_recognition"
     },
     {
       "id": "A0L04-T03",
@@ -136,7 +140,8 @@
         "unknown_variant": "review_required; no automatic rejection",
         "language_variants": "accept equivalent en-US; preserve targeted distinctions"
       },
-      "feedback_ru": "В head сочетание ea передаёт /e/, а не /iː/."
+      "feedback_ru": "В head сочетание ea передаёт /e/, а не /iː/.",
+      "skill": "word_recognition"
     },
     {
       "id": "A0L04-T04",
@@ -161,7 +166,8 @@
         "unknown_variant": "review_required; no automatic rejection",
         "language_variants": "accept equivalent en-US; preserve targeted distinctions"
       },
-      "feedback_ru": "В book записан /ʊ/, в food /uː/."
+      "feedback_ru": "В book записан /ʊ/, в food /uː/.",
+      "skill": "word_recognition"
     },
     {
       "id": "A0L04-T05",
@@ -186,7 +192,8 @@
         "unknown_variant": "review_required; no automatic rejection",
         "language_variants": "accept equivalent en-US; preserve targeted distinctions"
       },
-      "feedback_ru": "Не переносим /eɪ/ из rain на said."
+      "feedback_ru": "Не переносим /eɪ/ из rain на said.",
+      "skill": "word_recognition"
     },
     {
       "id": "A0L04-T06",
@@ -211,14 +218,15 @@
         "unknown_variant": "review_required; no automatic rejection",
         "language_variants": "accept equivalent en-US; preserve targeted distinctions"
       },
-      "feedback_ru": "/aɪ/ — один дифтонг; конечная e здесь не добавляет слог."
+      "feedback_ru": "/aɪ/ — один дифтонг; конечная e здесь не добавляет слог.",
+      "skill": "word_recognition"
     },
     {
       "id": "A0L04-T07",
       "objective": "Найти исключения в карточке",
-      "type": "reading",
+      "type": "word_recognition",
       "difficulty": 2,
-      "phase": "reading",
+      "phase": "word_recognition",
       "prompt": "Какие два слова в A0L04-R названы исключениями? Перечисли через запятую.",
       "answers": [
         "have, give"
@@ -238,14 +246,15 @@
         "unknown_variant": "review_required; no automatic rejection",
         "language_variants": "accept equivalent en-US; preserve targeted distinctions"
       },
-      "feedback_ru": "Это have и give; в них нет ожидаемых по упрощению дифтонгов."
+      "feedback_ru": "Это have и give; в них нет ожидаемых по упрощению дифтонгов.",
+      "skill": "word_recognition"
     },
     {
       "id": "A0L04-T08",
       "objective": "Найти слово по значению",
-      "type": "reading",
+      "type": "word_recognition",
       "difficulty": 2,
-      "phase": "reading",
+      "phase": "word_recognition",
       "prompt": "В A0L04-R какое слово означает «дом»?",
       "answers": [
         "home"
@@ -263,7 +272,8 @@
         "unknown_variant": "review_required; no automatic rejection",
         "language_variants": "accept equivalent en-US; preserve targeted distinctions"
       },
-      "feedback_ru": "Home связано с домом; name — имя."
+      "feedback_ru": "Home связано с домом; name — имя.",
+      "skill": "word_recognition"
     },
     {
       "id": "A0L04-T09",
@@ -318,7 +328,8 @@
         "rubric": "docs/writing-feedback.md",
         "review_status": "unreviewed",
         "self_review_available": true
-      }
+      },
+      "skill": "word_recognition"
     },
     {
       "id": "A0L04-T10",
@@ -373,7 +384,8 @@
         "rubric": "docs/writing-feedback.md",
         "review_status": "unreviewed",
         "self_review_available": true
-      }
+      },
+      "skill": "word_recognition"
     },
     {
       "id": "A0L04-T11",
@@ -398,7 +410,8 @@
         "unknown_variant": "review_required; no automatic rejection",
         "language_variants": "accept equivalent en-US; preserve targeted distinctions"
       },
-      "feedback_ru": "В этом слове ay передаёт /eɪ/."
+      "feedback_ru": "В этом слове ay передаёт /eɪ/.",
+      "skill": "word_recognition"
     },
     {
       "id": "A0L04-T12",
@@ -423,7 +436,8 @@
         "unknown_variant": "review_required; no automatic rejection",
         "language_variants": "accept equivalent en-US; preserve targeted distinctions"
       },
-      "feedback_ru": "Начальная безударная гласная — schwa /ə/."
+      "feedback_ru": "Начальная безударная гласная — schwa /ə/.",
+      "skill": "word_recognition"
     }
   ],
   "review": {
@@ -439,6 +453,7 @@
   "quality": {
     "status": "author_reviewed_pending_independent_review",
     "provenance": "Оригинальные инструкции, карточки и задания; IPA и общеязыковые правила сверены с открытыми словарными справочниками.",
-    "remaining_review": "Независимая проверка фонетических объяснений и пилот взрослого новичка."
+    "remaining_review": "Независимая проверка фонетических объяснений и пилот взрослого новичка.",
+    "audit_stage1_6": "Содержательный пересмотр новых текстов и Writing; не независимая человеческая экспертиза. См. docs/stage-1.6-report.md."
   }
 }

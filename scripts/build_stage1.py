@@ -5,7 +5,8 @@ ROOT = Path(__file__).resolve().parents[1]
 def write(path, text):
     p = ROOT / path
     p.parent.mkdir(parents=True, exist_ok=True)
-    p.write_text(text, encoding='utf-8')
+    with p.open('w', encoding='utf-8', newline='\n') as stream:
+        stream.write(text)
 
 # Каждая строка — самостоятельная тема, а не официальный syllabus CEFR.
 # ID | предпосылки | тема | результат | правила | ошибки | практика | контроль
@@ -55,20 +56,20 @@ B2-09|B2-08|Аргументация, синтез и академическая
 B2-10|B2-09|Мост к IELTS Academic Writing|Различает задачи описания данных и аргументации|Task 1 overview/key comparisons/process; не выдумывать причины; Task 2 response/development; 150/250 слов минимум; 60 минут, ориентир 20/40; четыре критерия оценки|Task 1 как мнение; пропуск overview; заученное эссе не по теме|Оригинальные данные; план; полный текст; редактура по критериям|Проба двух задач за 60 минут и внешняя оценка; без автоматического присвоения Band
 '''.strip()
 topics = []
-from stage1_5 import extend_curriculum, audit_lessons, foundation_lessons
+from stage1_5 import extend_curriculum, audit_lessons, foundation_lessons, refine_stage1_6
 rows = extend_curriculum(rows)
 for row in rows.splitlines():
     ident, pre, title, outcome, rules, errors, practice, check = row.split('|')
     topics.append(dict(id=ident, pre=[] if pre=='-' else pre.split(','), title=title, outcome=outcome, rules=rules, errors=errors, practice=practice, check=check))
 intro = '''# Карта программы A0 → B2
 
-Все уровневые назначения грамматики, порядок, длины текстов и пороги — методические решения LangForge. CEFR описывает деятельность, а не единственный обязательный список английских конструкций. A0 — внутренняя подготовительная метка, не официальный уровень CEFR. Каждая тема ниже — блок из нескольких будущих уроков; готовые L01–L05 покрывают A1-01–A1-05 в начальном объёме.
+Все уровневые назначения грамматики, порядок, длины текстов и пороги — методические решения friklang. CEFR описывает деятельность, а не единственный обязательный список английских конструкций. A0 — внутренняя подготовительная метка, не официальный уровень CEFR. Каждая тема ниже — блок из нескольких будущих уроков; готовые L01–L05 покрывают A1-01–A1-05 в начальном объёме.
 
 ## Результаты этапов
 
 Вольное краткое изложение ориентиров из [CEFR Companion Volume 2020, шкалы чтения и письма, с. 54 и 66](https://rm.coe.int/common-european-framework-of-reference-for-languages-learning-teaching/16809ea0d4):
 
-| Этап | Чтение и письмо: направление развития | Внутренний контроль LangForge |
+| Этап | Чтение и письмо: направление развития | Внутренний контроль friklang |
 | --- | --- | --- |
 | A0 | Подготовка к работе со знакомыми буквами и словами | Буквы, словарная запись, простые сочетания; без оценки речи |
 | A1 | Очень простые знакомые тексты; отдельные простые фразы о себе | Понять записку и написать 30–50 слов |
@@ -101,7 +102,7 @@ parts.append('''
 
 ## Порядок первых пяти уроков
 
-Сохраняются предложенные пять тем. Перед ними выделены A0-01–A0-03, поскольку незнание алфавита нельзя принимать за ошибку грамматики. В L01 сначала объясняется ограниченный блок I am; это снимает зависимость от полной таблицы L02. Пунктуация присутствует с L01, а L05 закрепляет её в тексте. L04 ограничен утверждениями Present Simple; do/does вводится после базовых именных групп в A1-08. Такой объём позволяет не требовать неописанных отрицаний и вопросов.
+Сохраняются предложенные пять тем. A0L01–A0L05 готовят две параллельные ветви: после алфавита в A0L01 можно начинать построение предложений; A0L02–A0L04 развивают распознавание буквосочетаний и IPA параллельно, а углублённое IPA не является условием для Writing. В L01 сначала объясняется ограниченный блок I am; это снимает зависимость от полной таблицы L02. Пунктуация присутствует с L01, а L05 закрепляет её в тексте. L04 ограничен утверждениями Present Simple; do/does вводится после базовых именных групп в A1-08. Такой объём позволяет не требовать неописанных отрицаний и вопросов.
 
 С октября 2026 до осени 2027 ориентир маршрута для ученика с подтверждённым A2: устранение базовых пробелов → B1 → B2 → экзаменационный мост. Календарные длительности не назначены без данных о времени и темпе; пересмотр маршрута каждые 4 недели по самостоятельным работам. Подготовка всех IELTS-навыков организуется отдельно от этого приложения.
 ''')
@@ -112,7 +113,7 @@ write('docs/curriculum.md', curriculum_text)
 
 LESSONS = []
 def lesson(n, title, objective, vocab, theory, examples, text, glossary=None):
-    l = dict(schema_version='1.0', id=f'L{n:02}', title=title, level='A1 (методическое распределение)', curriculum_topics=[f'A1-{n:02}'], prerequisites=['A0-01','A0-02','A0-03'] if n==1 else [f'L{n-1:02}'], objective=objective, vocabulary=dict(x.split('=',1) for x in vocab.split('|')), theory=theory, examples=[dict(correct=a,incorrect=b,correction=a,explanation_ru=c) for a,b,c in examples], reading=dict(id=f'L{n:02}-R', text=text,glossary=glossary or {}), tasks=[],review=dict(schedule_days=[1,3,7,21],instruction_ru='Сначала выполни задания 17–18 без ключа. Через неделю составь новый текст о другом человеке/ситуации в рамках изученных правил; оцени по рубрике Writing.',mastery='80% закрытых заданий, Writing ≥6/8 без нуля по смыслу/целевой конструкции; подтвердить через неделю.'),quality=dict(status='author_reviewed_pending_independent_review',provenance='Оригинальные тексты, задания и пояснения LangForge; не скопированы из источников.',remaining_review='Независимая языковая редактура и пилот; см. docs/content-quality.md.'))
+    l = dict(schema_version='1.0', id=f'L{n:02}', title=title, level='A1 (методическое распределение)', curriculum_topics=[f'A1-{n:02}'], prerequisites=['A0-01','A0-02','A0-03'] if n==1 else [f'L{n-1:02}'], objective=objective, vocabulary=dict(x.split('=',1) for x in vocab.split('|')), theory=theory, examples=[dict(correct=a,incorrect=b,correction=a,explanation_ru=c) for a,b,c in examples], reading=dict(id=f'L{n:02}-R', text=text,glossary=glossary or {}), tasks=[],review=dict(schedule_days=[1,3,7,21],instruction_ru='Сначала выполни задания 17–18 без ключа. Через неделю составь новый текст о другом человеке/ситуации в рамках изученных правил; оцени по рубрике Writing.',mastery='80% закрытых заданий, Writing ≥6/8 без нуля по смыслу/целевой конструкции; подтвердить через неделю.'),quality=dict(status='author_reviewed_pending_independent_review',provenance='Оригинальные тексты, задания и пояснения friklang; не скопированы из источников.',remaining_review='Независимая языковая редактура и пилот; см. docs/content-quality.md.'))
     LESSONS.append(l)
     return l
 def task(l, typ, goal, prompt, answers, feedback, alts=None, criteria=None, sample=None, difficulty=None):
@@ -262,6 +263,7 @@ task(l,'checkpoint','Вернуться к форме и границам','По
 
 audit_lessons(LESSONS)
 LESSONS = foundation_lessons() + LESSONS
+refine_stage1_6(LESSONS)
 for l in LESSONS:
     write(f"content/lessons/{l['id'].lower()}.json",json.dumps(l,ensure_ascii=False,indent=2)+'\n')
 

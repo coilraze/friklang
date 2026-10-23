@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.1",
+  "schema_version": "1.2",
   "id": "L03",
   "title": "Отрицания и вопросы с be",
   "level": "A1 (методическое распределение)",
@@ -60,7 +60,9 @@
     "id": "L03-R",
     "text": "Mia is at home. Ben is not at home. Is Mia ready? Yes, she is. Is Ben here? No, he is not.",
     "glossary": {},
-    "context_ru": "Mia пишет записку из дома. Here в этой записке означает место, где находится Mia."
+    "context_ru": "Mia пишет записку из дома. Here в этой записке означает место, где находится Mia.",
+    "skill": "reading_comprehension",
+    "purpose": "guided_text_practice"
   },
   "tasks": [
     {
@@ -86,7 +88,8 @@
         "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
         "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
       },
-      "feedback_ru": "С they ставим are."
+      "feedback_ru": "С they ставим are.",
+      "skill": "grammar"
     },
     {
       "id": "L03-T02",
@@ -113,7 +116,8 @@
         "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
         "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
       },
-      "feedback_ru": "She требует is."
+      "feedback_ru": "She требует is.",
+      "skill": "grammar"
     },
     {
       "id": "L03-T03",
@@ -138,7 +142,8 @@
         "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
         "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
       },
-      "feedback_ru": "Not ставится после am."
+      "feedback_ru": "Not ставится после am.",
+      "skill": "grammar"
     },
     {
       "id": "L03-T04",
@@ -163,7 +168,8 @@
         "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
         "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
       },
-      "feedback_ru": "Добавь not после is; остальные слова сохраняются."
+      "feedback_ru": "Добавь not после is; остальные слова сохраняются.",
+      "skill": "grammar"
     },
     {
       "id": "L03-T05",
@@ -188,7 +194,8 @@
         "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
         "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
       },
-      "feedback_ru": "Are перед you; в конце вопросительный знак."
+      "feedback_ru": "Are перед you; в конце вопросительный знак.",
+      "skill": "grammar"
     },
     {
       "id": "L03-T06",
@@ -213,7 +220,8 @@
         "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
         "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
       },
-      "feedback_ru": "Is ставится перед he."
+      "feedback_ru": "Is ставится перед he.",
+      "skill": "grammar"
     },
     {
       "id": "L03-T07",
@@ -238,7 +246,8 @@
         "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
         "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
       },
-      "feedback_ru": "С be не добавляется do; перенеси are вперёд."
+      "feedback_ru": "С be не добавляется do; перенеси are вперёд.",
+      "skill": "grammar"
     },
     {
       "id": "L03-T08",
@@ -261,9 +270,20 @@
         "internal_whitespace": "preserve",
         "typographic_apostrophe_equivalent": true,
         "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
-        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error",
+        "reviewed_errors": {
+          "She's not ready.": {
+            "category": "task_completion",
+            "explanation_ru": "Эта фраза грамматически правильна, но здесь требуется сократить только is not."
+          },
+          "She isnt ready.": {
+            "category": "spelling",
+            "explanation_ru": "В сокращении is not нужен апостроф: isn’t."
+          }
+        }
       },
-      "feedback_ru": "Is not сокращается до isn't; нужен апостроф."
+      "feedback_ru": "Is not сокращается до isn't; нужен апостроф.",
+      "skill": "grammar"
     },
     {
       "id": "L03-T09",
@@ -288,22 +308,25 @@
         "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
         "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
       },
-      "feedback_ru": "На you отвечаешь о себе I; в конце am не сокращается."
+      "feedback_ru": "На you отвечаешь о себе I; в конце am не сокращается.",
+      "skill": "grammar"
     },
     {
       "id": "L03-T10",
-      "objective": "Исправить краткий ответ",
-      "type": "correct",
+      "objective": "Редактирование записки и самостоятельное продолжение",
+      "type": "writing",
       "difficulty": 2,
       "phase": "practice",
-      "prompt": "Исправь: Yes, she's.",
-      "answers": [
-        "Yes, she is."
-      ],
+      "prompt": "Исправь краткий ответ «Yes, she's.» на вопрос Is Mia ready? Затем придумай свой вопрос о месте Mia и краткий отрицательный ответ. Последний факт можно выдумать.",
+      "answers": [],
       "alternatives": [],
-      "criteria": [],
+      "criteria": [
+        "Исправлен исходный утвердительный ответ: Yes, she is.",
+        "Самостоятельно составлен вопрос о месте и отрицательный ответ о Mia.",
+        "Допустимы полные формы и изученные отрицательные сокращения."
+      ],
       "validation": {
-        "mode": "exact",
+        "mode": "manual",
         "unicode": "NFC",
         "trim_outer_whitespace": true,
         "case_sensitive": true,
@@ -313,20 +336,48 @@
         "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
         "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
       },
-      "feedback_ru": "В кратком утвердительном ответе последняя связка не сокращается."
+      "feedback_ru": "Сначала сохрани исходные факты и исправь формы. Затем добавь собственное предложение по критериям. Образец — один возможный вариант, не строковый ключ.",
+      "sample_answer": "Yes, she is. Is she here? No, she is not.",
+      "writing_support": {
+        "checklist_ru": [
+          "Исправлен исходный утвердительный ответ: Yes, she is.",
+          "Самостоятельно составлен вопрос о месте и отрицательный ответ о Mia.",
+          "Допустимы полные формы и изученные отрицательные сокращения."
+        ],
+        "typical_errors": [
+          {
+            "incorrect": "Is she here.",
+            "correction": "Is she here?",
+            "explanation_ru": "В конце прямого вопроса нужен ?."
+          },
+          {
+            "incorrect": "Yes, she's.",
+            "correction": "Yes, she is.",
+            "explanation_ru": "В конце утвердительного краткого ответа связка не сокращается."
+          }
+        ],
+        "rubric": "docs/writing-feedback.md",
+        "review_status": "unreviewed",
+        "self_review_available": true
+      },
+      "skill": "writing"
     },
     {
       "id": "L03-T11",
-      "objective": "Извлечь факт с отрицанием",
+      "objective": "Понимание нового микротекста: negation",
       "type": "reading",
       "difficulty": 2,
       "phase": "reading",
-      "prompt": "L03-R: Ben дома? Ответь по-русски да/нет.",
+      "prompt": "Прочитай L03-RC. Ben находится здесь? Ответь по-русски.",
       "answers": [
         "нет"
       ],
-      "alternatives": [],
-      "criteria": [],
+      "alternatives": [
+        "Нет, Ben не здесь."
+      ],
+      "criteria": [
+        "Ответ соответствует фактам/отсылкам текста; другая верная формулировка допустима."
+      ],
       "validation": {
         "mode": "semantic_short",
         "unicode": "NFC",
@@ -339,20 +390,28 @@
         "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error",
         "scoring": "meaning primary; record spelling/capitalisation/punctuation separately; do not erase them"
       },
-      "feedback_ru": "Ben is not at home прямо отрицает его присутствие дома."
+      "feedback_ru": "Ben is not here прямо отрицает его присутствие здесь.",
+      "reading_id": "L03-RC",
+      "reading_focus": "negation",
+      "skill": "reading_comprehension"
     },
     {
       "id": "L03-T12",
-      "objective": "Понять готовность",
+      "objective": "Понимание нового микротекста: negation",
       "type": "reading",
       "difficulty": 2,
       "phase": "reading",
-      "prompt": "Mia готова? Ответь кратко по-английски.",
+      "prompt": "Прочитай L03-RC. Mia устала? Дай краткий ответ по-английски.",
       "answers": [
-        "Yes, she is."
+        "No, she is not."
       ],
-      "alternatives": [],
-      "criteria": [],
+      "alternatives": [
+        "No, she isn't.",
+        "No, she's not."
+      ],
+      "criteria": [
+        "Ответ соответствует фактам/отсылкам текста; другая верная формулировка допустима."
+      ],
       "validation": {
         "mode": "semantic_short",
         "unicode": "NFC",
@@ -365,23 +424,25 @@
         "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error",
         "scoring": "meaning primary; record spelling/capitalisation/punctuation separately; do not erase them"
       },
-      "feedback_ru": "Yes, she is относится к вопросу Is Mia ready?"
+      "feedback_ru": "No, she is not отвечает на Is Mia tired?, не на вопрос о Ben.",
+      "reading_id": "L03-RC",
+      "reading_focus": "negation",
+      "skill": "reading_comprehension"
     },
     {
       "id": "L03-T13",
-      "objective": "Найти отрицательный ответ",
+      "objective": "Понимание нового микротекста: pronoun_reference",
       "type": "reading",
       "difficulty": 2,
       "phase": "reading",
-      "prompt": "Ben здесь? Дай краткий ответ по-английски.",
+      "prompt": "Прочитай L03-RC. Готов ли Ben? Дай краткий ответ по-английски.",
       "answers": [
-        "No, he is not."
+        "Yes, he is."
       ],
-      "alternatives": [
-        "No, he isn't.",
-        "No, he's not."
+      "alternatives": [],
+      "criteria": [
+        "Ответ соответствует фактам/отсылкам текста; другая верная формулировка допустима."
       ],
-      "criteria": [],
       "validation": {
         "mode": "semantic_short",
         "unicode": "NFC",
@@ -394,23 +455,27 @@
         "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error",
         "scoring": "meaning primary; record spelling/capitalisation/punctuation separately; do not erase them"
       },
-      "feedback_ru": "Последнее предложение отвечает отрицательно о Ben."
+      "feedback_ru": "Yes, he is относится к Ben из Is Ben ready? Утвердительная связка в конце не сокращается.",
+      "reading_id": "L03-RC",
+      "reading_focus": "pronoun_reference",
+      "skill": "reading_comprehension"
     },
     {
       "id": "L03-T14",
-      "objective": "Отличить отсутствие от состояния",
+      "objective": "Понимание нового микротекста: missing_information",
       "type": "reading",
       "difficulty": 2,
       "phase": "reading",
-      "prompt": "Можно ли из текста узнать, устал ли Ben? Ответь по-русски.",
+      "prompt": "Прочитай L03-RC. Можно ли узнать, где именно находится Ben? Объясни по-русски.",
       "answers": [
-        "нет"
+        "Нельзя: сказано только, что его нет здесь."
       ],
       "alternatives": [
-        "нельзя",
-        "Неизвестно."
+        "Место Ben не указано."
       ],
-      "criteria": [],
+      "criteria": [
+        "Ответ соответствует фактам/отсылкам текста; другая верная формулировка допустима."
+      ],
       "validation": {
         "mode": "semantic_short",
         "unicode": "NFC",
@@ -423,7 +488,10 @@
         "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error",
         "scoring": "meaning primary; record spelling/capitalisation/punctuation separately; do not erase them"
       },
-      "feedback_ru": "В тексте сказано о месте Ben; усталость не указана."
+      "feedback_ru": "Not here исключает одно место, но не сообщает, где Ben находится. Не нужно угадывать дом или работу.",
+      "reading_id": "L03-RC",
+      "reading_focus": "missing_information",
+      "skill": "reading_comprehension"
     },
     {
       "id": "L03-T15",
@@ -473,7 +541,8 @@
         "rubric": "docs/writing-feedback.md",
         "review_status": "unreviewed",
         "self_review_available": true
-      }
+      },
+      "skill": "writing"
     },
     {
       "id": "L03-T16",
@@ -523,7 +592,8 @@
         "rubric": "docs/writing-feedback.md",
         "review_status": "unreviewed",
         "self_review_available": true
-      }
+      },
+      "skill": "writing"
     },
     {
       "id": "L03-T17",
@@ -551,7 +621,8 @@
         "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
         "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
       },
-      "feedback_ru": "С we: are not или aren't."
+      "feedback_ru": "С we: are not или aren't.",
+      "skill": "grammar"
     },
     {
       "id": "L03-T18",
@@ -576,7 +647,8 @@
         "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
         "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
       },
-      "feedback_ru": "Is перед she, затем here и вопросительный знак."
+      "feedback_ru": "Is перед she, затем here и вопросительный знак.",
+      "skill": "grammar"
     }
   ],
   "review": {
@@ -591,9 +663,19 @@
   },
   "quality": {
     "status": "author_reviewed_pending_independent_review",
-    "provenance": "Оригинальные тексты, задания и пояснения LangForge; не скопированы из источников.",
+    "provenance": "Оригинальные тексты, задания и пояснения friklang; не скопированы из источников.",
     "remaining_review": "Независимая языковая редактура и пилот; см. docs/content-quality.md.",
-    "audit": "Самостоятельный аудит Codex этапа 1.5; не независимая лингвистическая экспертиза. См. docs/content-audit.md."
+    "audit": "Самостоятельный аудит Codex этапа 1.5; не независимая лингвистическая экспертиза. См. docs/content-audit.md.",
+    "audit_stage1_6": "Содержательный пересмотр новых текстов и Writing; не независимая человеческая экспертиза. См. docs/stage-1.6-report.md."
   },
-  "language_standard": "en-GB; equivalent en-US accepted unless explicitly targeted"
+  "language_standard": "en-GB; equivalent en-US accepted unless explicitly targeted",
+  "assessment_reading": {
+    "id": "L03-RC",
+    "text": "Mia is here. Ben is not here. Is Mia tired? No, she is not. Is Ben ready? Yes, he is.",
+    "context_ru": "Here относится к месту, откуда пишет автор.",
+    "glossary": {},
+    "skill": "reading_comprehension",
+    "presentation": "assessment_only_after_teaching; hide_text_and_keys_until_attempt",
+    "reuse_policy": "First exposure only: later attempts are practice, not a fresh comprehension measure."
+  }
 }

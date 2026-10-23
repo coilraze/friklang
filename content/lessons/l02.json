@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.1",
+  "schema_version": "1.2",
   "id": "L02",
   "title": "Личные местоимения и am/is/are",
   "level": "A1 (методическое распределение)",
@@ -62,7 +62,9 @@
     "glossary": {
       "with Ben": "с Беном"
     },
-    "context_ru": "В этой учебной ситуации участвуют только Mia и Ben. Mia пишет от первого лица."
+    "context_ru": "В этой учебной ситуации участвуют только Mia и Ben. Mia пишет от первого лица.",
+    "skill": "reading_comprehension",
+    "purpose": "guided_text_practice"
   },
   "tasks": [
     {
@@ -88,7 +90,8 @@
         "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
         "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
       },
-      "feedback_ru": "С I используется am."
+      "feedback_ru": "С I используется am.",
+      "skill": "grammar"
     },
     {
       "id": "L02-T02",
@@ -113,7 +116,8 @@
         "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
         "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
       },
-      "feedback_ru": "I перед am; ready после связки."
+      "feedback_ru": "I перед am; ready после связки.",
+      "skill": "grammar"
     },
     {
       "id": "L02-T03",
@@ -136,9 +140,16 @@
         "internal_whitespace": "preserve",
         "typographic_apostrophe_equivalent": true,
         "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
-        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error",
+        "reviewed_errors": {
+          "are": {
+            "category": "grammar",
+            "explanation_ru": "С she в этом предложении нужна is, а не are."
+          }
+        }
       },
-      "feedback_ru": "She сочетается с is."
+      "feedback_ru": "She сочетается с is.",
+      "skill": "grammar"
     },
     {
       "id": "L02-T04",
@@ -163,7 +174,8 @@
         "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
         "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
       },
-      "feedback_ru": "We — «мы», форма are."
+      "feedback_ru": "We — «мы», форма are.",
+      "skill": "grammar"
     },
     {
       "id": "L02-T05",
@@ -188,7 +200,8 @@
         "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
         "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
       },
-      "feedback_ru": "Даже к одному адресату: you are."
+      "feedback_ru": "Даже к одному адресату: you are.",
+      "skill": "grammar"
     },
     {
       "id": "L02-T06",
@@ -213,7 +226,8 @@
         "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
         "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
       },
-      "feedback_ru": "Mia заменяется she; форма is сохраняется."
+      "feedback_ru": "Mia заменяется she; форма is сохраняется.",
+      "skill": "grammar"
     },
     {
       "id": "L02-T07",
@@ -238,7 +252,8 @@
         "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
         "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
       },
-      "feedback_ru": "Для чая используем it, а не he по русскому роду слова."
+      "feedback_ru": "Для чая используем it, а не he по русскому роду слова.",
+      "skill": "grammar"
     },
     {
       "id": "L02-T08",
@@ -263,7 +278,8 @@
         "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
         "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
       },
-      "feedback_ru": "They + are; в начале They с заглавной."
+      "feedback_ru": "They + are; в начале They с заглавной.",
+      "skill": "grammar"
     },
     {
       "id": "L02-T09",
@@ -288,22 +304,25 @@
         "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
         "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
       },
-      "feedback_ru": "С he нужна is; at home остаётся без изменений."
+      "feedback_ru": "С he нужна is; at home остаётся без изменений.",
+      "skill": "grammar"
     },
     {
       "id": "L02-T10",
-      "objective": "Исправить we is",
-      "type": "correct",
+      "objective": "Редактирование записки и самостоятельное продолжение",
+      "type": "writing",
       "difficulty": 2,
       "phase": "practice",
-      "prompt": "Исправь: We is happy. Сохрани подлежащее, смысл и заданную конструкцию; исправь ошибочную форму и оформление.",
-      "answers": [
-        "We are happy."
-      ],
+      "prompt": "Исправь записку: «we is here. ben are ready.» Сохрани We и Ben. Добавь своё третье предложение с He is о Ben.",
+      "answers": [],
       "alternatives": [],
-      "criteria": [],
+      "criteria": [
+        "В исходных фразах исправлены We are и Ben is.",
+        "Добавлено осмысленное He is с ясной отсылкой к Ben.",
+        "Факты согласованы; полные формы и оформление проверены."
+      ],
       "validation": {
-        "mode": "exact",
+        "mode": "manual",
         "unicode": "NFC",
         "trim_outer_whitespace": true,
         "case_sensitive": true,
@@ -313,46 +332,77 @@
         "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
         "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
       },
-      "feedback_ru": "С we нужна are; happy не меняется."
+      "feedback_ru": "Сначала сохрани исходные факты и исправь формы. Затем добавь собственное предложение по критериям. Образец — один возможный вариант, не строковый ключ.",
+      "sample_answer": "We are here. Ben is ready. He is happy.",
+      "writing_support": {
+        "checklist_ru": [
+          "В исходных фразах исправлены We are и Ben is.",
+          "Добавлено осмысленное He is с ясной отсылкой к Ben.",
+          "Факты согласованы; полные формы и оформление проверены."
+        ],
+        "typical_errors": [
+          {
+            "incorrect": "She are happy.",
+            "correction": "She is happy.",
+            "explanation_ru": "С she используется is."
+          },
+          {
+            "incorrect": "We is here.",
+            "correction": "We are here.",
+            "explanation_ru": "С we используется are."
+          }
+        ],
+        "rubric": "docs/writing-feedback.md",
+        "review_status": "unreviewed",
+        "self_review_available": true
+      },
+      "skill": "writing"
     },
     {
       "id": "L02-T11",
-      "objective": "Определить рассказчика",
+      "objective": "Понимание нового микротекста: fact",
       "type": "reading",
       "difficulty": 2,
       "phase": "reading",
-      "prompt": "L02-R: кто пишет текст? Ответь именем.",
+      "prompt": "Прочитай L02-RC. Кто пишет записку? Ответь именем.",
+      "answers": [
+        "Alex"
+      ],
+      "alternatives": [],
+      "criteria": [
+        "Ответ соответствует фактам/отсылкам текста; другая верная формулировка допустима."
+      ],
+      "validation": {
+        "mode": "semantic_short",
+        "unicode": "NFC",
+        "trim_outer_whitespace": true,
+        "case_sensitive": true,
+        "punctuation_sensitive": true,
+        "internal_whitespace": "preserve",
+        "typographic_apostrophe_equivalent": true,
+        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
+        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error",
+        "scoring": "meaning primary; record spelling/capitalisation/punctuation separately; do not erase them"
+      },
+      "feedback_ru": "I am Alex указывает автора, Mia — другой участник.",
+      "reading_id": "L02-RC",
+      "reading_focus": "fact",
+      "skill": "reading_comprehension"
+    },
+    {
+      "id": "L02-T12",
+      "objective": "Понимание нового микротекста: pronoun_reference",
+      "type": "reading",
+      "difficulty": 2,
+      "phase": "reading",
+      "prompt": "Прочитай L02-RC. Кого обозначает She? Ответь именем.",
       "answers": [
         "Mia"
       ],
       "alternatives": [],
-      "criteria": [],
-      "validation": {
-        "mode": "semantic_short",
-        "unicode": "NFC",
-        "trim_outer_whitespace": true,
-        "case_sensitive": true,
-        "punctuation_sensitive": true,
-        "internal_whitespace": "preserve",
-        "typographic_apostrophe_equivalent": true,
-        "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
-        "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error",
-        "scoring": "meaning primary; record spelling/capitalisation/punctuation separately; do not erase them"
-      },
-      "feedback_ru": "Первое предложение I am Mia."
-    },
-    {
-      "id": "L02-T12",
-      "objective": "Найти референт he",
-      "type": "reading",
-      "difficulty": 2,
-      "phase": "reading",
-      "prompt": "Кого обозначает He в L02-R? Ответь именем.",
-      "answers": [
-        "Ben"
+      "criteria": [
+        "Ответ соответствует фактам/отсылкам текста; другая верная формулировка допустима."
       ],
-      "alternatives": [],
-      "criteria": [],
       "validation": {
         "mode": "semantic_short",
         "unicode": "NFC",
@@ -365,26 +415,28 @@
         "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error",
         "scoring": "meaning primary; record spelling/capitalisation/punctuation separately; do not erase them"
       },
-      "feedback_ru": "He отсылает к Ben из предыдущего предложения."
+      "feedback_ru": "She следует за упоминанием Mia.",
+      "reading_id": "L02-RC",
+      "reading_focus": "pronoun_reference",
+      "skill": "reading_comprehension"
     },
     {
       "id": "L02-T13",
-      "objective": "Определить состав we",
+      "objective": "Понимание нового микротекста: pronoun_reference",
       "type": "reading",
       "difficulty": 2,
       "phase": "reading",
-      "prompt": "Кто обозначен We в L02-R? Перечисли два имени по-русски или по-английски; можно через запятую.",
+      "prompt": "Прочитай L02-RC. Кого включает We? Перечисли имена через запятую, порядок не важен.",
       "answers": [
-        "Mia and Ben"
+        "Alex, Mia"
       ],
       "alternatives": [
-        "Миа и Бен",
-        "Ben and Mia",
-        "Mia, Ben",
-        "Ben, Mia",
-        "Бен и Миа"
+        "Mia, Alex",
+        "Алекс и Миа"
       ],
-      "criteria": [],
+      "criteria": [
+        "Ответ соответствует фактам/отсылкам текста; другая верная формулировка допустима."
+      ],
       "validation": {
         "mode": "semantic_short",
         "unicode": "NFC",
@@ -397,23 +449,27 @@
         "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error",
         "scoring": "meaning primary; record spelling/capitalisation/punctuation separately; do not erase them"
       },
-      "feedback_ru": "We здесь включает рассказчика Mia и Ben. Порядок имён не важен; английский союз and не обязателен."
+      "feedback_ru": "We включает говорящего Alex и второго участника Mia.",
+      "reading_id": "L02-RC",
+      "reading_focus": "pronoun_reference",
+      "skill": "reading_comprehension"
     },
     {
       "id": "L02-T14",
-      "objective": "Найти место",
+      "objective": "Понимание нового микротекста: simple_inference",
       "type": "reading",
       "difficulty": 2,
       "phase": "reading",
-      "prompt": "Где находятся Mia и Ben? Можно ответить фрагментом.",
+      "prompt": "Прочитай L02-RC. Готов ли Alex? Ответь по-русски и укажи, на какое предложение опираешься.",
       "answers": [
-        "at home"
+        "Да: We are ready."
       ],
       "alternatives": [
-        "дома",
-        "They are at home."
+        "Да, we включает Alex."
       ],
-      "criteria": [],
+      "criteria": [
+        "Ответ соответствует фактам/отсылкам текста; другая верная формулировка допустима."
+      ],
       "validation": {
         "mode": "semantic_short",
         "unicode": "NFC",
@@ -426,7 +482,10 @@
         "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error",
         "scoring": "meaning primary; record spelling/capitalisation/punctuation separately; do not erase them"
       },
-      "feedback_ru": "We are at home сообщает место обоих."
+      "feedback_ru": "We are ready относится к обоим, поэтому Alex тоже готов. Нельзя делать вывод только из She is happy.",
+      "reading_id": "L02-RC",
+      "reading_focus": "simple_inference",
+      "skill": "reading_comprehension"
     },
     {
       "id": "L02-T15",
@@ -476,7 +535,8 @@
         "rubric": "docs/writing-feedback.md",
         "review_status": "unreviewed",
         "self_review_available": true
-      }
+      },
+      "skill": "writing"
     },
     {
       "id": "L02-T16",
@@ -526,7 +586,8 @@
         "rubric": "docs/writing-feedback.md",
         "review_status": "unreviewed",
         "self_review_available": true
-      }
+      },
+      "skill": "writing"
     },
     {
       "id": "L02-T17",
@@ -551,7 +612,8 @@
         "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
         "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
       },
-      "feedback_ru": "It требует is; warm дано в словаре."
+      "feedback_ru": "It требует is; warm дано в словаре.",
+      "skill": "grammar"
     },
     {
       "id": "L02-T18",
@@ -576,7 +638,8 @@
         "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
         "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
       },
-      "feedback_ru": "С they употребляется are, даже если местоимение относится к одному человеку. Is здесь не подходит."
+      "feedback_ru": "С they употребляется are, даже если местоимение относится к одному человеку. Is здесь не подходит.",
+      "skill": "grammar"
     }
   ],
   "review": {
@@ -591,9 +654,19 @@
   },
   "quality": {
     "status": "author_reviewed_pending_independent_review",
-    "provenance": "Оригинальные тексты, задания и пояснения LangForge; не скопированы из источников.",
+    "provenance": "Оригинальные тексты, задания и пояснения friklang; не скопированы из источников.",
     "remaining_review": "Независимая языковая редактура и пилот; см. docs/content-quality.md.",
-    "audit": "Самостоятельный аудит Codex этапа 1.5; не независимая лингвистическая экспертиза. См. docs/content-audit.md."
+    "audit": "Самостоятельный аудит Codex этапа 1.5; не независимая лингвистическая экспертиза. См. docs/content-audit.md.",
+    "audit_stage1_6": "Содержательный пересмотр новых текстов и Writing; не независимая человеческая экспертиза. См. docs/stage-1.6-report.md."
   },
-  "language_standard": "en-GB; equivalent en-US accepted unless explicitly targeted"
+  "language_standard": "en-GB; equivalent en-US accepted unless explicitly targeted",
+  "assessment_reading": {
+    "id": "L02-RC",
+    "text": "I am Alex. I am with Mia. She is happy. We are here. We are ready.",
+    "context_ru": "В записке участвуют только Alex и Mia.",
+    "glossary": {},
+    "skill": "reading_comprehension",
+    "presentation": "assessment_only_after_teaching; hide_text_and_keys_until_attempt",
+    "reuse_policy": "First exposure only: later attempts are practice, not a fresh comprehension measure."
+  }
 }

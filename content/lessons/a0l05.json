@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.1",
+  "schema_version": "1.2",
   "id": "A0L05",
   "title": "От карточки к первому предложению",
   "level": "A0 (внутренняя метка подготовки)",
@@ -8,7 +8,7 @@
     "A0-05"
   ],
   "prerequisites": [
-    "A0L04"
+    "A0L01"
   ],
   "objective": "Самостоятельно написать имя, место и состояние тремя простыми предложениями.",
   "vocabulary": {
@@ -53,7 +53,9 @@
   "reading": {
     "id": "A0L05-R",
     "text": "I am Mia. I am at home. I am calm. I am ready.",
-    "glossary": {}
+    "glossary": {},
+    "skill": "reading_comprehension",
+    "purpose": "guided_text_practice"
   },
   "tasks": [
     {
@@ -79,7 +81,8 @@
         "unknown_variant": "review_required; no automatic rejection",
         "language_variants": "accept equivalent en-US; preserve targeted distinctions"
       },
-      "feedback_ru": "Первая буква имени заглавная."
+      "feedback_ru": "Первая буква имени заглавная.",
+      "skill": "grammar"
     },
     {
       "id": "A0L05-T02",
@@ -104,7 +107,8 @@
         "unknown_variant": "review_required; no automatic rejection",
         "language_variants": "accept equivalent en-US; preserve targeted distinctions"
       },
-      "feedback_ru": "После I в этом утверждении нужна am."
+      "feedback_ru": "После I в этом утверждении нужна am.",
+      "skill": "grammar"
     },
     {
       "id": "A0L05-T03",
@@ -129,7 +133,8 @@
         "unknown_variant": "review_required; no automatic rejection",
         "language_variants": "accept equivalent en-US; preserve targeted distinctions"
       },
-      "feedback_ru": "Порядок I + am + ready; в конце точка."
+      "feedback_ru": "Порядок I + am + ready; в конце точка.",
+      "skill": "grammar"
     },
     {
       "id": "A0L05-T04",
@@ -154,7 +159,8 @@
         "unknown_variant": "review_required; no automatic rejection",
         "language_variants": "accept equivalent en-US; preserve targeted distinctions"
       },
-      "feedback_ru": "At home — место; перед ним в этой схеме нужна am."
+      "feedback_ru": "At home — место; перед ним в этой схеме нужна am.",
+      "skill": "grammar"
     },
     {
       "id": "A0L05-T05",
@@ -179,7 +185,8 @@
         "unknown_variant": "review_required; no automatic rejection",
         "language_variants": "accept equivalent en-US; preserve targeted distinctions"
       },
-      "feedback_ru": "I и Ben с заглавной; в конце точка."
+      "feedback_ru": "I и Ben с заглавной; в конце точка.",
+      "skill": "punctuation"
     },
     {
       "id": "A0L05-T06",
@@ -204,7 +211,8 @@
         "unknown_variant": "review_required; no automatic rejection",
         "language_variants": "accept equivalent en-US; preserve targeted distinctions"
       },
-      "feedback_ru": "Вопрос обозначается ?, утверждение обычно заканчивается точкой."
+      "feedback_ru": "Вопрос обозначается ?, утверждение обычно заканчивается точкой.",
+      "skill": "grammar"
     },
     {
       "id": "A0L05-T07",
@@ -231,7 +239,10 @@
         "unknown_variant": "review_required; no automatic rejection",
         "language_variants": "accept equivalent en-US; preserve targeted distinctions"
       },
-      "feedback_ru": "At home — дома."
+      "feedback_ru": "At home — дома.",
+      "skill": "reading_comprehension",
+      "reading_id": "A0L05-R",
+      "reading_focus": "fact"
     },
     {
       "id": "A0L05-T08",
@@ -256,7 +267,10 @@
         "unknown_variant": "review_required; no automatic rejection",
         "language_variants": "accept equivalent en-US; preserve targeted distinctions"
       },
-      "feedback_ru": "Ready означает готовность; calm — спокойствие."
+      "feedback_ru": "Ready означает готовность; calm — спокойствие.",
+      "skill": "reading_comprehension",
+      "reading_id": "A0L05-R",
+      "reading_focus": "fact"
     },
     {
       "id": "A0L05-T09",
@@ -311,7 +325,8 @@
         "rubric": "docs/writing-feedback.md",
         "review_status": "unreviewed",
         "self_review_available": true
-      }
+      },
+      "skill": "writing"
     },
     {
       "id": "A0L05-T10",
@@ -366,7 +381,8 @@
         "rubric": "docs/writing-feedback.md",
         "review_status": "unreviewed",
         "self_review_available": true
-      }
+      },
+      "skill": "writing"
     },
     {
       "id": "A0L05-T11",
@@ -391,7 +407,8 @@
         "unknown_variant": "review_required; no automatic rejection",
         "language_variants": "accept equivalent en-US; preserve targeted distinctions"
       },
-      "feedback_ru": "Нужны две заглавные I и две точки."
+      "feedback_ru": "Нужны две заглавные I и две точки.",
+      "skill": "punctuation"
     },
     {
       "id": "A0L05-T12",
@@ -416,7 +433,8 @@
         "unknown_variant": "review_required; no automatic rejection",
         "language_variants": "accept equivalent en-US; preserve targeted distinctions"
       },
-      "feedback_ru": "I заглавное; после I нужна am; точка уже есть."
+      "feedback_ru": "I заглавное; после I нужна am; точка уже есть.",
+      "skill": "grammar"
     }
   ],
   "review": {
@@ -432,6 +450,12 @@
   "quality": {
     "status": "author_reviewed_pending_independent_review",
     "provenance": "Оригинальные инструкции, карточки и задания; IPA и общеязыковые правила сверены с открытыми словарными справочниками.",
-    "remaining_review": "Независимая проверка фонетических объяснений и пилот взрослого новичка."
-  }
+    "remaining_review": "Независимая проверка фонетических объяснений и пилот взрослого новичка.",
+    "audit_stage1_6": "Содержательный пересмотр новых текстов и Writing; не независимая человеческая экспертиза. См. docs/stage-1.6-report.md."
+  },
+  "recommended_parallel": [
+    "A0L02",
+    "A0L03",
+    "A0L04"
+  ]
 }

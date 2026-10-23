@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.1",
+  "schema_version": "1.2",
   "id": "A0L01",
   "title": "Алфавит: буквы, регистр и названия",
   "level": "A0 (внутренняя метка подготовки)",
@@ -45,7 +45,9 @@
   "reading": {
     "id": "A0L01-R",
     "text": "Name: Mia\nCode: AB\n\nName: Ben\nCode: CD",
-    "glossary": {}
+    "glossary": {},
+    "skill": "word_recognition",
+    "purpose": "guided_preparation"
   },
   "tasks": [
     {
@@ -54,7 +56,7 @@
       "type": "identify",
       "difficulty": 1,
       "phase": "practice",
-      "prompt": "Введи строчную пару B.",
+      "prompt": "Напиши маленькую (строчную) букву, которая соответствует заглавной латинской B. Введи один символ.",
       "answers": [
         "b"
       ],
@@ -71,7 +73,8 @@
         "unknown_variant": "review_required; no automatic rejection",
         "language_variants": "accept equivalent en-US; preserve targeted distinctions"
       },
-      "feedback_ru": "У заглавной B строчная пара b, не d."
+      "feedback_ru": "У заглавной B строчная пара b, не d.",
+      "skill": "word_recognition"
     },
     {
       "id": "A0L01-T02",
@@ -79,7 +82,7 @@
       "type": "identify",
       "difficulty": 1,
       "phase": "practice",
-      "prompt": "Введи заглавную пару q.",
+      "prompt": "Напиши большую (заглавную) букву, которая соответствует строчной латинской q. Введи один символ.",
       "answers": [
         "Q"
       ],
@@ -96,7 +99,8 @@
         "unknown_variant": "review_required; no automatic rejection",
         "language_variants": "accept equivalent en-US; preserve targeted distinctions"
       },
-      "feedback_ru": "Для q заглавная Q, не O."
+      "feedback_ru": "Для q заглавная Q, не O.",
+      "skill": "word_recognition"
     },
     {
       "id": "A0L01-T03",
@@ -121,7 +125,8 @@
         "unknown_variant": "review_required; no automatic rejection",
         "language_variants": "accept equivalent en-US; preserve targeted distinctions"
       },
-      "feedback_ru": "Порядок A, B, C, D; здесь требуются отдельные буквы."
+      "feedback_ru": "Порядок A, B, C, D; здесь требуются отдельные буквы.",
+      "skill": "word_recognition"
     },
     {
       "id": "A0L01-T04",
@@ -146,7 +151,8 @@
         "unknown_variant": "review_required; no automatic rejection",
         "language_variants": "accept equivalent en-US; preserve targeted distinctions"
       },
-      "feedback_ru": "/iː/ — название E; название I — /aɪ/."
+      "feedback_ru": "/iː/ — название E; название I — /aɪ/.",
+      "skill": "word_recognition"
     },
     {
       "id": "A0L01-T05",
@@ -171,7 +177,8 @@
         "unknown_variant": "review_required; no automatic rejection",
         "language_variants": "accept equivalent en-US; preserve targeted distinctions"
       },
-      "feedback_ru": "Буква J называется /dʒeɪ/; G — /dʒiː/."
+      "feedback_ru": "Буква J называется /dʒeɪ/; G — /dʒiː/.",
+      "skill": "word_recognition"
     },
     {
       "id": "A0L01-T06",
@@ -196,14 +203,15 @@
         "unknown_variant": "review_required; no automatic rejection",
         "language_variants": "accept equivalent en-US; preserve targeted distinctions"
       },
-      "feedback_ru": "Это Z. Американское /ziː/ — название той же буквы."
+      "feedback_ru": "Это Z. Американское /ziː/ — название той же буквы.",
+      "skill": "word_recognition"
     },
     {
       "id": "A0L01-T07",
       "objective": "Прочитать поле карточки",
-      "type": "reading",
+      "type": "word_recognition",
       "difficulty": 2,
-      "phase": "reading",
+      "phase": "word_recognition",
       "prompt": "В A0L01-R какое имя стоит рядом с кодом CD?",
       "answers": [
         "Ben"
@@ -221,14 +229,15 @@
         "unknown_variant": "review_required; no automatic rejection",
         "language_variants": "accept equivalent en-US; preserve targeted distinctions"
       },
-      "feedback_ru": "Код CD записан на карточке Ben."
+      "feedback_ru": "Код CD записан на карточке Ben.",
+      "skill": "word_recognition"
     },
     {
       "id": "A0L01-T08",
       "objective": "Прочитать код",
-      "type": "reading",
+      "type": "word_recognition",
       "difficulty": 2,
-      "phase": "reading",
+      "phase": "word_recognition",
       "prompt": "Какой код указан для Mia? Сохрани регистр.",
       "answers": [
         "AB"
@@ -246,7 +255,8 @@
         "unknown_variant": "review_required; no automatic rejection",
         "language_variants": "accept equivalent en-US; preserve targeted distinctions"
       },
-      "feedback_ru": "На карточке Mia код AB, а не CD."
+      "feedback_ru": "На карточке Mia код AB, а не CD.",
+      "skill": "word_recognition"
     },
     {
       "id": "A0L01-T09",
@@ -301,7 +311,8 @@
         "rubric": "docs/writing-feedback.md",
         "review_status": "unreviewed",
         "self_review_available": true
-      }
+      },
+      "skill": "word_recognition"
     },
     {
       "id": "A0L01-T10",
@@ -356,7 +367,8 @@
         "rubric": "docs/writing-feedback.md",
         "review_status": "unreviewed",
         "self_review_available": true
-      }
+      },
+      "skill": "word_recognition"
     },
     {
       "id": "A0L01-T11",
@@ -381,7 +393,8 @@
         "unknown_variant": "review_required; no automatic rejection",
         "language_variants": "accept equivalent en-US; preserve targeted distinctions"
       },
-      "feedback_ru": "Начальная M заглавная, остальные буквы строчные."
+      "feedback_ru": "Начальная M заглавная, остальные буквы строчные.",
+      "skill": "word_recognition"
     },
     {
       "id": "A0L01-T12",
@@ -406,7 +419,8 @@
         "unknown_variant": "review_required; no automatic rejection",
         "language_variants": "accept equivalent en-US; preserve targeted distinctions"
       },
-      "feedback_ru": "Название I — /aɪ/, а E — /iː/."
+      "feedback_ru": "Название I — /aɪ/, а E — /iː/.",
+      "skill": "word_recognition"
     }
   ],
   "review": {
@@ -422,6 +436,7 @@
   "quality": {
     "status": "author_reviewed_pending_independent_review",
     "provenance": "Оригинальные инструкции, карточки и задания; IPA и общеязыковые правила сверены с открытыми словарными справочниками.",
-    "remaining_review": "Независимая проверка фонетических объяснений и пилот взрослого новичка."
+    "remaining_review": "Независимая проверка фонетических объяснений и пилот взрослого новичка.",
+    "audit_stage1_6": "Содержательный пересмотр новых текстов и Writing; не независимая человеческая экспертиза. См. docs/stage-1.6-report.md."
   }
 }

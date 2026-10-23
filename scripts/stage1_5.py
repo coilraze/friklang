@@ -4,6 +4,7 @@ def extend_curriculum(rows):
     rows = rows.replace(old, '''A0-03|A0-02|Согласные и буквосочетания|Сопоставляет sh/ch/th/ph/ck/ng с заданной IPA-записью|sh/ch/th/ph/ck/ng; неоднозначность th/ch; немые k/w; проверка по словарю|Считать ch всегда одним звуком; произносить все буквы|Разметка сочетаний; минисловарь; исключения|Объяснить чтение 6 слов с данным IPA
 A0-04|A0-03|Гласные, silent e и исключения|Распознаёт частые модели и отказывается от ложной универсальности|CVC/CVCe как тенденции; ee/ea/oo/ai/ay; schwa; have/give/said; орфография не определяет число слогов|Считать каждую гласную букву слогом; читать have по модели name|Пары с IPA; поиск исключений; собственная карточка|Применить модель к данным примерам и проверить исключение
 A0-05|A0-04|Первое предложение и пунктуация|Самостоятельно пишет микропрофиль из трёх утверждений|I am + имя/состояние/место; заглавные; пробелы; точка; вопрос как знак для распознавания, без построения вопросов|Пропуск am; строчное i; слитная запись|Карточка → предложение; порядок; правка; свой профиль|Новый профиль без копирования имени/состояния''')
+    rows = rows.replace('A0-05|A0-04|', 'A0-05|A0-01|')
     return rows.replace('A1-01|A0-03|', 'A1-01|A0-05|')
 
 def audit_lessons(lessons):
@@ -209,3 +210,107 @@ def make_foundation():
     add(l,'correct','Повторить после перерыва','Сохрани I и смысл, исправь: i calm.',['I am calm.'],'I заглавное; после I нужна am; точка уже есть.',phase='delayed_review')
     out.append(l)
     return out
+
+
+def refine_stage1_6(lessons):
+    """Содержательные правки 1.6: стабильные ID, параллельный A0, перенос навыков."""
+    by_id={l['id']:l for l in lessons}
+    by_id['A0L05']['prerequisites']=['A0L01']
+    by_id['A0L05']['recommended_parallel']=['A0L02','A0L03','A0L04']
+    by_id['A0L01']['tasks'][0]['prompt']='Напиши маленькую (строчную) букву, которая соответствует заглавной латинской B. Введи один символ.'
+    by_id['A0L01']['tasks'][1]['prompt']='Напиши большую (заглавную) букву, которая соответствует строчной латинской q. Введи один символ.'
+    by_id['A0L03']['reading']['text']='Карточка слов для письменных подписей:\nshop /ʃɒp/ — магазин\nphone /fəʊn/ — телефон\nchair /tʃeə/ — стул\nСравни написание и данную IPA-запись; изображения для задания не нужны.'
+    l1=by_id['L01']
+    l1['vocabulary']['Ben']='Бен, вымышленное имя'
+    l1['reading'].update(text='I am Alex. I am here. I am happy.',context_ru='Учебный пример: короткая записка участника занятия. Контрольная записка будет другой.')
+    # Эти тексты не включаются в теорию, разминку, примеры и обучающее чтение.
+    assessments={
+        'L01':('Записка перед самостоятельным занятием.', 'I am Ben. I am at home. I am tired. I am ready.'),
+        'L02':('В записке участвуют только Alex и Mia.', 'I am Alex. I am with Mia. She is happy. We are here. We are ready.'),
+        'L03':('Here относится к месту, откуда пишет автор.', 'Mia is here. Ben is not here. Is Mia tired? No, she is not. Is Ben ready? Yes, he is.'),
+        'L04':('В записке участвуют только Ben и Mia. Речь о нынешних привычках; here — место автора.', 'I am Ben. I work at home. Mia studies English every day. She reads here. We like English.'),
+        'L05':('В записке участвуют только Alex и Mia; here — место автора.', 'I am Alex. I study English at home. Mia is here. She reads every day. She is not tired. We are happy.'),
+    }
+    # prompt, ключи, альтернативы, фокус, русское основание ответа
+    questions={
+        'L01':[
+            ('Кто написал контрольную записку? Ответь именем.',['Ben'],[],'fact','Автор называет себя: I am Ben.'),
+            ('Где автор? Ответь по-русски или английским фрагментом.',['дома'],['at home'],'fact','At home означает дома.'),
+            ('Как автор описывает усталость? Выпиши полное предложение об этом.',['I am tired.'],[],'fact','Tired означает усталость; ready — готовность, это другое состояние.'),
+            ('Можно ли по записке узнать возраст автора? Ответь по-русски и объясни.',['Нельзя: возраст не указан.'],['Неизвестно, сколько ему лет.'],'missing_information','В тексте есть имя, место и состояния, но нет возраста. Достаточно объяснить это своими словами.'),
+        ],
+        'L02':[
+            ('Кто пишет записку? Ответь именем.',['Alex'],[],'fact','I am Alex указывает автора, Mia — другой участник.'),
+            ('Кого обозначает She? Ответь именем.',['Mia'],[],'pronoun_reference','She следует за упоминанием Mia.'),
+            ('Кого включает We? Перечисли имена через запятую, порядок не важен.',['Alex, Mia'],['Mia, Alex','Алекс и Миа'],'pronoun_reference','We включает говорящего Alex и второго участника Mia.'),
+            ('Готов ли Alex? Ответь по-русски и укажи, на какое предложение опираешься.',['Да: We are ready.'],['Да, we включает Alex.'],'simple_inference','We are ready относится к обоим, поэтому Alex тоже готов. Нельзя делать вывод только из She is happy.'),
+        ],
+        'L03':[
+            ('Ben находится здесь? Ответь по-русски.',['нет'],['Нет, Ben не здесь.'],'negation','Ben is not here прямо отрицает его присутствие здесь.'),
+            ('Mia устала? Дай краткий ответ по-английски.',['No, she is not.'],["No, she isn't.","No, she's not."],'negation','No, she is not отвечает на Is Mia tired?, не на вопрос о Ben.'),
+            ('Готов ли Ben? Дай краткий ответ по-английски.',['Yes, he is.'],[],'pronoun_reference','Yes, he is относится к Ben из Is Ben ready? Утвердительная связка в конце не сокращается.'),
+            ('Можно ли узнать, где именно находится Ben? Объясни по-русски.',['Нельзя: сказано только, что его нет здесь.'],['Место Ben не указано.'],'missing_information','Not here исключает одно место, но не сообщает, где Ben находится. Не нужно угадывать дом или работу.'),
+        ],
+        'L04':[
+            ('Кто изучает English каждый день? Ответь именем.',['Mia'],[],'fact','Mia studies English every day сообщает о её привычке.'),
+            ('Где работает Ben? Ответь фрагментом или по-русски.',['at home'],['дома'],'fact','Автор Ben пишет I work at home.'),
+            ('Кого обозначает She в She reads here?',['Mia'],[],'pronoun_reference','She отсылает к Mia, названной перед этим.'),
+            ('Нравится ли Ben английский? Ответь по-русски и назови основание из текста.',['Да: We like English.'],['Да, We включает Ben.'],'simple_inference','Автор Ben включён в We; поэтому общий факт относится и к нему.'),
+        ],
+        'L05':[
+            ('Кто написал записку? Ответь именем.',['Alex'],[],'fact','Автор называет себя Alex; Mia — другой человек.'),
+            ('Кто читает каждый день? Ответь именем.',['Mia'],[],'pronoun_reference','She после Mia относится к Mia; every day относится к reads.'),
+            ('Mia устала? Дай краткий ответ по-английски.',['No, she is not.'],["No, she isn't.","No, she's not."],'negation','She is not tired отрицает усталость Mia.'),
+            ('Можно ли узнать, где работает Mia? Объясни по-русски.',['Нельзя: место работы Mia не указано.'],['О работе Mia ничего не сказано.'],'missing_information','Текст сообщает о чтении Mia и месте учёбы Alex, а не о работе Mia.'),
+        ],
+    }
+    for lid,(context,text) in assessments.items():
+        l=by_id[lid]
+        rid=f'{lid}-RC'
+        l['assessment_reading']=dict(id=rid,text=text,context_ru=context,glossary={},skill='reading_comprehension',presentation='assessment_only_after_teaching; hide_text_and_keys_until_attempt',reuse_policy='First exposure only: later attempts are practice, not a fresh comprehension measure.')
+        for t,(prompt,answers,alts,focus,feedback) in zip(l['tasks'][10:14],questions[lid]):
+            t.update(objective='Понимание нового микротекста: '+focus,prompt=f'Прочитай {rid}. '+prompt,answers=answers,alternatives=alts,criteria=['Ответ соответствует фактам/отсылкам текста; другая верная формулировка допустима.'],feedback_ru=feedback,reading_id=rid,reading_focus=focus)
+            t['validation']['mode']='semantic_short'
+
+    # Не добавляем уроки или задания: T10 становится короткой письменной мастерской.
+    workshops={
+        'L01':('Исправь записку от Ben: «i ben. i at home.» Сохрани имя и место. Добавь своё третье предложение о состоянии Ben от его лица с I am.',
+                'I am Ben. I am at home. I am calm.', ['Сохранены Ben и at home; в обоих утверждениях есть I am.','Добавлено своё третье осмысленное состояние с I am.','Заглавные и границы исправлены; состояние может отличаться от образца.']),
+        'L02':('Исправь записку: «we is here. ben are ready.» Сохрани We и Ben. Добавь своё третье предложение с He is о Ben.',
+                'We are here. Ben is ready. He is happy.', ['В исходных фразах исправлены We are и Ben is.','Добавлено осмысленное He is с ясной отсылкой к Ben.','Факты согласованы; полные формы и оформление проверены.']),
+        'L03':('Исправь краткий ответ «Yes, she\'s.» на вопрос Is Mia ready? Затем придумай свой вопрос о месте Mia и краткий отрицательный ответ. Последний факт можно выдумать.',
+                'Yes, she is. Is she here? No, she is not.', ['Исправлен исходный утвердительный ответ: Yes, she is.','Самостоятельно составлен вопрос о месте и отрицательный ответ о Mia.','Допустимы полные формы и изученные отрицательные сокращения.']),
+        'L04':('О нынешних привычках: исправь «mia study english. i am work at home.» Сохрани Mia и I. Добавь своё третье предложение о привычке Mia с She.',
+                'Mia studies English. I work at home. She reads every day.', ['Исправлены studies, I work, заглавные и точки.','Добавлена новая привычка Mia с правильной формой третьего лица.','She имеет ясную отсылку; нет лишней is перед обычным глаголом.']),
+        'L05':('Исправь записку о нынешних привычках Mia: «mia study english. she read every day. she is not tired» Сохрани факты. Добавь своё четвёртое предложение о Mia и объясни по-русски две правки.',
+                'Mia studies English. She reads every day. She is not tired. She is happy. С Mia нужна studies, с she — reads. Первое слово каждого предложения пишется с заглавной.', ['Три исходных факта сохранены и оформлены.','Добавлено самостоятельное осмысленное четвёртое предложение.','Две причины правок объяснены на русском; неизвестное мнение не подменяет правило.']),
+    }
+    for lid,(prompt,sample,criteria) in workshops.items():
+        l=by_id[lid]
+        t=l['tasks'][9]
+        t.update(type='writing',objective='Редактирование записки и самостоятельное продолжение',prompt=prompt,answers=[],alternatives=[],criteria=criteria,sample_answer=sample,feedback_ru='Сначала сохрани исходные факты и исправь формы. Затем добавь собственное предложение по критериям. Образец — один возможный вариант, не строковый ключ.',difficulty=2)
+        t['validation']['mode']='manual'
+        from copy import deepcopy
+        t['writing_support']=deepcopy(l['tasks'][14]['writing_support'])
+    l1['tasks'][14].update(prompt='Ты новый участник занятия. Придумай имя, которого нет в контрольной записке, и напиши от его лица два предложения: имя и место. Используй полную форму I am.',criteria=['Два утверждения от одного говорящего.','Новое имя, а не Ben из контрольной записки; место here или at home.','В обоих предложениях I am и верное оформление.'],sample_answer='I am Noor. I am here.')
+    l1['tasks'][15].update(prompt='Напиши свою новую записку перед занятием: имя, место, состояние — три предложения. Выбери here/at home и happy/calm/tired/ready по своему смыслу. Не переписывай контрольную записку.',sample_answer='I am Alex. I am here. I am happy.')
+    for l in lessons:
+        l['schema_version']='1.2'
+        l['reading']['skill']='word_recognition' if l['id'].startswith('A0L') and l['id']!='A0L05' else 'reading_comprehension'
+        l['reading']['purpose']='guided_preparation' if l['reading']['skill']=='word_recognition' else 'guided_text_practice'
+        for t in l['tasks']:
+            if l['reading']['skill']=='word_recognition' and t['type']=='reading':
+                t['type']='word_recognition'
+                t['phase']='word_recognition'
+            t['skill']='reading_comprehension' if t['type']=='reading' else 'word_recognition' if t['type']=='word_recognition' or l['id'] in ('A0L01','A0L02','A0L03','A0L04') else 'writing' if t['type']=='writing' else 'punctuation' if t['type']=='punctuation' else 'grammar'
+            if t['type']=='reading' and 'reading_id' not in t:
+                t['reading_id']=l['reading']['id']
+                t['reading_focus']='fact'
+            if t['type']=='writing':
+                t['writing_support']['checklist_ru']=t['criteria'][:]
+        l['quality']['audit_stage1_6']='Содержательный пересмотр новых текстов и Writing; не независимая человеческая экспертиза. См. docs/stage-1.6-report.md.'
+    # Небольшой набор доказуемых ошибок; неизвестные ответы не диагностируются по догадке.
+    by_id['L02']['tasks'][2]['validation']['reviewed_errors']={'are':{'category':'grammar','explanation_ru':'С she в этом предложении нужна is, а не are.'}}
+    by_id['L03']['tasks'][7]['validation']['reviewed_errors']={
+        "She's not ready.":{'category':'task_completion','explanation_ru':'Эта фраза грамматически правильна, но здесь требуется сократить только is not.'},
+        'She isnt ready.':{'category':'spelling','explanation_ru':'В сокращении is not нужен апостроф: isn’t.'}}

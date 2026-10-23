@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.1",
+  "schema_version": "1.2",
   "id": "A0L03",
   "title": "Согласные сочетания и немые буквы",
   "level": "A0 (внутренняя метка подготовки)",
@@ -54,8 +54,10 @@
   ],
   "reading": {
     "id": "A0L03-R",
-    "text": "Карточка для подписи рисунка магазина:\nshop /ʃɒp/ — магазин\nphone /fəʊn/ — телефон\nchair /tʃeə/ — стул\nСначала проверь сочетания, затем выбери подпись предмета.",
-    "glossary": {}
+    "text": "Карточка слов для письменных подписей:\nshop /ʃɒp/ — магазин\nphone /fəʊn/ — телефон\nchair /tʃeə/ — стул\nСравни написание и данную IPA-запись; изображения для задания не нужны.",
+    "glossary": {},
+    "skill": "word_recognition",
+    "purpose": "guided_preparation"
   },
   "tasks": [
     {
@@ -81,7 +83,8 @@
         "unknown_variant": "review_required; no automatic rejection",
         "language_variants": "accept equivalent en-US; preserve targeted distinctions"
       },
-      "feedback_ru": "В shop сочетание sh даёт /ʃ/."
+      "feedback_ru": "В shop сочетание sh даёт /ʃ/.",
+      "skill": "word_recognition"
     },
     {
       "id": "A0L03-T02",
@@ -106,7 +109,8 @@
         "unknown_variant": "review_required; no automatic rejection",
         "language_variants": "accept equivalent en-US; preserve targeted distinctions"
       },
-      "feedback_ru": "Две буквы ph здесь обозначают один согласный /f/."
+      "feedback_ru": "Две буквы ph здесь обозначают один согласный /f/.",
+      "skill": "word_recognition"
     },
     {
       "id": "A0L03-T03",
@@ -131,7 +135,8 @@
         "unknown_variant": "review_required; no automatic rejection",
         "language_variants": "accept equivalent en-US; preserve targeted distinctions"
       },
-      "feedback_ru": "В данной записи /ð/, в thin было /θ/."
+      "feedback_ru": "В данной записи /ð/, в thin было /θ/.",
+      "skill": "word_recognition"
     },
     {
       "id": "A0L03-T04",
@@ -156,7 +161,8 @@
         "unknown_variant": "review_required; no automatic rejection",
         "language_variants": "accept equivalent en-US; preserve targeted distinctions"
       },
-      "feedback_ru": "School показывает исключение из частой модели ch."
+      "feedback_ru": "School показывает исключение из частой модели ch.",
+      "skill": "word_recognition"
     },
     {
       "id": "A0L03-T05",
@@ -181,7 +187,8 @@
         "unknown_variant": "review_required; no automatic rejection",
         "language_variants": "accept equivalent en-US; preserve targeted distinctions"
       },
-      "feedback_ru": "В записи нет /k/; начинается /n/."
+      "feedback_ru": "В записи нет /k/; начинается /n/.",
+      "skill": "word_recognition"
     },
     {
       "id": "A0L03-T06",
@@ -206,14 +213,15 @@
         "unknown_variant": "review_required; no automatic rejection",
         "language_variants": "accept equivalent en-US; preserve targeted distinctions"
       },
-      "feedback_ru": "В данной форме sing записан только /ŋ/, без /g/."
+      "feedback_ru": "В данной форме sing записан только /ŋ/, без /g/.",
+      "skill": "word_recognition"
     },
     {
       "id": "A0L03-T07",
       "objective": "Прочитать подпись предмета",
-      "type": "reading",
+      "type": "word_recognition",
       "difficulty": 2,
-      "phase": "reading",
+      "phase": "word_recognition",
       "prompt": "Какое слово в A0L03-R означает «стул»?",
       "answers": [
         "chair"
@@ -231,14 +239,15 @@
         "unknown_variant": "review_required; no automatic rejection",
         "language_variants": "accept equivalent en-US; preserve targeted distinctions"
       },
-      "feedback_ru": "Подпись chair относится к стулу."
+      "feedback_ru": "Подпись chair относится к стулу.",
+      "skill": "word_recognition"
     },
     {
       "id": "A0L03-T08",
       "objective": "Найти другую модель",
-      "type": "reading",
+      "type": "word_recognition",
       "difficulty": 2,
-      "phase": "reading",
+      "phase": "word_recognition",
       "prompt": "В A0L03-R какое слово начинается сочетанием ph?",
       "answers": [
         "phone"
@@ -256,7 +265,8 @@
         "unknown_variant": "review_required; no automatic rejection",
         "language_variants": "accept equivalent en-US; preserve targeted distinctions"
       },
-      "feedback_ru": "В phone две буквы ph дают /f/."
+      "feedback_ru": "В phone две буквы ph дают /f/.",
+      "skill": "word_recognition"
     },
     {
       "id": "A0L03-T09",
@@ -311,7 +321,8 @@
         "rubric": "docs/writing-feedback.md",
         "review_status": "unreviewed",
         "self_review_available": true
-      }
+      },
+      "skill": "word_recognition"
     },
     {
       "id": "A0L03-T10",
@@ -366,7 +377,8 @@
         "rubric": "docs/writing-feedback.md",
         "review_status": "unreviewed",
         "self_review_available": true
-      }
+      },
+      "skill": "word_recognition"
     },
     {
       "id": "A0L03-T11",
@@ -391,7 +403,8 @@
         "unknown_variant": "review_required; no automatic rejection",
         "language_variants": "accept equivalent en-US; preserve targeted distinctions"
       },
-      "feedback_ru": "В данной записи начальный звук /r/, а не /w/."
+      "feedback_ru": "В данной записи начальный звук /r/, а не /w/.",
+      "skill": "word_recognition"
     },
     {
       "id": "A0L03-T12",
@@ -416,7 +429,8 @@
         "unknown_variant": "review_required; no automatic rejection",
         "language_variants": "accept equivalent en-US; preserve targeted distinctions"
       },
-      "feedback_ru": "В back сочетание ck обозначает один /k/."
+      "feedback_ru": "В back сочетание ck обозначает один /k/.",
+      "skill": "word_recognition"
     }
   ],
   "review": {
@@ -432,6 +446,7 @@
   "quality": {
     "status": "author_reviewed_pending_independent_review",
     "provenance": "Оригинальные инструкции, карточки и задания; IPA и общеязыковые правила сверены с открытыми словарными справочниками.",
-    "remaining_review": "Независимая проверка фонетических объяснений и пилот взрослого новичка."
+    "remaining_review": "Независимая проверка фонетических объяснений и пилот взрослого новичка.",
+    "audit_stage1_6": "Содержательный пересмотр новых текстов и Writing; не независимая человеческая экспертиза. См. docs/stage-1.6-report.md."
   }
 }

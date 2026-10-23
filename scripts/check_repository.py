@@ -9,8 +9,8 @@ patterns = {
     'aws_access_id': re.compile(r'\bAKIA[A-Z0-9]{16}\b'),
     'api_key_assignment': re.compile(r'''(?i)(?:api[_-]?key|access[_-]?token|password)\s*[:=]\s*["'][A-Za-z0-9_./+\-=]{20,}["']'''),
 }
-allowed_roots={'docs','content','scripts'}
-allowed_top={'README.md','.gitignore'}
+allowed_roots={'docs','content','scripts','tests'}
+allowed_top={'README.md','.gitignore','.gitattributes'}
 ignored_parts={'.git','__pycache__','.venv','venv','.pytest_cache','.mypy_cache','.ruff_cache'}
 files=[]
 problems=[]
@@ -21,7 +21,7 @@ for p in sorted(ROOT.rglob('*')):
     files.append(p)
     if (len(rel.parts)==1 and rel.name not in allowed_top) or (len(rel.parts)>1 and rel.parts[0] not in allowed_roots):
         problems.append(f'Unexpected path: {rel.as_posix()}')
-    if p.suffix.lower() not in {'.md','.json','.py'} and p.name!='.gitignore':
+    if p.suffix.lower() not in {'.md','.json','.py'} and p.name not in {'.gitignore','.gitattributes'}:
         problems.append(f'Unexpected file type: {rel.as_posix()}')
     try:
         data=p.read_text(encoding='utf-8')

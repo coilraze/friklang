@@ -60,7 +60,8 @@ for path in paths:
     is_a0 = lid.startswith('A0L')
     require(len(tasks) == (12 if is_a0 else 18), f'{lid}: неверное число заданий')
     require(sum(t.get('type')=='writing' for t in tasks)>=2, f'{lid}: нет двух Writing')
-    require(sum(t.get('type')=='reading' for t in tasks)>=(2 if is_a0 else 4), f'{lid}: мало Reading')
+    require(sum(t.get('type')=='reading' for t in tasks)>=(2 if lid=='A0L05' else 4 if not is_a0 else 0), f'{lid}: мало Reading Comprehension')
+    require(sum(t.get('type')=='word_recognition' for t in tasks)>=(2 if is_a0 and lid!='A0L05' else 0), f'{lid}: мало Word Recognition')
     require(len({t.get('type') for t in tasks})>=(3 if is_a0 else 5), f'{lid}: мало разных типов')
     for i,t in enumerate(tasks, 1):
         tid = t.get('id')
@@ -71,7 +72,7 @@ for path in paths:
             require(key in t, f'{tid}: нет {key}')
         require(t.get('difficulty') in [1,2,3], f'{tid}: неверная сложность')
         require(bool(re.search('[А-Яа-яЁё]', t.get('feedback_ru',''))), f'{tid}: нет русского пояснения')
-        require(t.get('type') in ['identify','gap','reorder','correct','form','punctuation','reading','writing','checkpoint'], f'{tid}: неверный тип')
+        require(t.get('type') in ['identify','gap','reorder','correct','form','punctuation','reading','word_recognition','writing','checkpoint'], f'{tid}: неверный тип')
         mode = t.get('validation',{}).get('mode')
         require(mode in ['exact','semantic_short','manual'], f'{tid}: неверный режим')
         if t.get('type')=='writing':
@@ -84,6 +85,12 @@ for path in paths:
             require(bool(t.get('answers')), f'{tid}: нет ключа')
         if t.get('type')=='punctuation':
             require(t.get('validation',{}).get('punctuation_sensitive') is True, f'{tid}: игнорируется цель пунктуации')
+        if t.get('type')=='reading':
+            rid=t.get('reading_id')
+            require(rid in [lesson.get('reading',{}).get('id'),lesson.get('assessment_reading',{}).get('id')], f'{tid}: неизвестный Reading-текст')
+            require(bool(t.get('reading_focus')), f'{tid}: нет фокуса понимания')
+        if t.get('type')=='word_recognition':
+            require(is_a0 and lesson.get('reading',{}).get('skill')=='word_recognition', f'{tid}: decoding смешан с comprehension')
         variants = t.get('answers',[]) + t.get('alternatives',[])
         require(all(isinstance(a,str) and a.strip() for a in variants), f'{tid}: пустой/нестроковый ответ')
         require(len(variants)==len(set(variants)), f'{tid}: повтор альтернативы')
@@ -97,7 +104,10 @@ for lid in [f'L{i:02}' for i in range(1,6)]:
 
 diagnostic=(ROOT/'docs/diagnostic-assessment.md').read_text(encoding='utf-8')
 diagnostic_ids=re.findall(r'^\| (D\d{2}) /',diagnostic,re.M)
-require(diagnostic_ids==[f'D{i:02}' for i in range(1,25)], 'Нарушен набор 24 диагностических пунктов')
+require(diagnostic_ids==[f'D{i:02}' for i in range(1,29)], 'Нарушен набор 28 диагностических пунктов')
+require('R2 — отдельный оригинальный текст' in diagnostic, 'Нет второго независимого Reading текста диагностики')
+for skill in ['Grammar','Reading Comprehension','Writing','Punctuation','Spelling / Word Recognition']:
+    require(f'| {skill} |' in diagnostic, f'Нет отдельного диагностического результата {skill}')
 
 for path in ROOT.rglob('*.md'):
     for target in re.findall(r'\]\(([^)]+)\)', path.read_text(encoding='utf-8')):

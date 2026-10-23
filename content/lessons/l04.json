@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.1",
+  "schema_version": "1.2",
   "id": "L04",
   "title": "Present Simple: утверждения и согласование",
   "level": "A1 (методическое распределение)",
@@ -67,7 +67,9 @@
     "id": "L04-R",
     "text": "Mia reads every day. She studies English. Ben works at home. He reads every day. They like English.",
     "glossary": {},
-    "context_ru": "В этой учебной ситуации участвуют только Mia и Ben."
+    "context_ru": "В этой учебной ситуации участвуют только Mia и Ben.",
+    "skill": "reading_comprehension",
+    "purpose": "guided_text_practice"
   },
   "tasks": [
     {
@@ -93,7 +95,8 @@
         "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
         "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
       },
-      "feedback_ru": "С характеристикой ready используется is; это не обычный глагол действия."
+      "feedback_ru": "С характеристикой ready используется is; это не обычный глагол действия.",
+      "skill": "grammar"
     },
     {
       "id": "L04-T02",
@@ -118,7 +121,8 @@
         "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
         "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
       },
-      "feedback_ru": "Not после am; это повторение предыдущего урока."
+      "feedback_ru": "Not после am; это повторение предыдущего урока.",
+      "skill": "grammar"
     },
     {
       "id": "L04-T03",
@@ -143,7 +147,8 @@
         "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
         "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
       },
-      "feedback_ru": "С I основная форма read."
+      "feedback_ru": "С I основная форма read.",
+      "skill": "grammar"
     },
     {
       "id": "L04-T04",
@@ -168,7 +173,8 @@
         "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
         "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
       },
-      "feedback_ru": "С she в утверждении Present Simple reads."
+      "feedback_ru": "С she в утверждении Present Simple reads.",
+      "skill": "grammar"
     },
     {
       "id": "L04-T05",
@@ -193,7 +199,8 @@
         "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
         "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
       },
-      "feedback_ru": "Согласная d + y: study → studies."
+      "feedback_ru": "Согласная d + y: study → studies.",
+      "skill": "grammar"
     },
     {
       "id": "L04-T06",
@@ -218,7 +225,8 @@
         "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
         "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
       },
-      "feedback_ru": "После ch в watch добавляется es: watches TV — смотрит телевизор."
+      "feedback_ru": "После ch в watch добавляется es: watches TV — смотрит телевизор.",
+      "skill": "grammar"
     },
     {
       "id": "L04-T07",
@@ -243,7 +251,8 @@
         "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
         "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
       },
-      "feedback_ru": "В Present Simple с work не нужна am."
+      "feedback_ru": "В Present Simple с work не нужна am.",
+      "skill": "grammar"
     },
     {
       "id": "L04-T08",
@@ -268,7 +277,8 @@
         "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
         "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
       },
-      "feedback_ru": "С they нужна основная форма без s."
+      "feedback_ru": "С they нужна основная форма без s.",
+      "skill": "grammar"
     },
     {
       "id": "L04-T09",
@@ -293,22 +303,25 @@
         "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
         "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
       },
-      "feedback_ru": "С she глагол have меняется на has. Have time — располагать временем."
+      "feedback_ru": "С she глагол have меняется на has. Have time — располагать временем.",
+      "skill": "grammar"
     },
     {
       "id": "L04-T10",
-      "objective": "Собрать привычку",
-      "type": "reorder",
+      "objective": "Редактирование записки и самостоятельное продолжение",
+      "type": "writing",
       "difficulty": 2,
       "phase": "practice",
-      "prompt": "Собери: English / studies / Mia.",
-      "answers": [
-        "Mia studies English."
-      ],
+      "prompt": "О нынешних привычках: исправь «mia study english. i am work at home.» Сохрани Mia и I. Добавь своё третье предложение о привычке Mia с She.",
+      "answers": [],
       "alternatives": [],
-      "criteria": [],
+      "criteria": [
+        "Исправлены studies, I work, заглавные и точки.",
+        "Добавлена новая привычка Mia с правильной формой третьего лица.",
+        "She имеет ясную отсылку; нет лишней is перед обычным глаголом."
+      ],
       "validation": {
-        "mode": "exact",
+        "mode": "manual",
         "unicode": "NFC",
         "trim_outer_whitespace": true,
         "case_sensitive": true,
@@ -318,20 +331,46 @@
         "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
         "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
       },
-      "feedback_ru": "Mia — подлежащее; studies — действие; English — что изучает."
+      "feedback_ru": "Сначала сохрани исходные факты и исправь формы. Затем добавь собственное предложение по критериям. Образец — один возможный вариант, не строковый ключ.",
+      "sample_answer": "Mia studies English. I work at home. She reads every day.",
+      "writing_support": {
+        "checklist_ru": [
+          "Исправлены studies, I work, заглавные и точки.",
+          "Добавлена новая привычка Mia с правильной формой третьего лица.",
+          "She имеет ясную отсылку; нет лишней is перед обычным глаголом."
+        ],
+        "typical_errors": [
+          {
+            "incorrect": "She study English.",
+            "correction": "She studies English.",
+            "explanation_ru": "С she: согласная + y → ies."
+          },
+          {
+            "incorrect": "I am read.",
+            "correction": "I read.",
+            "explanation_ru": "В целевом Present Simple не ставим am перед read."
+          }
+        ],
+        "rubric": "docs/writing-feedback.md",
+        "review_status": "unreviewed",
+        "self_review_available": true
+      },
+      "skill": "writing"
     },
     {
       "id": "L04-T11",
-      "objective": "Найти действие Mia",
+      "objective": "Понимание нового микротекста: fact",
       "type": "reading",
       "difficulty": 2,
       "phase": "reading",
-      "prompt": "L04-R: что изучает Mia? Ответь одним словом по-английски.",
+      "prompt": "Прочитай L04-RC. Кто изучает English каждый день? Ответь именем.",
       "answers": [
-        "English"
+        "Mia"
       ],
       "alternatives": [],
-      "criteria": [],
+      "criteria": [
+        "Ответ соответствует фактам/отсылкам текста; другая верная формулировка допустима."
+      ],
       "validation": {
         "mode": "semantic_short",
         "unicode": "NFC",
@@ -344,23 +383,27 @@
         "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error",
         "scoring": "meaning primary; record spelling/capitalisation/punctuation separately; do not erase them"
       },
-      "feedback_ru": "She studies English; she относится к Mia."
+      "feedback_ru": "Mia studies English every day сообщает о её привычке.",
+      "reading_id": "L04-RC",
+      "reading_focus": "fact",
+      "skill": "reading_comprehension"
     },
     {
       "id": "L04-T12",
-      "objective": "Найти место работы",
+      "objective": "Понимание нового микротекста: fact",
       "type": "reading",
       "difficulty": 2,
       "phase": "reading",
-      "prompt": "Где работает Ben? Можно ответить фрагментом или по-русски.",
+      "prompt": "Прочитай L04-RC. Где работает Ben? Ответь фрагментом или по-русски.",
       "answers": [
         "at home"
       ],
       "alternatives": [
-        "дома",
-        "He works at home."
+        "дома"
       ],
-      "criteria": [],
+      "criteria": [
+        "Ответ соответствует фактам/отсылкам текста; другая верная формулировка допустима."
+      ],
       "validation": {
         "mode": "semantic_short",
         "unicode": "NFC",
@@ -373,23 +416,25 @@
         "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error",
         "scoring": "meaning primary; record spelling/capitalisation/punctuation separately; do not erase them"
       },
-      "feedback_ru": "В предложении Ben works at home место работы указано блоком at home — дома."
+      "feedback_ru": "Автор Ben пишет I work at home.",
+      "reading_id": "L04-RC",
+      "reading_focus": "fact",
+      "skill": "reading_comprehension"
     },
     {
       "id": "L04-T13",
-      "objective": "Определить референт they",
+      "objective": "Понимание нового микротекста: pronoun_reference",
       "type": "reading",
       "difficulty": 2,
       "phase": "reading",
-      "prompt": "Кого обозначает They в последнем предложении?",
+      "prompt": "Прочитай L04-RC. Кого обозначает She в She reads here?",
       "answers": [
-        "Mia and Ben"
+        "Mia"
       ],
-      "alternatives": [
-        "Миа и Бен",
-        "Ben and Mia"
+      "alternatives": [],
+      "criteria": [
+        "Ответ соответствует фактам/отсылкам текста; другая верная формулировка допустима."
       ],
-      "criteria": [],
       "validation": {
         "mode": "semantic_short",
         "unicode": "NFC",
@@ -402,20 +447,27 @@
         "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error",
         "scoring": "meaning primary; record spelling/capitalisation/punctuation separately; do not erase them"
       },
-      "feedback_ru": "They объединяет Mia и Ben из предыдущих предложений."
+      "feedback_ru": "She отсылает к Mia, названной перед этим.",
+      "reading_id": "L04-RC",
+      "reading_focus": "pronoun_reference",
+      "skill": "reading_comprehension"
     },
     {
       "id": "L04-T14",
-      "objective": "Подтвердить факт текстом",
+      "objective": "Понимание нового микротекста: simple_inference",
       "type": "reading",
       "difficulty": 2,
       "phase": "reading",
-      "prompt": "Выпиши предложение, которое сообщает, что Ben читает каждый день.",
+      "prompt": "Прочитай L04-RC. Нравится ли Ben английский? Ответь по-русски и назови основание из текста.",
       "answers": [
-        "He reads every day."
+        "Да: We like English."
       ],
-      "alternatives": [],
-      "criteria": [],
+      "alternatives": [
+        "Да, We включает Ben."
+      ],
+      "criteria": [
+        "Ответ соответствует фактам/отсылкам текста; другая верная формулировка допустима."
+      ],
       "validation": {
         "mode": "semantic_short",
         "unicode": "NFC",
@@ -428,7 +480,10 @@
         "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error",
         "scoring": "meaning primary; record spelling/capitalisation/punctuation separately; do not erase them"
       },
-      "feedback_ru": "He в этом месте обозначает Ben, а не Mia."
+      "feedback_ru": "Автор Ben включён в We; поэтому общий факт относится и к нему.",
+      "reading_id": "L04-RC",
+      "reading_focus": "simple_inference",
+      "skill": "reading_comprehension"
     },
     {
       "id": "L04-T15",
@@ -478,7 +533,8 @@
         "rubric": "docs/writing-feedback.md",
         "review_status": "unreviewed",
         "self_review_available": true
-      }
+      },
+      "skill": "writing"
     },
     {
       "id": "L04-T16",
@@ -528,7 +584,8 @@
         "rubric": "docs/writing-feedback.md",
         "review_status": "unreviewed",
         "self_review_available": true
-      }
+      },
+      "skill": "writing"
     },
     {
       "id": "L04-T17",
@@ -553,7 +610,8 @@
         "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
         "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
       },
-      "feedback_ru": "Go в третьем лице: goes. В этом устойчивом сочетании home употребляется без to."
+      "feedback_ru": "Go в третьем лице: goes. В этом устойчивом сочетании home употребляется без to.",
+      "skill": "grammar"
     },
     {
       "id": "L04-T18",
@@ -578,7 +636,8 @@
         "unknown_variant": "review_required; do not mark incorrect solely on mismatch",
         "language_variants": "accept_equivalent_en_US; style_difference_is_not_grammar_error"
       },
-      "feedback_ru": "Ben — один человек, поэтому study → studies."
+      "feedback_ru": "Ben — один человек, поэтому study → studies.",
+      "skill": "grammar"
     }
   ],
   "review": {
@@ -593,9 +652,19 @@
   },
   "quality": {
     "status": "author_reviewed_pending_independent_review",
-    "provenance": "Оригинальные тексты, задания и пояснения LangForge; не скопированы из источников.",
+    "provenance": "Оригинальные тексты, задания и пояснения friklang; не скопированы из источников.",
     "remaining_review": "Независимая языковая редактура и пилот; см. docs/content-quality.md.",
-    "audit": "Самостоятельный аудит Codex этапа 1.5; не независимая лингвистическая экспертиза. См. docs/content-audit.md."
+    "audit": "Самостоятельный аудит Codex этапа 1.5; не независимая лингвистическая экспертиза. См. docs/content-audit.md.",
+    "audit_stage1_6": "Содержательный пересмотр новых текстов и Writing; не независимая человеческая экспертиза. См. docs/stage-1.6-report.md."
   },
-  "language_standard": "en-GB; equivalent en-US accepted unless explicitly targeted"
+  "language_standard": "en-GB; equivalent en-US accepted unless explicitly targeted",
+  "assessment_reading": {
+    "id": "L04-RC",
+    "text": "I am Ben. I work at home. Mia studies English every day. She reads here. We like English.",
+    "context_ru": "В записке участвуют только Ben и Mia. Речь о нынешних привычках; here — место автора.",
+    "glossary": {},
+    "skill": "reading_comprehension",
+    "presentation": "assessment_only_after_teaching; hide_text_and_keys_until_attempt",
+    "reuse_policy": "First exposure only: later attempts are practice, not a fresh comprehension measure."
+  }
 }
