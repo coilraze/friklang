@@ -33,3 +33,5 @@ Desktop.ini
 node_modules/
 dist/
 coverage/
+playwright-report/
+test-results/

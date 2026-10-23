@@ -110,6 +110,8 @@ for skill in ['Grammar','Reading Comprehension','Writing','Punctuation','Spellin
     require(f'| {skill} |' in diagnostic, f'Нет отдельного диагностического результата {skill}')
 
 for path in ROOT.rglob('*.md'):
+    if any(part in {'node_modules', 'dist', '.git', '__pycache__'} for part in path.relative_to(ROOT).parts):
+        continue
     for target in re.findall(r'\]\(([^)]+)\)', path.read_text(encoding='utf-8')):
         if '://' in target or target.startswith('#'):
             continue

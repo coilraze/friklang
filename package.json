@@ -1,0 +1,17 @@
+{
+  "name": "friklang",
+  "private": true,
+  "version": "0.2.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "node --test tests/app/*.test.js",
+    "test:e2e": "npm run build && node tests/e2e/run.mjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.55.0",
+    "vite": "^7.1.7"
+  }
+}
