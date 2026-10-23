@@ -1,6 +1,8 @@
 import './styles.css';
 import { levels, lessons, lessonsById, topics, tasksFor } from './catalog.js';
+import contractions from '../content/contractions.json';
 import { evaluateAnswer } from './answer-checker.js';
+import { requiresPronunciationContext, speakText, stopSpeech } from './speech.js';
 import {
   deriveLessonStatus, importProgress, loadProgress, saveProgress, taskRecord,
 } from './progress-store.js';
@@ -16,12 +18,14 @@ let errorMessage = '';
 let activeTab = 'lesson';
 let saveQueue = Promise.resolve();
 let restoreFocus = null;
+let speechStatus = '';
 
 function route() {
   const match = location.pathname.match(/^\/lessons\/([^/]+)(?:\/tasks\/([^/]+))?\/?$/);
   if (match) return { page: 'lesson', lessonId: decodeURIComponent(match[1]), taskId: match[2] ? decodeURIComponent(match[2]) : null };
   if (location.pathname === '/progress') return { page: 'progress' };
   if (location.pathname === '/diagnostic') return { page: 'diagnostic' };
+  if (location.pathname === '/contractions') return { page: 'contractions' };
   return { page: 'home' };
 }
 
@@ -103,6 +107,7 @@ function currentTask(lesson = currentLesson()) {
 function pageTitle() {
   if (currentRoute.page === 'progress') return 'Мой прогресс';
   if (currentRoute.page === 'diagnostic') return 'Входная диагностика';
+  if (currentRoute.page === 'contractions') return 'Сокращённые формы';
   const lesson = currentLesson();
   return lesson?.title ?? (currentRoute.page === 'lesson' ? 'Урок не найден' : 'Английский в своём темпе');
 }
@@ -110,7 +115,7 @@ function pageTitle() {
 function renderHeader() {
   return `<header class="topbar"><button class="menu-button" data-action="toggle-drawer" aria-label="Открыть меню уроков" aria-expanded="${drawerOpen}" aria-controls="lesson-drawer">☰</button>
     <a class="brand" href="/" data-link>friklang</a><div class="topbar-current">${escapeHtml(pageTitle())}</div>
-    <nav class="top-actions" aria-label="Основные разделы">${linkTo('/', 'Библиотека', 'top-link', 'data-link')}${linkTo('/progress', 'Прогресс', 'top-link', 'data-link')}</nav>
+    <nav class="top-actions" aria-label="Основные разделы">${linkTo('/', 'Библиотека', 'top-link', 'data-link')}${linkTo('/contractions', 'Сокращения', 'top-link', 'data-link')}${linkTo('/progress', 'Прогресс', 'top-link', 'data-link')}</nav>
   </header>`;
 }
 
@@ -126,12 +131,28 @@ function renderHome() {
   </section><p class="quiet progress-note">Начато заданий: ${started}. Диагностика и предпосылки — только рекомендации.</p></main>`;
 }
 
+function speakControl(text) {
+  if (/[\u0400-\u04ff\u0250-\u02ff]/u.test(String(text))) return '';
+  return `<span class="speak-controls"><button class="speak-button" data-action="speak" data-text="${escapeHtml(text)}" aria-label="Озвучить: ${escapeHtml(text)}" title="Озвучить на английском">🔊</button><button class="speak-button slow-speak" data-action="speak-slow" data-text="${escapeHtml(text)}" aria-label="Озвучить медленно: ${escapeHtml(text)}" title="Медленно">0.78×</button></span>`;
+}
+
+function renderGuide(section, index) {
+  return `<details class="guide-card"><summary>${escapeHtml(section.heading)}</summary><div class="guide-content"><p>${escapeHtml(section.body)}</p>${section.examples?.length ? `<div class="guide-examples">${section.examples.map((example) => `<div><p><strong>${escapeHtml(example.en)}</strong>${speakControl(example.en)}</p><p class="quiet">${escapeHtml(example.ru)}</p></div>`).join('')}</div>` : ''}${section.table ? `<div class="table-scroll"><table><thead><tr>${section.table.headers.map((cell) => `<th>${escapeHtml(cell)}</th>`).join('')}</tr></thead><tbody>${section.table.rows.map((row) => `<tr>${row.map((cell) => `<td>${escapeHtml(cell)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>` : ''}${section.errors?.length ? `<div class="guide-errors">${section.errors.map((error) => `<p><del>${escapeHtml(error.incorrect)}</del> → <strong>${escapeHtml(error.correct)}</strong><br><span>${escapeHtml(error.why)}</span></p>`).join('')}</div>` : ''}</div></details>`;
+}
+
 function renderTheory(lesson) {
   return `<section class="theory-section" id="theory"><div class="section-heading"><div><span class="eyebrow">ТЕОРИЯ</span><h2>Разберём тему</h2></div></div>
-    <div class="theory-grid">${lesson.theory.map((paragraph, index) => `<article class="theory-card"><span class="theory-number">${String(index + 1).padStart(2, '0')}</span><p>${escapeHtml(paragraph)}</p></article>`).join('')}</div>
-    ${Object.keys(lesson.vocabulary ?? {}).length ? `<details class="vocabulary-panel"><summary>Словарь урока · ${Object.keys(lesson.vocabulary).length} слов и выражений</summary><div class="vocabulary-grid">${Object.entries(lesson.vocabulary).map(([word, meaning]) => `<span><b>${escapeHtml(word)}</b><span>${escapeHtml(meaning)}</span></span>`).join('')}</div></details>` : ''}
-    ${lesson.examples?.length ? `<div class="examples-block"><h3>Примеры</h3>${lesson.examples.map((example) => `<article class="example-row"><div><span class="example-label">Так</span><p>${escapeHtml(example.correct)}</p></div><div><span class="example-label">Не так</span><p class="wrong-example">${escapeHtml(example.incorrect)}</p></div><p class="example-fix">${escapeHtml(example.explanation_ru)}</p></article>`).join('')}</div>` : ''}
+    <details class="theory-summary" open><summary>Кратко · повторение</summary><div class="theory-grid">${lesson.theory.map((paragraph, index) => `<article class="theory-card"><span class="theory-number">${String(index + 1).padStart(2, '0')}</span><p>${escapeHtml(paragraph)}</p></article>`).join('')}</div></details>
+    ${lesson.theory_detail?.length ? `<div class="deep-theory"><h3>Подробно · изучение с нуля</h3>${lesson.theory_detail.map(renderGuide).join('')}</div>` : ''}
+    ${Object.keys(lesson.vocabulary ?? {}).length ? `<details class="vocabulary-panel"><summary>Словарь урока · ${Object.keys(lesson.vocabulary).length} слов и выражений</summary><div class="vocabulary-grid">${Object.entries(lesson.vocabulary).map(([word, meaning]) => { const detail = lesson.vocabulary_detail?.[word] ?? {}; const example = detail.example || ''; const contextNote = requiresPronunciationContext(word) ? '<small class="quiet">У этого написания несколько произношений: нажмите озвучивание у примера целиком.</small>' : ''; return `<span><b>${escapeHtml(word)} ${requiresPronunciationContext(word) ? '' : speakControl(word)}</b><span>${escapeHtml(detail.meaning_ru ?? meaning)}${detail.part_of_speech ? ` · ${escapeHtml(detail.part_of_speech)}` : ''}${detail.forms ? ` · формы: ${escapeHtml(detail.forms)}` : ''}${detail.ipa ? ` · IPA ${escapeHtml(detail.ipa)}` : ''}${detail.stress ? ` · ${escapeHtml(detail.stress)}` : ''}${contextNote}${example ? `<br><em>${escapeHtml(example)}</em>${speakControl(example)}` : ''}</span></span>`; }).join('')}</div></details>` : ''}
+    ${lesson.examples?.length ? `<div class="examples-block"><h3>Примеры</h3>${lesson.examples.map((example) => `<article class="example-row"><div><span class="example-label">Так</span><p>${escapeHtml(example.correct)} ${speakControl(example.correct)}</p></div><div><span class="example-label">Не так</span><p class="wrong-example">${escapeHtml(example.incorrect)}</p></div><p class="example-fix">${escapeHtml(example.explanation_ru)}</p></article>`).join('')}</div>` : ''}
+    ${lesson.theory_links?.length ? `<nav class="related-lessons" aria-label="Связанные уроки"><strong>Связанные темы</strong>${lesson.theory_links.map((id) => { const related = lessonsById.get(id); return related ? `<a href="${lessonPath(id)}" data-link>${escapeHtml(related.title)} →</a>` : ''; }).join('')}</nav>` : ''}
+    <div class="speech-toolbar" aria-live="polite"><span id="speech-status">${escapeHtml(speechStatus || 'Озвучивание по нажатию · en-GB при наличии; голос зависит от устройства.')}</span><button class="text-button" data-action="stop-speech">Остановить</button></div>
   </section>`;
+}
+
+function renderContractions() {
+  return `<main class="page-shell"><header class="page-heading"><span class="eyebrow">СПРАВОЧНИК · GRAMMAR</span><h1>${escapeHtml(contractions.title)}</h1><p>Откройте нужную группу. Сокращение помогает узнать естественную речь, но не всегда подходит любому жанру.</p></header><section class="contraction-principles">${contractions.principles.map((item) => `<p>${escapeHtml(item)}</p>`).join('')}</section>${contractions.groups.map((group) => `<section class="contraction-group"><h2>${escapeHtml(group.level)}</h2>${group.items.map((item) => `<article class="contraction-card"><h3>${escapeHtml(item.short)} <span>← ${escapeHtml(item.full)}</span> ${speakControl(item.short)}</h3><p>${escapeHtml(item.context)}</p></article>`).join('')}</section>`).join('')}<section class="contraction-group"><h2>Где нужна осторожность</h2>${contractions.unavailable.map((item) => `<p class="contraction-card">${escapeHtml(item)}</p>`).join('')}</section></main>`;
 }
 
 function taskReading(lesson, task) {
@@ -219,7 +240,8 @@ function renderDiagnostic() {
 function render() {
   const content = currentRoute.page === 'lesson' ? renderLesson()
     : currentRoute.page === 'progress' ? renderProgress()
-      : currentRoute.page === 'diagnostic' ? renderDiagnostic() : renderHome();
+      : currentRoute.page === 'diagnostic' ? renderDiagnostic()
+        : currentRoute.page === 'contractions' ? renderContractions() : renderHome();
   root.innerHTML = `${renderHeader()}${renderDrawer()}${content}${errorMessage ? `<div class="toast" role="alert">${escapeHtml(errorMessage)}<button data-action="dismiss-error" aria-label="Закрыть сообщение">×</button></div>` : ''}`;
   document.title = `${pageTitle()} · friklang`;
   if (drawerOpen) {
@@ -229,6 +251,7 @@ function render() {
 }
 
 async function navigate(path, { replace = false } = {}) {
+  stopSpeech();
   const openTaskDirectly = new URL(path, location.origin).pathname.includes('/tasks/');
   await enqueueSave();
   if (replace) history.replaceState({}, '', path); else history.pushState({}, '', path);
@@ -409,6 +432,13 @@ root.addEventListener('click', async (event) => {
   if (action === 'explanation') { const record = taskRecord(progress, currentTask().id); record.explanationOpen = !record.explanationOpen; enqueueSave(); render(); }
   if (action === 'mark-writing-done') markWritingDone();
   if (action === 'return-theory') document.querySelector('#theory')?.scrollIntoView({ behavior: 'smooth' });
+  if (action === 'speak' || action === 'speak-slow') speakText(control.dataset.text, { slow: action === 'speak-slow', onStatus: ({ message, type }) => {
+    speechStatus = message || 'Озвучивание завершено.';
+    const status = document.querySelector('#speech-status');
+    if (status) status.textContent = speechStatus;
+    if (type === 'error' || type === 'unavailable') errorMessage = message;
+  } });
+  if (action === 'stop-speech') { stopSpeech(); speechStatus = 'Озвучивание остановлено.'; const status = document.querySelector('#speech-status'); if (status) status.textContent = speechStatus; }
   if (action === 'remind') addReminder();
   if (action === 'export') exportFile();
   if (action === 'dismiss-error') { errorMessage = ''; render(); }

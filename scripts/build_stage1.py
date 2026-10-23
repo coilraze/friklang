@@ -57,6 +57,7 @@ B2-10|B2-09|Мост к IELTS Academic Writing|Различает задачи �
 '''.strip()
 topics = []
 from stage1_5 import extend_curriculum, audit_lessons, foundation_lessons, refine_stage1_6
+from stage2_2_content import enrich, CONTRACTIONS
 rows = extend_curriculum(rows)
 for row in rows.splitlines():
     ident, pre, title, outcome, rules, errors, practice, check = row.split('|')
@@ -264,8 +265,10 @@ task(l,'checkpoint','Вернуться к форме и границам','По
 audit_lessons(LESSONS)
 LESSONS = foundation_lessons() + LESSONS
 refine_stage1_6(LESSONS)
+enrich(LESSONS)
 for l in LESSONS:
     write(f"content/lessons/{l['id'].lower()}.json",json.dumps(l,ensure_ascii=False,indent=2)+'\n')
+write('content/contractions.json', json.dumps(CONTRACTIONS, ensure_ascii=False, indent=2)+'\n')
 
 if __name__=='__main__':
     print(f'Создано {len(topics)} тем и {len(LESSONS)} уроков, {sum(len(l["tasks"]) for l in LESSONS)} заданий.')

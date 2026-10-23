@@ -641,7 +641,8 @@
     "provenance": "Оригинальные тексты, задания и пояснения friklang; не скопированы из источников.",
     "remaining_review": "Независимая языковая редактура и пилот; см. docs/content-quality.md.",
     "audit": "Самостоятельный аудит Codex этапа 1.5; не независимая лингвистическая экспертиза. См. docs/content-audit.md.",
-    "audit_stage1_6": "Содержательный пересмотр новых текстов и Writing; не независимая человеческая экспертиза. См. docs/stage-1.6-report.md."
+    "audit_stage1_6": "Содержательный пересмотр новых текстов и Writing; не независимая человеческая экспертиза. См. docs/stage-1.6-report.md.",
+    "stage_2_2": "Авторская подробная теория добавлена; самостоятельная проверка Codex не является независимой лингвистической экспертизой."
   },
   "language_standard": "en-GB; equivalent en-US accepted unless explicitly targeted",
   "assessment_reading": {
@@ -652,5 +653,148 @@
     "skill": "reading_comprehension",
     "presentation": "assessment_only_after_teaching; hide_text_and_keys_until_attempt",
     "reuse_policy": "First exposure only: later attempts are practice, not a fresh comprehension measure."
+  },
+  "theory_detail": [
+    {
+      "heading": "Зачем в английском нужна am",
+      "body": "В русском настоящем времени мы обычно говорим «Я готов» без отдельного глагола. В стандартном полном английском утверждении о состоянии, личности или месте нужна форма be: I am ready; I am Mia; I am at home. Без am предложение I ready не образует нужной конструкции. Прилагательное ready не меняется по роду и числу.",
+      "examples": [
+        {
+          "en": "I am calm. — Я спокоен / спокойна.",
+          "ru": "am связывает I с состоянием calm."
+        },
+        {
+          "en": "I calm.",
+          "ru": "Ошибка: пропущена необходимая форма be."
+        }
+      ]
+    },
+    {
+      "heading": "Утверждение и отрицание",
+      "body": "Базовый порядок утверждения: I + am + имя/состояние/место. Чтобы отрицать состояние или место, поставь not после am: I am not tired. Не добавляй do к be: *I do not am tired — неверно. В этом уроке отрабатывается только I; остальные формы и вопросы разбираются в следующих темах.",
+      "examples": [
+        {
+          "en": "I am not late.",
+          "ru": "not стоит после am."
+        }
+      ]
+    },
+    {
+      "heading": "Сокращение I’m",
+      "body": "В повседневной речи и неформальном письме I am часто сокращают до I’m. Апостроф отмечает пропущенные буквы: I’m ready. Полная форма и сокращение грамматически корректны. В упражнениях по умолчанию допустимы обе, если задание не просит явно полную форму. В формальном академическом письме полные формы часто предпочтительнее, но сокращение само по себе не делает фразу неграмматичной.",
+      "examples": [
+        {
+          "en": "I am ready. = I’m ready.",
+          "ru": "Одинаковая конструкция; различается стиль и написание."
+        },
+        {
+          "en": "Im ready.",
+          "ru": "Орфографическая ошибка: в сокращении нужен апостроф."
+        }
+      ]
+    },
+    {
+      "heading": "Чтение текста и ограничения темы",
+      "body": "В короткой записке I am может сообщать имя, состояние или место; следующее предложение может повторить I для ясности. Не используй запятую между I и am. Пока не применяй вопросы Is…? и отрицание с do: первое изучается в следующем уроке, второе не подходит к be. Читай целое предложение и проверяй, что именно описано.",
+      "examples": [
+        {
+          "en": "I am Mia. I am at home. I am calm.",
+          "ru": "Каждое предложение — отдельное сообщение о говорящем."
+        }
+      ]
+    }
+  ],
+  "theory_links": [
+    "L02"
+  ],
+  "vocabulary_detail": {
+    "I": {
+      "meaning_ru": "я",
+      "example": "I am ready.",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "am": {
+      "meaning_ru": "форма be после I",
+      "example": "I am ready.",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "ready": {
+      "meaning_ru": "готов/готова",
+      "example": "I am ready.",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "here": {
+      "meaning_ru": "здесь",
+      "example": "I am here.",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "at home": {
+      "meaning_ru": "дома",
+      "example": "",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "happy": {
+      "meaning_ru": "доволен/довольна; счастлив/счастлива",
+      "example": "",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "tired": {
+      "meaning_ru": "уставший/уставшая",
+      "example": "",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "calm": {
+      "meaning_ru": "спокойный/спокойная",
+      "example": "",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "Mia": {
+      "meaning_ru": "Миа, имя",
+      "example": "I am Mia.",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "Alex": {
+      "meaning_ru": "Алекс, имя",
+      "example": "",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "Ben": {
+      "meaning_ru": "Бен, вымышленное имя",
+      "example": "",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    }
   }
 }

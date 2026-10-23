@@ -657,7 +657,8 @@
     "provenance": "Оригинальные тексты, задания и пояснения friklang; не скопированы из источников.",
     "remaining_review": "Независимая языковая редактура и пилот; см. docs/content-quality.md.",
     "audit": "Самостоятельный аудит Codex этапа 1.5; не независимая лингвистическая экспертиза. См. docs/content-audit.md.",
-    "audit_stage1_6": "Содержательный пересмотр новых текстов и Writing; не независимая человеческая экспертиза. См. docs/stage-1.6-report.md."
+    "audit_stage1_6": "Содержательный пересмотр новых текстов и Writing; не независимая человеческая экспертиза. См. docs/stage-1.6-report.md.",
+    "stage_2_2": "Авторская подробная теория добавлена; самостоятельная проверка Codex не является независимой лингвистической экспертизой."
   },
   "language_standard": "en-GB; equivalent en-US accepted unless explicitly targeted",
   "assessment_reading": {
@@ -668,5 +669,240 @@
     "skill": "reading_comprehension",
     "presentation": "assessment_only_after_teaching; hide_text_and_keys_until_attempt",
     "reuse_policy": "First exposure only: later attempts are practice, not a fresh comprehension measure."
+  },
+  "theory_detail": [
+    {
+      "heading": "Выбери подлежащее по смыслу",
+      "body": "Местоимение заменяет уже понятное имя или предмет. I — говорящий; you — один собеседник или несколько; he/she обычно относятся к человеку; it — к предмету, животному или ситуации, когда это уместно. Для человека ориентируйся на контекст и известное предпочтение, а не угадывай по имени. В современном английском singular they может относиться к одному человеку.",
+      "examples": [
+        {
+          "en": "Mia is here. She is ready.",
+          "ru": "Во втором предложении she отсылает к Mia."
+        }
+      ]
+    },
+    {
+      "heading": "Формы be в настоящем времени",
+      "body": "Форма зависит от подлежащего: I am; he/she/it is; you/we/they are. С одним именем используй is: Ben is ready. You получает are и при обращении к одному человеку, и к группе. После be можно поставить прилагательное, имя или выражение места. Обычное прилагательное не согласуется с числом: They are ready.",
+      "examples": [
+        {
+          "en": "She is calm. They are calm.",
+          "ru": "Меняется be, а calm остаётся прежним."
+        },
+        {
+          "en": "She are calm.",
+          "ru": "Ошибка согласования: после she требуется is."
+        }
+      ],
+      "table": {
+        "headers": [
+          "Подлежащее",
+          "Форма be",
+          "Пример"
+        ],
+        "rows": [
+          [
+            "I",
+            "am",
+            "I am ready."
+          ],
+          [
+            "he / she / it",
+            "is",
+            "She is here."
+          ],
+          [
+            "you / we / they",
+            "are",
+            "They are calm."
+          ]
+        ]
+      }
+    },
+    {
+      "heading": "Сокращённые утвердительные формы",
+      "body": "В разговоре и неформальном письме распространены I’m, you’re, he’s, she’s, it’s, we’re, they’re. Апостроф показывает пропуск букв. Форма ’s здесь может быть is, но в других конструкциях бывает has: значение определяется тем, что следует дальше. В этом уроке используем только случаи со значением is; полное написание также всегда допустимо, если формат задания это разрешает.",
+      "examples": [
+        {
+          "en": "She’s ready. (She is ready.)",
+          "ru": "После ’s стоит прилагательное; это is."
+        },
+        {
+          "en": "She’s finished her work. (She has finished her work.)",
+          "ru": "В примере с объектом her work форма ’s означает has; Present Perfect здесь только показан как более поздняя тема."
+        }
+      ],
+      "errors": [
+        {
+          "incorrect": "She are ready.",
+          "correct": "She is ready.",
+          "why": "Форму выбираем по подлежащему she."
+        },
+        {
+          "incorrect": "You is ready.",
+          "correct": "You are ready.",
+          "why": "You требует are и при обращении к одному собеседнику."
+        }
+      ]
+    },
+    {
+      "heading": "Краткие контрасты",
+      "body": "Не подменяй форму глагола местоимением: *They is готовое правило не поддерживает. Не выбирай it из-за русского рода предмета: английское it не кодирует русский род. Пиши I с заглавной и ставь точку в утверждении. Вопросы и отрицания с be относятся к следующему уроку.",
+      "examples": [
+        {
+          "en": "You are at home. / We are at home.",
+          "ru": "В обоих случаях нужна are."
+        }
+      ]
+    }
+  ],
+  "theory_links": [
+    "L03"
+  ],
+  "vocabulary_detail": {
+    "you": {
+      "meaning_ru": "ты; вы",
+      "example": "You are here.",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "he": {
+      "meaning_ru": "он (о человеке)",
+      "example": "She is ready.",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "she": {
+      "meaning_ru": "она (о человеке)",
+      "example": "She is ready.",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "it": {
+      "meaning_ru": "оно/он/она о предмете в наших примерах",
+      "example": "It is cold.",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "we": {
+      "meaning_ru": "мы",
+      "example": "",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "they": {
+      "meaning_ru": "они",
+      "example": "",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "is": {
+      "meaning_ru": "форма be с he/she/it и одним именем",
+      "example": "She is ready.",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "are": {
+      "meaning_ru": "форма be с you/we/they",
+      "example": "You are here.",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "Ben": {
+      "meaning_ru": "Бен, имя",
+      "example": "",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "tea": {
+      "meaning_ru": "чай",
+      "example": "",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "cold": {
+      "meaning_ru": "холодный",
+      "example": "It is cold.",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "warm": {
+      "meaning_ru": "тёплый",
+      "example": "",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "with": {
+      "meaning_ru": "с",
+      "example": "",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "at home": {
+      "meaning_ru": "дома",
+      "example": "",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "here": {
+      "meaning_ru": "здесь",
+      "example": "You are here.",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "ready": {
+      "meaning_ru": "готовый",
+      "example": "She is ready.",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "happy": {
+      "meaning_ru": "довольный",
+      "example": "",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "calm": {
+      "meaning_ru": "спокойный",
+      "example": "",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    }
   }
 }

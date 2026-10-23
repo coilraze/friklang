@@ -454,6 +454,210 @@
     "status": "author_reviewed_pending_independent_review",
     "provenance": "Оригинальные инструкции, карточки и задания; IPA и общеязыковые правила сверены с открытыми словарными справочниками.",
     "remaining_review": "Независимая проверка фонетических объяснений и пилот взрослого новичка.",
-    "audit_stage1_6": "Содержательный пересмотр новых текстов и Writing; не независимая человеческая экспертиза. См. docs/stage-1.6-report.md."
+    "audit_stage1_6": "Содержательный пересмотр новых текстов и Writing; не независимая человеческая экспертиза. См. docs/stage-1.6-report.md.",
+    "stage_2_2": "Авторская подробная теория добавлена; самостоятельная проверка Codex не является независимой лингвистической экспертизой."
+  },
+  "theory_detail": [
+    {
+      "heading": "Модель CVC и конечная e",
+      "body": "В коротких частых словах типа CVC (согласная–гласная–согласная) гласная часто краткая: cap /kæp/, sit /sɪt/. В ряде слов конечная e не образует слога, а связана с другим чтением гласной: cap–cape, sit–site. Это распространённая орфографическая модель, а не формула для всех слов; have и give сохраняют краткую гласную.",
+      "examples": [
+        {
+          "en": "cap /kæp/ — cape /keɪp/",
+          "ru": "Добавление конечной e связано с изменением гласного в этой паре."
+        }
+      ]
+    },
+    {
+      "heading": "Частые сочетания и исключения",
+      "body": "ee часто встречается с /iː/ (see), а oo — и с /uː/ (food), и с /ʊ/ (book). ea бывает /iː/ в tea и /e/ в head. ai часто даёт /eɪ/ в rain, но said — отдельное частотное исключение. Запоминай слово, пример и словарное аудио вместе; выученное сочетание сужает круг догадок, но не доказывает произношение незнакомого слова.",
+      "examples": [
+        {
+          "en": "tea /tiː/ — head /hed/",
+          "ru": "Одинаковые буквы ea, разные гласные звуки."
+        }
+      ],
+      "table": {
+        "headers": [
+          "Сочетание",
+          "Пример",
+          "Оговорка"
+        ],
+        "rows": [
+          [
+            "ee",
+            "see",
+            "часто /iː/"
+          ],
+          [
+            "ea",
+            "tea; head",
+            "/iː/ и /e/"
+          ],
+          [
+            "oo",
+            "food; book",
+            "/uː/ и /ʊ/"
+          ],
+          [
+            "ai",
+            "rain; said",
+            "частая модель и исключение"
+          ]
+        ]
+      }
+    },
+    {
+      "heading": "Безударные гласные и словарная проверка",
+      "body": "Безударная гласная часто редуцируется, например начальная a в about /əˈbaʊt/. Написание не обязано совпадать с названием буквы или ясно показывать звук. Для нового слова: определи предполагаемую модель, найди UK-запись в словаре, сравни IPA и при желании нажми озвучивание. Если слово — исключение, запомни его в короткой фразе.",
+      "examples": [
+        {
+          "en": "about /əˈbaʊt/; have /hæv/",
+          "ru": "В первом слове начальная гласная безударная; второе не следует модели конечной e."
+        }
+      ]
+    }
+  ],
+  "theory_links": [
+    "A0L05",
+    "L01"
+  ],
+  "vocabulary_detail": {
+    "cap": {
+      "meaning_ru": "кепка",
+      "example": "",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "cape": {
+      "meaning_ru": "плащ; мыс",
+      "example": "",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "sit": {
+      "meaning_ru": "сидеть",
+      "example": "",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "site": {
+      "meaning_ru": "место; сайт",
+      "example": "",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "name": {
+      "meaning_ru": "имя",
+      "example": "",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "home": {
+      "meaning_ru": "дом; домой в go home",
+      "example": "",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "have": {
+      "meaning_ru": "иметь",
+      "example": "have /hæv/",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "give": {
+      "meaning_ru": "давать",
+      "example": "",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "see": {
+      "meaning_ru": "видеть",
+      "example": "",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "tea": {
+      "meaning_ru": "чай",
+      "example": "",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "head": {
+      "meaning_ru": "голова",
+      "example": "",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "food": {
+      "meaning_ru": "еда",
+      "example": "",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "book": {
+      "meaning_ru": "книга",
+      "example": "book /bʊk/",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "rain": {
+      "meaning_ru": "дождь",
+      "example": "",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "day": {
+      "meaning_ru": "день",
+      "example": "",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "said": {
+      "meaning_ru": "сказал/сказала; форма say",
+      "example": "said /sed/",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "about": {
+      "meaning_ru": "о; приблизительно",
+      "example": "",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    }
   }
 }

@@ -1,0 +1,122 @@
+{
+  "title": "Сокращённые формы: справочник по уровням",
+  "principles": [
+    "Апостроф отмечает пропущенные буквы внутри сокращения. Он не заменяет точку, запятую или кавычки.",
+    "Сокращение сохраняет грамматическую конструкцию: сначала определи полную форму и роль вспомогательного глагола.",
+    "Разговорный и нейтральный английский часто использует сокращения. В IELTS Academic Writing и другой формальной работе полные формы обычно безопаснее по регистру; это не означает, что любое сокращение грамматически неверно.",
+    "Прямой апостроф (') и типографский апостроф (’) — варианты начертания. В обычной орфографии в сокращении нельзя пропустить апостроф."
+  ],
+  "groups": [
+    {
+      "level": "A1 · формы be",
+      "items": [
+        {
+          "short": "I'm",
+          "full": "I am",
+          "context": "I'm ready. — перед прилагательным; I'm at home. — перед местом."
+        },
+        {
+          "short": "You're",
+          "full": "you are",
+          "context": "You're here. You может относиться к одному собеседнику или группе."
+        },
+        {
+          "short": "He's / She's / It's",
+          "full": "he/she/it is (в изученных конструкциях)",
+          "context": "She's calm. Здесь 's = is; в She's finished her work позднее 's = has, что видно по смысловому глаголу и объекту."
+        },
+        {
+          "short": "We're / They're",
+          "full": "we are / they are",
+          "context": "We’re ready. They’re at home."
+        },
+        {
+          "short": "isn't / aren't / I'm not",
+          "full": "is not / are not / am not",
+          "context": "I am not обычно сокращают только как I’m not; стандартной формы I amn’t нет."
+        }
+      ]
+    },
+    {
+      "level": "A1 · do, does и did (после изучения вспомогательных глаголов)",
+      "items": [
+        {
+          "short": "don't / doesn't / didn't",
+          "full": "do not / does not / did not",
+          "context": "После does/doesn’t и did/didn’t смысловой глагол остаётся в основной форме: doesn’t work; didn’t go."
+        },
+        {
+          "short": "can't / cannot",
+          "full": "cannot",
+          "context": "Can’t — обычное сокращение; cannot обычно пишется одним словом."
+        },
+        {
+          "short": "won't",
+          "full": "will not",
+          "context": "Нерегулярное написание: не *willn’t."
+        }
+      ]
+    },
+    {
+      "level": "Позже · несколько значений одной формы",
+      "items": [
+        {
+          "short": "I've",
+          "full": "I have",
+          "context": "I've finished. = I have finished (вспомогательный have); I've got time. (конструкция have got). Не применяй перед любым объектом: *I've a book — не универсальная модель современного стандартного английского."
+        },
+        {
+          "short": "I'll",
+          "full": "I will",
+          "context": "I’ll call tomorrow. ’ll здесь = will."
+        },
+        {
+          "short": "I'd",
+          "full": "I would или I had",
+          "context": "I'd like tea. = I would; I'd finished the report before noon when you called. = I had. Следующая грамматическая форма и смысл задают расшифровку."
+        },
+        {
+          "short": "He's / she's / it's",
+          "full": "he/she/it is или has",
+          "context": "He's tired = is + прилагательное; He's visited London = has + причастие и объект. Нужны контекст и форма следующего слова."
+        },
+        {
+          "short": "there's",
+          "full": "there is или there has",
+          "context": "There's a book on the table = is; There's been a delay = has + been. Контекст помогает определить форму."
+        },
+        {
+          "short": "let's",
+          "full": "let us",
+          "context": "Let's start. — предложение сделать что-либо вместе; после let's используется основная форма глагола."
+        },
+        {
+          "short": "couldn't / wouldn't / shouldn't",
+          "full": "could not / would not / should not",
+          "context": "Эти сокращения встречаются в более поздних темах; значение модального глагола задаёт контекст."
+        },
+        {
+          "short": "there's",
+          "full": "there is или there has",
+          "context": "There's a book on the table = is; There's been a delay = has + been. Продолжение фразы помогает расшифровать форму."
+        },
+        {
+          "short": "let's",
+          "full": "let us",
+          "context": "Let's start. — предложение сделать что-либо вместе; после let's используется основная форма глагола."
+        },
+        {
+          "short": "couldn't / wouldn't / shouldn't",
+          "full": "could not / would not / should not",
+          "context": "Апостроф отмечает пропуск букв; значение модального глагола определяется контекстом."
+        }
+      ]
+    }
+  ],
+  "unavailable": [
+    "Не сокращай произвольно в формальном регистре, в заголовках с ограниченным стилем или когда задание явно требует полную форму.",
+    "В нейтральном стандартном английском нельзя соединить обе части be + not в She’sn’t; выбери She’s not или She isn’t.",
+    "В утвердительном кратком ответе обычно сохраняют полную форму: Yes, she is; не Yes, she’s.",
+    "Сокращение не устраняет другие правила: после doesn’t нужен глагол без -s, а I остаётся заглавным."
+  ]
+}

@@ -655,7 +655,8 @@
     "provenance": "Оригинальные тексты, задания и пояснения friklang; не скопированы из источников.",
     "remaining_review": "Независимая языковая редактура и пилот; см. docs/content-quality.md.",
     "audit": "Самостоятельный аудит Codex этапа 1.5; не независимая лингвистическая экспертиза. См. docs/content-audit.md.",
-    "audit_stage1_6": "Содержательный пересмотр новых текстов и Writing; не независимая человеческая экспертиза. См. docs/stage-1.6-report.md."
+    "audit_stage1_6": "Содержательный пересмотр новых текстов и Writing; не независимая человеческая экспертиза. См. docs/stage-1.6-report.md.",
+    "stage_2_2": "Авторская подробная теория добавлена; самостоятельная проверка Codex не является независимой лингвистической экспертизой."
   },
   "language_standard": "en-GB; equivalent en-US accepted unless explicitly targeted",
   "assessment_reading": {
@@ -666,5 +667,270 @@
     "skill": "reading_comprehension",
     "presentation": "assessment_only_after_teaching; hide_text_and_keys_until_attempt",
     "reuse_policy": "First exposure only: later attempts are practice, not a fresh comprehension measure."
+  },
+  "theory_detail": [
+    {
+      "heading": "Когда нужен Present Simple",
+      "body": "В этом начальном блоке Present Simple описывает повторяющиеся действия, привычки и общие факты: I read every day. Здесь он не сообщает, что действие идёт прямо в момент речи. Сначала найди подлежащее, затем выбери основную форму глагола или форму с окончанием для he/she/it. Справка по омографу read: в настоящем времени читается /riːd/, а форма прошедшего времени имеет то же написание, но звучит /red/. Прошедшее время здесь не изучается; озвучивай read внутри примера текущего урока, а не изолированно.",
+      "examples": [
+        {
+          "en": "I read English every day.",
+          "ru": "Здесь read — форма настоящего времени; пример предназначен для подсказки, не как эталон акцента."
+        }
+      ]
+    },
+    {
+      "heading": "Окончание для he, she, it",
+      "body": "С I/you/we/they используем основную форму: they read. С he/she/it и одним именем добавляем окончание: she reads; Mia reads. Обычно это -s; после -s, -sh, -ch, -x, -z и в частых go/do — -es; согласная + y меняется на -ies (study → studies). Have становится has. Это только утвердительная форма; вопросы и отрицания требуют do/does и вводятся отдельным материалом.",
+      "examples": [
+        {
+          "en": "She studies English. / Mia goes home.",
+          "ru": "Форма зависит от одного третьего лица."
+        },
+        {
+          "en": "She study English.",
+          "ru": "Ошибка: в утверждении с she нужна форма studies."
+        }
+      ],
+      "table": {
+        "headers": [
+          "Подлежащее",
+          "read",
+          "study",
+          "go"
+        ],
+        "rows": [
+          [
+            "I / you / we / they",
+            "read",
+            "study",
+            "go"
+          ],
+          [
+            "he / she / it / одно имя",
+            "reads",
+            "studies",
+            "goes"
+          ]
+        ]
+      }
+    },
+    {
+      "heading": "Не ставь be перед обычным глаголом",
+      "body": "Состояние прилагательного выражается через be: I am ready. Действие в этом блоке — обычным глаголом: I work. Не соединяй их без отдельной изученной причины: *I am work every day. Также have time («располагать временем») и go home — цельные частотные сочетания; перед home в этом значении не ставят to.",
+      "examples": [
+        {
+          "en": "I am ready. / I work every day.",
+          "ru": "Состояние использует am, привычное действие — work."
+        }
+      ]
+    },
+    {
+      "heading": "Сокращения и ограничения",
+      "body": "В утвердительном Present Simple основное действие обычно не сжимается: reads остаётся reads. Сокращение be относится к самой связке: I’m ready, но не *I’m work every day в значении «я работаю». Вопросы и отрицания с don’t/doesn’t будут отдельной темой; пока не добавляй их в ответ, если задача просит утверждение.",
+      "examples": [
+        {
+          "en": "She does not work. (отдельная тема)",
+          "ru": "Отрицание содержит does + основную форму work, а не изучаемую здесь утвердительную форму."
+        }
+      ]
+    }
+  ],
+  "theory_links": [
+    "L05"
+  ],
+  "vocabulary_detail": {
+    "read": {
+      "meaning_ru": "читать",
+      "example": "She reads every day.",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "work": {
+      "meaning_ru": "работать",
+      "example": "I work at home.",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "study": {
+      "meaning_ru": "учиться; изучать",
+      "example": "",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "live": {
+      "meaning_ru": "жить",
+      "example": "",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "like": {
+      "meaning_ru": "любить; нравиться",
+      "example": "",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "go": {
+      "meaning_ru": "ходить; ездить",
+      "example": "",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "watch": {
+      "meaning_ru": "смотреть",
+      "example": "",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "TV": {
+      "meaning_ru": "телевидение; watch TV — смотреть телевизор",
+      "example": "",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "have": {
+      "meaning_ru": "иметь",
+      "example": "",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "tea": {
+      "meaning_ru": "чай",
+      "example": "",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "English": {
+      "meaning_ru": "английский язык",
+      "example": "Ben studies English.",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "every day": {
+      "meaning_ru": "каждый день",
+      "example": "She reads every day.",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "at home": {
+      "meaning_ru": "дома",
+      "example": "I work at home.",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "here": {
+      "meaning_ru": "здесь",
+      "example": "",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "Mia": {
+      "meaning_ru": "Миа",
+      "example": "",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "Ben": {
+      "meaning_ru": "Бен",
+      "example": "Ben studies English.",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "I": {
+      "meaning_ru": "я",
+      "example": "I work at home.",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "you": {
+      "meaning_ru": "ты/вы",
+      "example": "",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "he": {
+      "meaning_ru": "он",
+      "example": "She reads every day.",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "she": {
+      "meaning_ru": "она",
+      "example": "She reads every day.",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "we": {
+      "meaning_ru": "мы",
+      "example": "",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "they": {
+      "meaning_ru": "они",
+      "example": "",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "home": {
+      "meaning_ru": "домой в go home; дома в at home",
+      "example": "I work at home.",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "time": {
+      "meaning_ru": "время; have time — располагать временем",
+      "example": "",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    }
   }
 }

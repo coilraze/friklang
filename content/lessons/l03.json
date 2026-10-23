@@ -666,7 +666,8 @@
     "provenance": "Оригинальные тексты, задания и пояснения friklang; не скопированы из источников.",
     "remaining_review": "Независимая языковая редактура и пилот; см. docs/content-quality.md.",
     "audit": "Самостоятельный аудит Codex этапа 1.5; не независимая лингвистическая экспертиза. См. docs/content-audit.md.",
-    "audit_stage1_6": "Содержательный пересмотр новых текстов и Writing; не независимая человеческая экспертиза. См. docs/stage-1.6-report.md."
+    "audit_stage1_6": "Содержательный пересмотр новых текстов и Writing; не независимая человеческая экспертиза. См. docs/stage-1.6-report.md.",
+    "stage_2_2": "Авторская подробная теория добавлена; самостоятельная проверка Codex не является независимой лингвистической экспертизой."
   },
   "language_standard": "en-GB; equivalent en-US accepted unless explicitly targeted",
   "assessment_reading": {
@@ -677,5 +678,217 @@
     "skill": "reading_comprehension",
     "presentation": "assessment_only_after_teaching; hide_text_and_keys_until_attempt",
     "reuse_policy": "First exposure only: later attempts are practice, not a fresh comprehension measure."
+  },
+  "theory_detail": [
+    {
+      "heading": "Отрицание с be",
+      "body": "Поставь not сразу после am/is/are, сохранив порядок утверждения: She is not ready; They are not here. Do/does перед отрицанием с be не нужны. Частые сокращения: isn’t, aren’t, I’m not; для am not стандартная форма I amn’t не употребляется. Можно сократить связку с подлежащим (She’s not) или отрицание (She isn’t), но не обе части сразу: *She’sn’t.",
+      "examples": [
+        {
+          "en": "She is not tired. = She isn’t tired. = She’s not tired.",
+          "ru": "Все три варианта грамматичны."
+        },
+        {
+          "en": "She doesn’t be tired.",
+          "ru": "Ошибка: вспомогательный do не используется с be."
+        }
+      ],
+      "table": {
+        "headers": [
+          "Полная форма",
+          "Варианты",
+          "Пример"
+        ],
+        "rows": [
+          [
+            "she is not",
+            "she isn't / she's not",
+            "She isn't ready. / She's not ready."
+          ],
+          [
+            "they are not",
+            "they aren't / they're not",
+            "They aren't here. / They're not here."
+          ],
+          [
+            "I am not",
+            "I'm not",
+            "I'm not tired."
+          ]
+        ]
+      }
+    },
+    {
+      "heading": "Вопрос: be перед подлежащим",
+      "body": "Для общего вопроса поменяй местами форму be и подлежащее: You are ready. → Are you ready? Is she here? В конце поставь вопросительный знак. Не добавляй do: *Does she be here? Краткие ответы используют полную форму be после Yes/No: Yes, she is. / No, she isn’t. В утвердительном кратком ответе обычно не пишут Yes, she’s.",
+      "examples": [
+        {
+          "en": "Are they at home? — Yes, they are.",
+          "ru": "are перемещается перед they; в кратком ответе порядок обычный."
+        }
+      ]
+    },
+    {
+      "heading": "Апостроф и сокращение",
+      "body": "Апостроф (’) — знак внутри сокращённого слова, он показывает пропуск букв: are not → aren’t. Он не является открывающей кавычкой, запятой или знаком ударения IPA. Прямой и типографский апостроф можно считать эквивалентными в ответе, если задание проверяет именно форму, но не пропускай сам знак.",
+      "examples": [
+        {
+          "en": "isn’t / isn’t",
+          "ru": "Два начертания одного апострофа."
+        }
+      ]
+    },
+    {
+      "heading": "Стиль",
+      "body": "Сокращения обычны в разговоре, сообщениях и многих нейтральных текстах. В формальном или академическом регистре часто выбирают полные формы ради более официального тона. Для IELTS Academic Writing полные формы — безопасный редакторский выбор; это рекомендация по регистру, а не отдельное грамматическое правило. Всегда следуй заданию и требованиям конкретного жанра.",
+      "examples": [
+        {
+          "en": "We are pleased to report…",
+          "ru": "Полная форма звучит уместно в формальном отчёте."
+        }
+      ]
+    }
+  ],
+  "theory_links": [
+    "L02",
+    "L04"
+  ],
+  "vocabulary_detail": {
+    "not": {
+      "meaning_ru": "не",
+      "example": "She is not tired.",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "yes": {
+      "meaning_ru": "да",
+      "example": "Yes, she is.",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "no": {
+      "meaning_ru": "нет",
+      "example": "She is not tired.",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "tired": {
+      "meaning_ru": "уставший",
+      "example": "She is not tired.",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "ready": {
+      "meaning_ru": "готовый",
+      "example": "Are you ready?",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "here": {
+      "meaning_ru": "здесь",
+      "example": "",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "at home": {
+      "meaning_ru": "дома",
+      "example": "",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "calm": {
+      "meaning_ru": "спокойный",
+      "example": "",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "Mia": {
+      "meaning_ru": "Миа",
+      "example": "",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "Ben": {
+      "meaning_ru": "Бен",
+      "example": "",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "I": {
+      "meaning_ru": "я",
+      "example": "She is not tired.",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "you": {
+      "meaning_ru": "ты/вы",
+      "example": "Are you ready?",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "he": {
+      "meaning_ru": "он",
+      "example": "She is not tired.",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "she": {
+      "meaning_ru": "она",
+      "example": "She is not tired.",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "it": {
+      "meaning_ru": "оно (предмет)",
+      "example": "",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "we": {
+      "meaning_ru": "мы",
+      "example": "",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "they": {
+      "meaning_ru": "они",
+      "example": "",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    }
   }
 }

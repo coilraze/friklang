@@ -42,6 +42,40 @@ try {
   mkdirSync('docs/screenshots', { recursive: true });
   await page.screenshot({ path: 'docs/screenshots/trainer-desktop.png', fullPage: true });
 
+  await page.goto(`${baseURL}/lessons/A0L01`);
+  await page.locator('.guide-card').first().locator('summary').click();
+  check(await page.locator('.guide-card[open]').count() === 1, 'opens an optional detailed A0 guide without replacing concise review');
+  check(await page.locator('[data-action="speak"]').evaluateAll((buttons) => buttons.every((button) => !/[\u0400-\u04ff\u0250-\u02ff]/u.test(button.dataset.text))), 'offers TTS only for curated Latin-script text, never Russian glosses or IPA notation');
+  await page.evaluate(() => window.scrollTo(0, 0));
+  await page.screenshot({ path: 'docs/screenshots/theory-deep-a0l01.png' });
+  const availableVoiceLanguages = await page.evaluate(() => window.speechSynthesis?.getVoices().map((voice) => voice.lang) ?? []);
+  console.log(`Chrome Web Speech voices available: ${availableVoiceLanguages.length ? [...new Set(availableVoiceLanguages)].join(', ') : 'none (fallback message tested)'}`);
+  const initialSpeechStatus = await page.locator('#speech-status').innerText();
+  await page.locator('[data-action="speak"]').first().click();
+  await page.waitForFunction((initial) => document.querySelector('#speech-status')?.textContent !== initial, initialSpeechStatus);
+  const normalSpeechStatus = await page.locator('#speech-status').innerText();
+  check(normalSpeechStatus !== initialSpeechStatus, 'speech button reports a voice or a usable unavailable state');
+  await page.locator('[data-action="speak-slow"]').first().click();
+  check(await page.locator('#speech-status').isVisible() && page.url().includes('/lessons/A0L01'), 'slow speech control responds without blocking the lesson');
+  await page.locator('[data-action="stop-speech"]').click();
+  check(await page.locator('#speech-status').innerText() !== normalSpeechStatus, 'speech can be stopped by explicit user action');
+
+  await page.goto(`${baseURL}/lessons/L04`);
+  await page.locator('.vocabulary-panel summary').click();
+  check(await page.locator('[data-action="speak"][data-text="read"]').count() === 0, 'does not offer ambiguous read as an isolated TTS word');
+  check(await page.locator('[data-action="speak"][data-text="I read English every day."]').count() > 0, 'keeps the homograph available inside a lesson-context example');
+
+  for (const [lessonId, screenshot] of [['L01', 'theory-deep-l01.png'], ['L02', 'theory-deep-l02.png']]) {
+    await page.goto(`${baseURL}/lessons/${lessonId}`);
+    await page.locator('.guide-card').first().locator('summary').click();
+    await page.evaluate(() => window.scrollTo(0, 0));
+    await page.screenshot({ path: `docs/screenshots/${screenshot}` });
+  }
+
+  await page.goto(`${baseURL}/contractions`);
+  check(await page.getByRole('heading', { name: /Сокращённые формы/ }).count() === 1, 'opens the standalone contractions reference');
+  check((await page.locator('body').innerText()).includes("I'd") && (await page.locator('body').innerText()).includes('IELTS Academic Writing'), 'reference separates A1 forms from later ambiguous contractions and formal style');
+
   await page.goto(`${baseURL}/lessons/L03/tasks/L03-T10`);
   await page.getByRole('heading', { name: 'Редактирование записки и самостоятельное продолжение' }).waitFor();
   await page.waitForTimeout(100);
@@ -68,6 +102,7 @@ try {
 
   await page.goto(`${baseURL}/lessons/L01/tasks/L01-T16`);
   await page.locator('#task-answer').fill('I am Noor. I am here.');
+  check(await page.locator('#task-card [data-action="speak"]').count() === 0, 'never creates speech controls for private Writing drafts');
   await page.goto(`${baseURL}/lessons/L02`);
   await page.goto(`${baseURL}/lessons/L01/tasks/L01-T16`);
   check(await page.locator('#task-answer').inputValue() === 'I am Noor. I am here.', 'restores Writing draft after switching lessons');

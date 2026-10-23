@@ -653,7 +653,8 @@
     "provenance": "Оригинальные тексты, задания и пояснения friklang; не скопированы из источников.",
     "remaining_review": "Независимая языковая редактура и пилот; см. docs/content-quality.md.",
     "audit": "Самостоятельный аудит Codex этапа 1.5; не независимая лингвистическая экспертиза. См. docs/content-audit.md.",
-    "audit_stage1_6": "Содержательный пересмотр новых текстов и Writing; не независимая человеческая экспертиза. См. docs/stage-1.6-report.md."
+    "audit_stage1_6": "Содержательный пересмотр новых текстов и Writing; не независимая человеческая экспертиза. См. docs/stage-1.6-report.md.",
+    "stage_2_2": "Авторская подробная теория добавлена; самостоятельная проверка Codex не является независимой лингвистической экспертизой."
   },
   "language_standard": "en-GB; equivalent en-US accepted unless explicitly targeted",
   "assessment_reading": {
@@ -664,5 +665,230 @@
     "skill": "reading_comprehension",
     "presentation": "assessment_only_after_teaching; hide_text_and_keys_until_attempt",
     "reuse_policy": "First exposure only: later attempts are practice, not a fresh comprehension measure."
+  },
+  "theory_detail": [
+    {
+      "heading": "Знаки показывают границы и тип предложения",
+      "body": "Заглавная буква отмечает начало предложения; имена, I и название языка English сохраняют заглавную. Точка завершает обычное утверждение, вопросительный знак — прямой вопрос. После вопросительного знака точка не добавляется. Между подлежащим и глаголом запятую не ставь.",
+      "examples": [
+        {
+          "en": "Mia reads. Is Ben ready?",
+          "ru": "Утверждение заканчивается точкой, прямой вопрос — вопросительным знаком."
+        }
+      ],
+      "errors": [
+        {
+          "incorrect": "Mia, reads English.",
+          "correct": "Mia reads English.",
+          "why": "Запятая не отделяет подлежащее от глагола."
+        },
+        {
+          "incorrect": "I am ready, I study English.",
+          "correct": "I am ready. I study English.",
+          "why": "В учебной прозе две самостоятельные мысли разделяем точкой."
+        }
+      ]
+    },
+    {
+      "heading": "Запятая и апостроф выполняют разные задачи",
+      "body": "В изученном кратком ответе после Yes/No ставь запятую: Yes, I am. Не соединяй две завершённые мысли одной запятой: в короткой учебной прозе безопасно разделить их точкой. Апостроф внутри I’m или isn’t показывает пропуск букв и не обозначает границу предложения. В типографике допускаются прямой и типографский апострофы.",
+      "examples": [
+        {
+          "en": "I am ready. I study English.",
+          "ru": "Две самостоятельные мысли разделены точкой."
+        },
+        {
+          "en": "I am ready, I study English.",
+          "ru": "В формальном тексте это comma splice; нужны точка или изученный соединитель."
+        }
+      ]
+    },
+    {
+      "heading": "Читать связный текст",
+      "body": "Прочитай текст сначала ради общей ситуации: кто пишет, кому и о чём? Затем ищи конкретный факт, отрицание и местоименную связь. Проверь, что текст действительно сообщает; не выводи место работы из фразы at home, если это не сказано. Читай слова в предложении, а незнакомое важное слово проверяй по словарю. Озвучивание помогает соотнести написание и звук, но само по себе не проверяет понимание.",
+      "examples": [
+        {
+          "en": "Ben is not at work. He is at home.",
+          "ru": "He относится к Ben; текст сообщает, что Ben не на работе и находится дома."
+        }
+      ]
+    },
+    {
+      "heading": "Проверка перед отправкой",
+      "body": "Перечитай записку в два прохода. Сначала смысл: каждое предложение сообщает то, что ты хотел? Потом форма: заглавные буквы, подходящие be/глагол, апостроф, границы предложений и конечный знак. Не исправляй правильное сокращение только потому, что оно отличается от полного образца. Для академического жанра предпочитай полный вариант, если стиль важен.",
+      "examples": [
+        {
+          "en": "She’s ready. (нейтрально/разговорно) — She is ready. (более формально)",
+          "ru": "Обе формы грамматичны; выбор зависит от регистра."
+        }
+      ]
+    }
+  ],
+  "theory_links": [
+    "L01",
+    "L03",
+    "L04"
+  ],
+  "vocabulary_detail": {
+    "English": {
+      "meaning_ru": "английский язык",
+      "example": "I study English.",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "read": {
+      "meaning_ru": "читать",
+      "example": "Mia reads.",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "study": {
+      "meaning_ru": "учиться; изучать",
+      "example": "I study English.",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "work": {
+      "meaning_ru": "работать",
+      "example": "",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "every day": {
+      "meaning_ru": "каждый день",
+      "example": "",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "at home": {
+      "meaning_ru": "дома",
+      "example": "",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "here": {
+      "meaning_ru": "здесь",
+      "example": "I am Mia. I am here.",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "ready": {
+      "meaning_ru": "готовый",
+      "example": "",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "tired": {
+      "meaning_ru": "уставший",
+      "example": "",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "happy": {
+      "meaning_ru": "довольный",
+      "example": "",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "Mia": {
+      "meaning_ru": "Миа",
+      "example": "Mia reads.",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "Ben": {
+      "meaning_ru": "Бен",
+      "example": "",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "yes": {
+      "meaning_ru": "да",
+      "example": "",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "no": {
+      "meaning_ru": "нет",
+      "example": "",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "I": {
+      "meaning_ru": "я",
+      "example": "I study English.",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "you": {
+      "meaning_ru": "ты/вы",
+      "example": "",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "he": {
+      "meaning_ru": "он",
+      "example": "I am Mia. I am here.",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "she": {
+      "meaning_ru": "она",
+      "example": "",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "we": {
+      "meaning_ru": "мы",
+      "example": "",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    },
+    "they": {
+      "meaning_ru": "они",
+      "example": "",
+      "ipa": "",
+      "part_of_speech": "",
+      "forms": "",
+      "stress": ""
+    }
   }
 }
