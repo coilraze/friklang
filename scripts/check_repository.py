@@ -11,7 +11,7 @@ patterns = {
 }
 allowed_roots={'docs','content','scripts','tests','src','.github','public'}
 allowed_top={'README.md','.gitignore','.gitattributes','package.json','package-lock.json','index.html','vite.config.js','Запустить friklang.cmd','Настроить friklang.cmd','Остановить friklang.cmd'}
-ignored_parts={'.git','__pycache__','.venv','venv','.pytest_cache','.mypy_cache','.ruff_cache','node_modules','dist','test-results'}
+ignored_parts={'.git','.vite','__pycache__','.venv','venv','.pytest_cache','.mypy_cache','.ruff_cache','node_modules','dist','test-results'}
 files=[]
 problems=[]
 for p in sorted(ROOT.rglob('*')):
