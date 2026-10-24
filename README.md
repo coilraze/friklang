@@ -1,58 +1,53 @@
-# friklang — учебный фундамент
+# friklang
 
-Архитектурное требование: все существующие материалы A0–B2 доступны сразу; навигация свободная, прогресс неблокирующий ([спецификация](docs/progress-and-navigation.md)).
+**Free English grammar, reading and writing trainer.**
 
-Этап 2: первый работающий тренажёр на Vite и Vanilla JavaScript использует существующие уроки. Все 10 уроков и 150 заданий доступны сразу; прогресс и черновики хранятся локально в IndexedDB. Сервер, аккаунты и платные API не используются.
+friklang is a free, browser-based library for independent English study. The current Stage 2.2 trainer includes 10 lessons and 150 exercises, concise and detailed grammar explanations, original short readings, guided writing, answer feedback, free lesson navigation, local progress, and optional browser speech. It uses Vite and vanilla JavaScript. There is no backend, registration, paid API, or cross-device progress sync.
 
-## Запуск приложения
+Progress is stored in IndexedDB in the current browser profile. Local `localhost` progress and progress on GitHub Pages are separate. Opening the public site does not import local drafts or progress.
 
-Нужен Node.js версии не ниже 20.19 или 22.12 ([требования Vite](https://vite.dev/guide/)). В папке проекта выполните:
+The curriculum is under development. Educational content has not yet received independent professional linguistic editing. The Codex self-audit and automated tests are not an independent human linguistic review.
 
-```powershell
-npm install
+**Hands and AI**
+
+Project concept, requirements, testing and product decisions by frikxe. Development implemented with AI assistance.
+
+No licence granting free reuse of the educational content is included.
+
+## Use the published site
+
+[Open friklang on GitHub Pages](https://frikxe.github.io/friklang/).
+
+The site is static and free to use. Your progress remains in that browser profile and is not synchronized with other devices.
+
+## Run locally
+
+Requires Node.js 22.12+ (or 20.19+).
+
+```sh
+npm ci
 npm run dev
 ```
 
-Откройте адрес, показанный Vite (обычно `http://127.0.0.1:5173`). Для проверки production-сборки: `npm run build`, затем `npm run preview`. Интерфейс работает в современном браузере; полноценный offline-PWA пока не реализован.
+Vite prints the local address. Create a production build with `npm run build`; preview it with `npm run preview`.
 
-Проверки: `npm test` — unit-тесты; `npm run test:e2e` — браузерные сценарии (нужен Chrome/Edge или `npx playwright install chromium`). Результаты и ограничения описаны в [отчёте этапа 2](docs/stage-2-report.md). Скриншоты: [урок на ПК](docs/screenshots/trainer-desktop.png), [меню на мобильном](docs/screenshots/navigation-mobile.png).
+## Checks
 
-- [Аудит всех исходных заданий и оставшиеся вопросы](docs/content-audit.md)
-- [Входная диагностика: 28 заданий и профиль навыков](docs/diagnostic-assessment.md)
-- [Языковой стандарт и пунктуация](docs/language-standard.md)
-- [Обратная связь по свободному Writing](docs/writing-feedback.md)
-- [Результаты проверок](docs/verification-results.md)
-- [Отчёт этапа 1.6](docs/stage-1.6-report.md)
-- [Свободная навигация и модель прогресса](docs/progress-and-navigation.md)
-- [Stage 2.2: подробная теория, сокращения и браузерная озвучка](docs/stage-2.2-report.md)
+```sh
+npm test
+npm run test:e2e
+GITHUB_PAGES=true npm run build
+npm run test:pages
+```
 
-Маршрут A0: после A0L01 (алфавит) параллельно доступны A0L05 (первые предложения) и A0L02–A0L04 (слоги, ударение, IPA и закономерности чтения); IPA не блокирует начало Writing. Затем — L01–L05. A0 — внутренняя подготовительная метка, не официальный CEFR. Таблица названий букв и письменная работа с IPA не подтверждают реальное произношение.
+The GitHub Actions workflow runs the unit/content checks, browser E2E scenarios, a Pages production build, and direct-route tests before deployment.
 
-Сборка: `python -X utf8 scripts/build_stage1.py`; проверка: `python -X utf8 scripts/validate_content.py`. Исходные авторские данные этапа 1 сохранены в build_stage1.py, дополнения и поправки — в stage1_5.py. Генератор перезаписывает карту и все десять JSON; правки вносятся в соответствующий источник. Пять исходных уроков по-прежнему имеют по 18 заданий, новые A0 — по 12. Все 20 открытых заданий снабжены образцом, критериями и поддержкой самопроверки. Самостоятельный аудит Codex не является независимой лингвистической экспертизой.
+## Project notes
 
-На этапе 1.5 Git инициализирован для локального хранения; коммит и отсутствие remote проверяются после всех проверок (см. журнал результатов). Remote не создаётся и push не выполняется.
-
-Ниже сохранено описание результатов **первого этапа**. Его исторические числа и статус Git относятся к состоянию до этапа 1.5; текущие результаты указаны выше.
-
-Бесплатный персональный курс чтения и письма для русскоязычного взрослого: A0 → A1 → A2 → B1 → B2. Краткая теория на русском, оригинальные тексты, самостоятельное составление предложений, объяснение ошибок и возвращение к материалу после перерыва. Приоритет — точность содержания.
-
-Этап 1 от 24 октября 2026 года: учебная архитектура и пять уроков, без приложения и серверной инфраструктуры. Listening, Speaking, аудио, игровые жизни и соревнования исключены.
-
-- [Исследование источников](docs/research/source-analysis.md)
-- [Карта программы](docs/curriculum.md)
-- [Стандарт урока](docs/lesson-standard.md)
-- [Проверка ответов](docs/answer-validation.md)
-- [Контроль качества и открытые решения](docs/content-quality.md)
-- [Пять уроков JSON](content/lessons/)
-
-В каждом уроке 18 заданий с ключами, альтернативами и объяснениями. Поля JSON описаны в стандарте; задания Reading и Writing входят в эти 18. Ключи предназначены для будущего режима проверки и не должны показываться ученику до попытки ответа. Для чтения JSON удобен любой редактор с форматированием.
-
-Перед первым уроком абсолютному новичку нужен подготовительный блок A0-01–A0-03 из программы. Ученик с предполагаемым A2 начинает с диагностики: результат DET Practice сам по себе не подтверждает профиль Reading/Writing и не заменяет оценку по заданиям.
-
-Цель B2 по чтению и письму и дальнейшая подготовка к IELTS Academic 6.5 осенью 2027 года — ориентир, не обещание балла или срока. Этот курс не покрывает весь IELTS: для общего результата нужны и другие экзаменационные навыки вне приложения.
-
-Проверка структуры: `python scripts/validate_content.py`. Это не проверка естественности языка и не независимая педагогическая экспертиза. Статус материалов: содержательно пересмотрены автором, независимая редактура ожидается.
-
-Редактирование контента: карта и JSON собираются из авторских данных в `scripts/build_stage1.py` командой `python scripts/build_stage1.py`. Этот скрипт перезаписывает карту и пять JSON; изменения в них нужно переносить в источник сборки. Остальные Markdown-документы редактируются напрямую. Внешние библиотеки не нужны.
-
-Рабочая папка при начале работы не являлась Git-репозиторием; удалённый репозиторий не настроен. Commit и push не выполнены. Сторонние учебные тексты и изображения в проект не включены. Лицензия на публикацию собственных материалов должна быть выбрана владельцем отдельно.
+- [Curriculum map](docs/curriculum.md)
+- [Content audit and open editorial questions](docs/content-audit.md)
+- [Language and punctuation standard](docs/language-standard.md)
+- [Writing feedback approach](docs/writing-feedback.md)
+- [Free navigation and progress model](docs/progress-and-navigation.md)
+- [Stage 2.2 report](docs/stage-2.2-report.md)
+- [Verification results](docs/verification-results.md)

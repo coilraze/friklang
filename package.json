@@ -8,7 +8,8 @@
     "build": "vite build",
     "preview": "vite preview --host 127.0.0.1",
     "test": "node --test tests/app/*.test.js",
-    "test:e2e": "npm run build && node tests/e2e/run.mjs"
+    "test:e2e": "npm run build && node tests/e2e/run.mjs",
+    "test:pages": "node tests/e2e/pages-routing.mjs"
   },
   "devDependencies": {
     "@playwright/test": "^1.55.0",

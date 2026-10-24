@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Opening friklang…</title>
+    <script>
+      const base = '/friklang';
+      const path = location.pathname.startsWith(base) ? location.pathname.slice(base.length) : '/';
+      const destination = `${path}${location.search}${location.hash}`;
+      location.replace(`${base}/?friklang_redirect=${encodeURIComponent(destination)}`);
+    </script>
+  </head>
+  <body><p>Opening friklang…</p></body>
+</html>

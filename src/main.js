@@ -8,6 +8,11 @@ import {
 } from './progress-store.js';
 
 const root = document.querySelector('#app');
+const basePath = import.meta.env.BASE_URL.replace(/\/$/, '');
+const githubPagesRedirect = new URLSearchParams(location.search).get('friklang_redirect');
+if (githubPagesRedirect?.startsWith('/') && !githubPagesRedirect.startsWith('//')) {
+  history.replaceState({}, '', `${basePath}${githubPagesRedirect}`);
+}
 const lessonStatusLabels = { not_started: 'Не начат', in_progress: 'В процессе', completed: 'Завершён', skipped: 'Пропущен' };
 const resultLabels = { correct: 'Верно', partial: 'Частично', incorrect: 'Неверно', ambiguous: 'Нужна проверка', unreviewed: 'Самопроверка' };
 let progress;
@@ -21,11 +26,14 @@ let restoreFocus = null;
 let speechStatus = '';
 
 function route() {
-  const match = location.pathname.match(/^\/lessons\/([^/]+)(?:\/tasks\/([^/]+))?\/?$/);
+  const path = location.pathname.startsWith(`${basePath}/`)
+    ? location.pathname.slice(basePath.length)
+    : location.pathname;
+  const match = path.match(/^\/lessons\/([^/]+)(?:\/tasks\/([^/]+))?\/?$/);
   if (match) return { page: 'lesson', lessonId: decodeURIComponent(match[1]), taskId: match[2] ? decodeURIComponent(match[2]) : null };
-  if (location.pathname === '/progress') return { page: 'progress' };
-  if (location.pathname === '/diagnostic') return { page: 'diagnostic' };
-  if (location.pathname === '/contractions') return { page: 'contractions' };
+  if (path === '/progress') return { page: 'progress' };
+  if (path === '/diagnostic') return { page: 'diagnostic' };
+  if (path === '/contractions') return { page: 'contractions' };
   return { page: 'home' };
 }
 
@@ -40,7 +48,11 @@ function linkTo(path, label, className = '', attrs = '') {
 }
 
 function lessonPath(lessonId, taskId = null) {
-  return `/lessons/${encodeURIComponent(lessonId)}${taskId ? `/tasks/${encodeURIComponent(taskId)}` : ''}`;
+  return `${import.meta.env.BASE_URL}lessons/${encodeURIComponent(lessonId)}${taskId ? `/tasks/${encodeURIComponent(taskId)}` : ''}`;
+}
+
+function appPath(path) {
+  return `${import.meta.env.BASE_URL}${path.replace(/^\//, '')}`;
 }
 
 function enqueueSave() {
@@ -114,8 +126,8 @@ function pageTitle() {
 
 function renderHeader() {
   return `<header class="topbar"><button class="menu-button" data-action="toggle-drawer" aria-label="Открыть меню уроков" aria-expanded="${drawerOpen}" aria-controls="lesson-drawer">☰</button>
-    <a class="brand" href="/" data-link>friklang</a><div class="topbar-current">${escapeHtml(pageTitle())}</div>
-    <nav class="top-actions" aria-label="Основные разделы">${linkTo('/', 'Библиотека', 'top-link', 'data-link')}${linkTo('/contractions', 'Сокращения', 'top-link', 'data-link')}${linkTo('/progress', 'Прогресс', 'top-link', 'data-link')}</nav>
+    <a class="brand" href="${appPath('/')}" data-link>friklang</a><div class="topbar-current">${escapeHtml(pageTitle())}</div>
+    <nav class="top-actions" aria-label="Основные разделы">${linkTo(appPath('/'), 'Библиотека', 'top-link', 'data-link')}${linkTo(appPath('/contractions'), 'Сокращения', 'top-link', 'data-link')}${linkTo(appPath('/progress'), 'Прогресс', 'top-link', 'data-link')}</nav>
   </header>`;
 }
 
@@ -124,7 +136,7 @@ function renderHome() {
   return `<main class="page-shell"><section class="welcome-card">
     <span class="eyebrow">АНГЛИЙСКИЙ · GRAMMAR · READING · WRITING</span><h1>Учитесь в своём темпе</h1>
     <p>Открывайте любой урок, возвращайтесь к упражнениям и продолжайте с того места, где остановились.</p>
-    <div class="welcome-actions"><button class="primary-button" data-action="open-drawer">Выбрать урок</button>${linkTo('/progress', 'Мой прогресс', 'secondary-button', 'data-link')}</div>
+    <div class="welcome-actions"><button class="primary-button" data-action="open-drawer">Выбрать урок</button>${linkTo(appPath('/progress'), 'Мой прогресс', 'secondary-button', 'data-link')}</div>
   </section>
   <section class="home-section"><div class="section-heading"><div><span class="eyebrow">ВАША БИБЛИОТЕКА</span><h2>Готовые уроки</h2></div><span class="quiet">${lessonsById.size} уроков · ${lessons.reduce((sum, lesson) => sum + lesson.tasks.length, 0)} заданий</span></div>
     <div class="lesson-cards">${lessons.map((lesson) => `<a class="lesson-card" href="${lessonPath(lesson.id)}" data-link><span class="card-level">${lesson.level.split(' ')[0]}</span><h3>${escapeHtml(lesson.title)}</h3><p>${escapeHtml(lesson.objective)}</p><span class="card-meta">${lesson.tasks.length} заданий · ${lessonStatusLabels[deriveLessonStatus(lesson, progress)]}</span></a>`).join('')}</div>
@@ -204,7 +216,7 @@ function renderTaskRail(lesson, activeTask) {
 
 function renderLesson() {
   const lesson = currentLesson();
-  if (!lesson) return `<main class="page-shell"><section class="empty-state"><span class="eyebrow">МАТЕРИАЛ НЕ НАЙДЕН</span><h1>Такого готового урока нет</h1><p>В программе может быть тема, для которой урок ещё не подготовлен. Мы не откроем пустую страницу.</p><a class="secondary-button" href="/" data-link>Вернуться в библиотеку</a></section></main>`;
+  if (!lesson) return `<main class="page-shell"><section class="empty-state"><span class="eyebrow">МАТЕРИАЛ НЕ НАЙДЕН</span><h1>Такого готового урока нет</h1><p>В программе может быть тема, для которой урок ещё не подготовлен. Мы не откроем пустую страницу.</p><a class="secondary-button" href="${appPath('/')}" data-link>Вернуться в библиотеку</a></section></main>`;
   const task = currentTask(lesson);
   const taskIndex = lesson.tasks.findIndex((item) => item.id === task.id);
   const previous = lesson.tasks[taskIndex - 1];
@@ -212,7 +224,7 @@ function renderLesson() {
   const topic = topics.find((item) => lesson.curriculum_topics?.includes(item.id));
   return `<main class="page-shell lesson-page"><div class="lesson-heading"><div><span class="eyebrow">${lesson.level.split(' ')[0]} · ${escapeHtml(topic?.title ?? '')}</span><h1>${escapeHtml(lesson.title)}</h1><p>${escapeHtml(lesson.objective)}</p></div><span class="status-pill status-${deriveLessonStatus(lesson, progress)}">${lessonStatusLabels[deriveLessonStatus(lesson, progress)]}</span></div>
     <div class="lesson-columns"><section class="lesson-main">${renderTheory(lesson)}<div class="practice-heading" id="practice"><div><span class="eyebrow">ПРАКТИКА · ${lesson.tasks.length} ЗАДАНИЙ</span><h2>Попробуйте сами</h2></div><button class="text-button" data-action="return-theory">↑ К теории</button></div>${renderTask(lesson, task, taskIndex)}
-      <nav class="task-pager" aria-label="Навигация по упражнениям"><a class="secondary-button ${previous ? '' : 'is-disabled'}" ${previous ? `href="${lessonPath(lesson.id, previous.id)}" data-link` : 'aria-disabled="true"'}>← Назад</a><span>${taskIndex + 1} / ${lesson.tasks.length}</span><a class="primary-button" href="${next ? lessonPath(lesson.id, next.id) : '/'}" data-link>${next ? 'Далее →' : 'К библиотеке'}</a></nav>
+      <nav class="task-pager" aria-label="Навигация по упражнениям"><a class="secondary-button ${previous ? '' : 'is-disabled'}" ${previous ? `href="${lessonPath(lesson.id, previous.id)}" data-link` : 'aria-disabled="true"'}>← Назад</a><span>${taskIndex + 1} / ${lesson.tasks.length}</span><a class="primary-button" href="${next ? lessonPath(lesson.id, next.id) : appPath('/')}" data-link>${next ? 'Далее →' : 'К библиотеке'}</a></nav>
     </section>${renderTaskRail(lesson, task)}</div></main>`;
 }
 
@@ -234,7 +246,7 @@ function renderProgress() {
 }
 
 function renderDiagnostic() {
-  return `<main class="page-shell"><section class="welcome-card"><span class="eyebrow">РЕКОМЕНДАЦИИ, НЕ ЭКЗАМЕН</span><h1>Начните с того, что вам полезно</h1><p>Диагностика в документах курса описывает навыки Grammar, Reading Comprehension, Writing, Punctuation и Spelling / Word Recognition. Любой урок можно открыть без неё.</p><div class="welcome-actions"><a class="primary-button" href="/lessons/A0L01" data-link>Начать с A0</a><button class="secondary-button" data-action="open-drawer">Выбрать любой урок</button></div></section><section class="progress-section"><h2>Материалы диагностики</h2><p>Письменные задания диагностики пока не подключены как интерактивный блок. Спецификация и банк пунктов доступны в документации курса: <code>docs/diagnostic-assessment.md</code>.</p></section></main>`;
+  return `<main class="page-shell"><section class="welcome-card"><span class="eyebrow">РЕКОМЕНДАЦИИ, НЕ ЭКЗАМЕН</span><h1>Начните с того, что вам полезно</h1><p>Диагностика в документах курса описывает навыки Grammar, Reading Comprehension, Writing, Punctuation и Spelling / Word Recognition. Любой урок можно открыть без неё.</p><div class="welcome-actions"><a class="primary-button" href="${appPath('/lessons/A0L01')}" data-link>Начать с A0</a><button class="secondary-button" data-action="open-drawer">Выбрать любой урок</button></div></section><section class="progress-section"><h2>Материалы диагностики</h2><p>Письменные задания диагностики пока не подключены как интерактивный блок. Спецификация и банк пунктов доступны в документации курса: <code>docs/diagnostic-assessment.md</code>.</p></section></main>`;
 }
 
 function render() {
@@ -252,9 +264,10 @@ function render() {
 
 async function navigate(path, { replace = false } = {}) {
   stopSpeech();
-  const openTaskDirectly = new URL(path, location.origin).pathname.includes('/tasks/');
+  const targetURL = new URL(path, location.href);
+  const openTaskDirectly = targetURL.pathname.includes('/tasks/');
   await enqueueSave();
-  if (replace) history.replaceState({}, '', path); else history.pushState({}, '', path);
+  if (replace) history.replaceState({}, '', targetURL.href); else history.pushState({}, '', targetURL.href);
   currentRoute = route();
   if (currentRoute.page === 'lesson' && lessonsById.has(currentRoute.lessonId)) {
     const lesson = lessonsById.get(currentRoute.lessonId);
@@ -494,7 +507,7 @@ document.addEventListener('visibilitychange', () => {
 });
 
 progress = await loadProgress();
-if (!location.pathname.startsWith('/lessons/')) {
+if (!route().lessonId) {
   currentRoute = route();
 } else if (!lessonsById.has(currentRoute.lessonId)) {
   // Unknown or planned lessons show an informative state instead of a blank route.
