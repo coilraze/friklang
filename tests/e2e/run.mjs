@@ -86,6 +86,7 @@ try {
   await page.getByRole('button', { name: 'Пропустить' }).click();
   await page.getByRole('heading', { name: 'Вспомнить порядок' }).waitFor();
   await page.locator('.task-number').first().click();
+  await page.waitForURL(/\/lessons\/L02\/tasks\/L02-T01$/);
   check(await page.locator('.task-bottom .status-pill').innerText() === 'Пропущен', 'skips an exercise and returns to it');
 
   await page.goto(`${baseURL}/lessons/L02/tasks/L02-T03`);
