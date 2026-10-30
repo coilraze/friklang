@@ -16,7 +16,7 @@ No licence granting free reuse of the educational content is included.
 
 ## Use the published site
 
-[Open friklang on GitHub Pages](https://frikxe.github.io/friklang/).
+[Open friklang on GitHub Pages](https://coilraze.github.io/friklang/).
 
 The site is static and free to use. Your progress remains in that browser profile and is not synchronized with other devices.
 
